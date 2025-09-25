@@ -14,7 +14,7 @@ repository               : "8CH6/academicpages.github.io"
 
 # Site Author - sidebar profile info
 author:
-  avatar           : "images/bio-photo.jpg"  # make sure your avatar file is named bio-photo.jpg in /images/
+  avatar           : "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg"  # make sure your avatar file is named bio-photo.jpg in /images/
   name             : "Yanrou GE"
   pronouns         :
   bio              : "Undergraduate student in Design & Technology. Interested in AI, AR, and interactive media for cultural heritage narratives."
