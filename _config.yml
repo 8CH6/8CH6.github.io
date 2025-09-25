@@ -14,7 +14,7 @@ repository               : "8CH6/academicpages.github.io"
 
 # Site Author - sidebar profile info
 author:
-  avatar           : "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg"  # make sure your avatar file is named bio-photo.jpg in /images/
+  avatar           : "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg"  # 使用远程头像
   name             : "Yanrou GE"
   pronouns         :
   bio              : "Undergraduate student in Design & Technology. Interested in AI, AR, and interactive media for cultural heritage narratives."
@@ -23,18 +23,10 @@ author:
   uri              :
   email            : "mailto:17805830516@163.com"
 
-  # Academic websites
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  orcid            : "http://orcid.org/yourorcidurl"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # Links
   github           : "8CH6"
 
-  # Social media (fill in if you want)
-  linkedin         :
-  instagram        :
-  zhihu            :
-
-# Publication Category
+# Publication Category (如果不需要，可以以后删除 publications collection)
 publication_category:
   books:
     title: 'Books'
