@@ -5,7 +5,7 @@
 locale                   : "zh-CN"
 site_theme               : "default"
 title : "Yanrou GE"
-logo  : "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/logo%E4%B8%8D%E5%B8%A6%E9%A2%9C%E8%89%B2%E7%89%88.png"
+logo: "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/logo不带颜色版.png"
 title_separator          : "-"
 name                     : "Yanrou GE"
 description              : "Undergraduate in Design & Technology — Sino-German Institute of Design and Communication"
