@@ -79,41 +79,53 @@ I craft **immersive narratives** for cultural heritage, blending motion design, 
 
 ## ⚡ Tools
 
-<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; text-align: center;">
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image1.png" alt="Blender" width="60"/><br/>Blender
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image1.png" alt="Lightroom" style="height:60px;"><br>
+    Lightroom
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image2.png" alt="Photoshop" width="60"/><br/>Photoshop
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image2.png" alt="Illustrator" style="height:60px;"><br>
+    Illustrator
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image3.png" alt="Illustrator" width="60"/><br/>Illustrator
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image3.png" alt="Adobe After Effects" style="height:60px;"><br>
+    After Effects
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image4.png" alt="After Effects" width="60"/><br/>After Effects
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image4.png" alt="TouchDesigner" style="height:60px;"><br>
+    TouchDesigner
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image5.png" alt="Cinema4D" width="60"/><br/>Cinema 4D
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image5.png" alt="Cinema 4D" style="height:60px;"><br>
+    Cinema 4D
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image6.png" alt="TouchDesigner" width="60"/><br/>TouchDesigner
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image6.png" alt="Blender" style="height:60px;"><br>
+    Blender
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image7.png" alt="Arduino" width="60"/><br/>Arduino
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image7.png" alt="VS Code" style="height:60px;"><br>
+    VS Code
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Vroid" width="60"/><br/>Vroid
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Arduino" style="height:60px;"><br>
+    Arduino
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image9.png" alt="Figma" width="60"/><br/>Figma
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image9.png" alt="Vroid" style="height:60px;"><br>
+    Vroid
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image10.png" alt="Procreate" width="60"/><br/>Procreate
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image10.png" alt="Photoshop" style="height:60px;"><br>
+    Photoshop
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image11.png" alt="Lightroom" width="60"/><br/>Lightroom
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image11.png" alt="Figma" style="height:60px;"><br>
+    Figma
   </div>
   <div>
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image12.png" alt="VS Code" width="60"/><br/>VS Code
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image12.png" alt="Processing" style="height:60px;"><br>
+    Processing
   </div>
 </div>
