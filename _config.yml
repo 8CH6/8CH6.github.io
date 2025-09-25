@@ -19,16 +19,14 @@ repository               : "8CH6/academicpages.github.io"
 
 # Site Author
 author:
-  # Biographic information
-  avatar: "images/profile.png"
+  avatar: "images/bio-photo.jpg"
   name: "Yanrou GE"
   pronouns: # example: "she/her"  
   bio: "Designer & Technologist specializing in AI, AR, and interactive media for cultural heritage narratives. Skilled in UX, motion design, and data-driven strategies to create impactful digital experiences."
   location: "Jiaxing, Zhejiang, China"
   employer: "Sino-German Institute of Design and Communication"
   uri: 
-  email: "mailto:17805830516@163.com"
-
+  email: "17805830516@163.com"
 
   # Academic websites
   academia: 
