@@ -24,8 +24,8 @@ author:
   avatar: "images/profile.png"
   name             : "Yanrou GE"
   pronouns         : # example: "she/her"  
-  Designer & Technologist specializing in AI, AR, and interactive media for cultural heritage narratives. Skilled in UX, motion design, and data-driven strategies to create impactful digital experiences.
-  location         : "Jiaxing, Zhejiang, China"
+bio: "Designer & Technologist specializing in AI, AR, and interactive media for cultural heritage narratives. Skilled in UX, motion design, and data-driven strategies to create impactful digital experiences."
+location         : "Jiaxing, Zhejiang, China"
   employer         : "Sino-German Institute of Design and Communication"
   uri              : # URL
   email            : "17805830516@163.com" 
