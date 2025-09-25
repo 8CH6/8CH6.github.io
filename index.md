@@ -4,7 +4,7 @@ title: "Yanrou GE - Design & Technology"
 author_profile: true
 ---
 
-# 👋 Hi, I'm **Ge Yanrou**
+# 👋 Hi, I'm **Yera**
 
 🎨 A **designer & technologist** exploring the intersection of **AI · AR · Interactive Media**.  
 I craft **immersive narratives** for cultural heritage, blending motion design, UX, and data-driven strategies to build impactful digital experiences.  
@@ -77,7 +77,18 @@ I craft **immersive narratives** for cultural heritage, blending motion design, 
 
 ---
 
-## ⚡ Tools
-Blender · Photoshop · Illustrator · After Effects  
-Cinema 4D · TouchDesigner · Arduino · Vroid  
-Figma · Procreate · Lightroom · VS Code
+## ⚡ Logos
+<p align="center">
+  <img src="images/image1.png" alt="Logo 1" width="80">
+  <img src="images/image2.png" alt="Logo 2" width="80">
+  <img src="images/image3.png" alt="Logo 3" width="80">
+  <img src="images/image4.png" alt="Logo 4" width="80">
+  <img src="images/image5.png" alt="Logo 5" width="80">
+  <img src="images/image6.png" alt="Logo 6" width="80">
+  <img src="images/image7.png" alt="Logo 7" width="80">
+  <img src="images/image8.png" alt="Logo 8" width="80">
+  <img src="images/image9.png" alt="Logo 9" width="80">
+  <img src="images/image10.png" alt="Logo 10" width="80">
+  <img src="images/image11.png" alt="Logo 11" width="80">
+  <img src="images/image12.png" alt="Logo 12" width="80">
+</p>
