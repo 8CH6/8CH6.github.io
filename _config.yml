@@ -1,125 +1,61 @@
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# This config file controls your academicpages site.
 
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default"
 title                    : "Yanrou GE"
 title_separator          : "-"
-name                     : &name "Yanrou GE"
-description              : &description "Design & Technology undergraduate — Sino-German Institute of Design and Communication"
-url                      : "https://8CH6.github.io"  
-baseurl                  : "" 
-repository               : "8CH6/academicpages.github.io"  
+name                     : "Yanrou GE"
+description              : "Undergraduate in Design & Technology — Sino-German Institute of Design and Communication"
+url                      : "https://8CH6.github.io"
+baseurl                  : ""
+repository               : "8CH6/academicpages.github.io"
 
-# Site Author
+# Site Author - sidebar profile info
 author:
-  avatar: "images/bio-photo.jpg"
-  name: "Yanrou GE"
-  pronouns: # example: "she/her"  
-  bio: "Designer & Technologist specializing in AI, AR, and interactive media for cultural heritage narratives. Skilled in UX, motion design, and data-driven strategies to create impactful digital experiences."
-  location: "Jiaxing, Zhejiang, China"
-  employer: "Sino-German Institute of Design and Communication"
-  uri: 
-  email: "17805830516@163.com"
+  avatar           : "images/bio-photo.jpg"  # make sure your avatar file is named bio-photo.jpg in /images/
+  name             : "Yanrou GE"
+  pronouns         :
+  bio              : "Undergraduate student in Design & Technology. Interested in AI, AR, and interactive media for cultural heritage narratives."
+  location         : "Jiaxing, Zhejiang, China"
+  employer         : "Sino-German Institute of Design and Communication"
+  uri              :
+  email            : "mailto:17805830516@163.com"
 
   # Academic websites
-  academia: 
-  arxiv: 
-  googlescholar: 
-  inspire-hep: 
-  impactstory: 
-  orcid: 
-  semantic: 
-  pubmed: 
-  researchgate: 
-  scopus: 
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  orcid            : "http://orcid.org/yourorcidurl"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  github           : "8CH6"
 
-  # Repositories and software development
-  bitbucket: 
-  codepen: 
-  dribbble: 
-  github: "8CH6"
-  kaggle: 
-  stackoverflow: 
-
-  # Social media
-  artstation: 
-  bluesky: 
-  facebook: 
-  flickr: 
-  foursquare: 
-  goodreads: 
-  google_plus: 
-  keybase: 
-  instagram: 
-  lastfm: 
-  linkedin: 
-  mastodon: 
-  medium: 
-  pinterest: 
-  soundcloud: 
-  steam: 
-  telegram: 
-  tumblr: 
-  twitter: 
-  vine: 
-  weibo: 
-  wikipedia: 
-  xing: 
-  youtube: 
-  zhihu: 
+  # Social media (fill in if you want)
+  linkedin         :
+  instagram        :
+  zhihu            :
 
 # Publication Category
 publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  
-breadcrumbs              : false 
+teaser                   :
+breadcrumbs              : false
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" 
-talkmap_link             : false      
+read_more                : "disabled"
+talkmap_link             : false
 comments:
-  provider               : 
-  disqus:
-    shortname            :
-  discourse:
-    server               : 
-  facebook:
-    appid                :
-    num_posts            : 
-    colorscheme          : 
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" 
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" 
+  provider               :
+
 atom_feed:
-  hide                   : false     
-  path                   : 
+  hide                   : false
+  path                   :
 
 # SEO Related
 google_site_verification :
@@ -129,23 +65,19 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               :
 facebook:
   username               :
-  app_id                 :
-  publisher              :
-og_image                 :  
-og_description           :  
+og_image                 :
+og_description           :
 social:
-  type                   : 
-  name                   : 
-  links: 
+  type                   : Person
+  name                   : Yanrou GE
+  links:
 
 # Analytics
 analytics:
-  provider               :  "false" 
-  google:
-    tracking_id          :
+  provider               : false
 
 # Reading Files
 include:
@@ -271,11 +203,11 @@ defaults:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed 
+  style: compressed
 
-# Outputting
+# Output
 permalink: /:categories/:title/
-timezone: Etc/UTC 
+timezone: Etc/UTC
 
 # Plugins
 plugins:
