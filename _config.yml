@@ -21,7 +21,7 @@ repository               : "8CH6/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar: "images/profile.png"
   name             : "Yanrou GE"
   pronouns         : # example: "she/her"  
   Designer & Technologist specializing in AI, AR, and interactive media for cultural heritage narratives. Skilled in UX, motion design, and data-driven strategies to create impactful digital experiences.
