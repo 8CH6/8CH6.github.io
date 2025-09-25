@@ -6,10 +6,10 @@ author_profile: true
 
 # 👋 Hi, I'm **Yera**
 
-🎨 A **designer & technologist** exploring the intersection of **AI · AR · Interactive Media**.  
+🎨 A **Design & Technology undergraduate** exploring the intersection of **AI · AR · Interactive Media**.  
 I craft **immersive narratives** for cultural heritage, blending motion design, UX, and data-driven strategies to build impactful digital experiences.  
 
-💡 My vision: use **intelligent media** to create sustainable cultural and commercial value — and step into a leadership role in the **cultural technology landscape**.  
+💡 My vision: use **intelligent media** to create sustainable cultural and commercial value — and grow into a leader in the **cultural technology landscape**.  
 
 📱 **+86 17805830516**
 
@@ -77,18 +77,43 @@ I craft **immersive narratives** for cultural heritage, blending motion design, 
 
 ---
 
-## ⚡ Logos
-<p align="center">
-  <img src="images/image1.png" alt="Logo 1" width="80">
-  <img src="images/image2.png" alt="Logo 2" width="80">
-  <img src="images/image3.png" alt="Logo 3" width="80">
-  <img src="images/image4.png" alt="Logo 4" width="80">
-  <img src="images/image5.png" alt="Logo 5" width="80">
-  <img src="images/image6.png" alt="Logo 6" width="80">
-  <img src="images/image7.png" alt="Logo 7" width="80">
-  <img src="images/image8.png" alt="Logo 8" width="80">
-  <img src="images/image9.png" alt="Logo 9" width="80">
-  <img src="images/image10.png" alt="Logo 10" width="80">
-  <img src="images/image11.png" alt="Logo 11" width="80">
-  <img src="images/image12.png" alt="Logo 12" width="80">
-</p>
+## ⚡ Tools
+
+<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; text-align: center;">
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image1.png" alt="Blender" width="60"/><br/>Blender
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image2.png" alt="Photoshop" width="60"/><br/>Photoshop
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image3.png" alt="Illustrator" width="60"/><br/>Illustrator
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image4.png" alt="After Effects" width="60"/><br/>After Effects
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image5.png" alt="Cinema4D" width="60"/><br/>Cinema 4D
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image6.png" alt="TouchDesigner" width="60"/><br/>TouchDesigner
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image7.png" alt="Arduino" width="60"/><br/>Arduino
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Vroid" width="60"/><br/>Vroid
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image9.png" alt="Figma" width="60"/><br/>Figma
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image10.png" alt="Procreate" width="60"/><br/>Procreate
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image11.png" alt="Lightroom" width="60"/><br/>Lightroom
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image12.png" alt="VS Code" width="60"/><br/>VS Code
+  </div>
+</div>
