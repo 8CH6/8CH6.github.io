@@ -1,0 +1,55 @@
+.about-section {
+  background: #000;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-avatar {
+  width: 180px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.about-tags span {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.about-tags span:hover {
+  background: #555;
+}
+
+.about-info {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 60%;
+  color: white;
+  font-size: 1rem;
+}
+
+.about-info td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
