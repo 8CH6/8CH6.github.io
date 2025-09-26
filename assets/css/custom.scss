@@ -1,55 +1,68 @@
+/* 全局 About 页样式 */
 .about-section {
-  background: #000;
-  color: white;
-  padding: 40px;
-  text-align: center;
+  background: #000;   /* 黑色背景 */
+  color: #fff;        /* 白字 */
+  padding: 2rem;
+  border-radius: 12px;
 }
 
-.about-title {
-  font-size: 2.5rem;
+.about-block {
+  margin-bottom: 3rem;
+}
+
+.about-block h1 {
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.about-avatar {
-  width: 180px;
-  border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+.about-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.about-tags {
+.about-links {
+  list-style: none;
+  padding: 0;
+}
+
+.about-links li {
+  margin: 0.5rem 0;
+}
+
+.about-links a {
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
+  gap: 0.5rem;
 }
 
-.about-tags span {
-  background: #333;
-  padding: 6px 12px;
-  border-radius: 6px;
+.skill-tag {
+  background: #1da1f2;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
   font-size: 0.9rem;
-  transition: background 0.3s;
-}
-
-.about-tags span:hover {
-  background: #555;
-}
-
-.about-info {
-  margin: 30px auto;
-  border-collapse: collapse;
-  width: 60%;
-  color: white;
-  font-size: 1rem;
-}
-
-.about-info td {
-  padding: 12px 20px;
-  border-bottom: 1px solid #444;
-  text-align: left;
+  font-weight: bold;
 }

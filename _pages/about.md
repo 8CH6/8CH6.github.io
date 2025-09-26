@@ -1,50 +1,54 @@
 ---
 layout: single
-title: "About Me"
+title: "About"
 permalink: /about/
-author_profile: false
 ---
 
 <div class="about-section">
 
-  <h2 class="about-title">ABOUT ME</h2>
+  <section class="about-block">
+    <h1>ABOUT ME</h1>
+    <p>
+      I am <strong>Yanrou GE</strong>, an undergraduate student in Design & Technology at 
+      the Sino-German Institute of Design and Communication. 
+      I am passionate about <em>AI, AR, and interactive media for cultural heritage narratives</em>.
+    </p>
+  </section>
 
-  <div class="about-center">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile" class="about-avatar">
-  </div>
+  <section class="about-block">
+    <h1>ONLINE</h1>
+    <ul class="about-links">
+      <li><a href="https://github.com/8CH6" target="_blank">GitHub</a></li>
+      <li><a href="mailto:17805830516@163.com">17805830516@163.com</a></li>
+    </ul>
+  </section>
 
-  <div class="about-tags">
-    <span>Design and Technology</span>
-    <span>Detailed</span>
-    <span>ENFJ</span>
-    <span>Scorpio</span>
-    <span>SAE</span>
-    <span>Passion</span>
-    <span>Efficient</span>
-    <span>Teamwork</span>
-  </div>
+  <section class="about-block">
+    <h1>PHOTOS</h1>
+    <div class="photo-grid">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Me">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/logo.png" alt="Logo">
+      <!-- 你可以继续添加更多照片 -->
+    </div>
+  </section>
 
-  <table class="about-info">
-    <tr>
-      <td><b>NAME</b></td>
-      <td>Yera</td>
-    </tr>
-    <tr>
-      <td><b>TEL</b></td>
-      <td>17805830516</td>
-    </tr>
-    <tr>
-      <td><b>EMAIL</b></td>
-      <td>17805830516@163.com</td>
-    </tr>
-    <tr>
-      <td><b>REDNOTE</b></td>
-      <td>3891545602</td>
-    </tr>
-    <tr>
-      <td><b>TIKTOK</b></td>
-      <td>36021644</td>
-    </tr>
-  </table>
+  <section class="about-block">
+    <h1>SKILLS</h1>
+    <div class="skills">
+      <span class="skill-tag">Adobe Photoshop</span>
+      <span class="skill-tag">Illustrator</span>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">3D Modeling</span>
+      <span class="skill-tag">AR/VR</span>
+    </div>
+  </section>
+
+  <section class="about-block">
+    <h1>CONTACT ME</h1>
+    <p>
+      📍 Jiaxing, Zhejiang, China <br>
+      📧 <a href="mailto:17805830516@163.com">17805830516@163.com</a>
+    </p>
+  </section>
 
 </div>
