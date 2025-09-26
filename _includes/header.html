@@ -4,9 +4,7 @@
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
           {% if site.logo %}
-            <img src="{{ site.logo }}" alt="{{ site.title }}" style="height:40px; vertical-align:middle;">
-          {% else %}
-            {{ site.title | escape }}
+            <img src="{{ site.logo }}" alt="Logo" style="height:40px; display:inline-block; vertical-align:middle;">
           {% endif %}
         </a>
         <ul class="visible-links">
