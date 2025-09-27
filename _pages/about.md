@@ -136,9 +136,9 @@ window.onload = typing;
     <span class="tooltiptext">3D CAD Design</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image7.png" alt="VS Code" style="height:60px;"><br>
-    VS Code
-    <span class="tooltiptext">Coding & Development</span>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/unity.png" alt="Unity" style="height:60px;"><br>
+    Unity
+    <span class="tooltiptext">Game & Interactive Development</span>
   </div>
   <div class="tooltip">
     <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Arduino" style="height:60px;"><br>
