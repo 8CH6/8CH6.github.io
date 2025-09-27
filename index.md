@@ -7,32 +7,30 @@ author_profile: false
   <div class="intro-text">
     <h1>👋 Hi, I'm <span class="highlight">Yera</span></h1>
     <p class="tagline">Exploring <strong>AI · AR · Interactive Media</strong> to craft <em>immersive cultural experiences</em>.</p>
-    <a href="/about/" class="about-btn">ABOUT ME</a>
+    <a href="/about/" class="btn-about">ABOUT ME</a>
   </div>
   <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile Photo" class="profile-photo">
 </div>
 
-<!-- ===== 作品展示区域 ===== -->
+<!-- ===== Featured Works Section ===== -->
 <section class="works-section">
-  <h2 class="works-title">精选作品</h2>
+  <h2 class="works-title">Featured Works</h2>
   <div class="works-grid">
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1" class="work-img">
-      <p>Work 1</p>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1">
     </div>
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2" class="work-img">
-      <p>Work 2</p>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2">
     </div>
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3" class="work-img">
-      <p>Work 3</p>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3">
     </div>
   </div>
+  <a href="/portfolio/" class="btn-more">SEE MORE</a>
 </section>
 
 <style>
-/* ===== 背景动画 ===== */
+/* ===== Background Animation ===== */
 body {
   margin: 0;
   background: linear-gradient(-45deg, #e0f7fa, #e1bee7, #bbdefb, #c8e6c9);
@@ -45,7 +43,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* ===== 主容器 ===== */
+/* ===== Intro Section ===== */
 .intro-container {
   display: flex;
   align-items: center;
@@ -59,8 +57,6 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   backdrop-filter: blur(10px);
 }
-
-/* ===== 左侧文字 ===== */
 .intro-text { flex: 1; }
 .intro-text h1 {
   font-size: 3.5em;
@@ -83,25 +79,6 @@ body {
   opacity: 0;
   transform: translateY(20px);
 }
-.about-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 30px;
-  font-size: 1.1em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.about-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* ===== 右侧图片 ===== */
 .profile-photo {
   width: 28%;
   border-radius: 20px;
@@ -111,57 +88,70 @@ body {
   animation: zoomIn 1.2s ease forwards 0.6s;
 }
 
-/* ===== 动画 ===== */
-@keyframes fadeInUp {
-  to { opacity: 1; transform: translateY(0); }
+/* ===== Buttons ===== */
+.btn-about, .btn-more {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
-@keyframes zoomIn {
-  to { transform: scale(1); opacity: 1; }
+.btn-about {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+}
+.btn-about:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  transform: scale(1.05);
+}
+.btn-more {
+  background: #333;
+  color: #fff;
+}
+.btn-more:hover {
+  background: #555;
+  transform: scale(1.05);
 }
 
-/* ===== 作品展示 ===== */
+/* ===== Works Section ===== */
 .works-section {
-  margin: 100px auto;
   max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
   text-align: center;
-  padding: 0 20px;
 }
 .works-title {
-  font-size: 2.2em;
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  color: #111;
   font-weight: 700;
-  margin-bottom: 50px;
-  color: #222;
 }
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 25px;
 }
-.work-card {
-  background: #fff;
+.work-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.work-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-.work-img {
-  width: 100%;
-  height: 220px;         /* 统一高度 */
-  object-fit: cover;     /* 保持比例，裁剪溢出部分 */
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-.work-card p {
-  font-size: 1.1em;
-  color: #444;
-  margin: 0;
+.work-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
-/* ===== 手机端优化 ===== */
+/* ===== Animations ===== */
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+@keyframes zoomIn { to { transform: scale(1); opacity: 1; } }
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .intro-container {
     flex-direction: column;
