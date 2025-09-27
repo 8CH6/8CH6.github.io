@@ -1,12 +1,13 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+// ============================================================================
+// This file controls what is imported from /_sass
+// ============================================================================
+//
+// Note that the files are processed in the order they are imported, so they are partly
+// sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+//
 
 @import
     "vendor/breakpoint/breakpoint",
@@ -41,19 +42,26 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* === 自定义导航栏右对齐 === */
+
+// ============================================================================
+// Custom Styles
+// ============================================================================
+
+/* === Custom Navigation Alignment === */
 .masthead__menu #site-nav.greedy-nav {
-  justify-content: flex-end;   // 导航整体靠右
+  justify-content: flex-end;   /* Align nav items to the right */
 }
 
 .masthead__menu #site-nav.greedy-nav .visible-links {
-  margin: 0;                   // 去掉居中
+  margin: 0;                   /* Remove default centering */
 }
 
 .greedy-nav .site-title {
-  margin-right: auto;          // 保证左边的 logo 靠左
+  margin-right: auto;          /* Keep logo/title aligned left */
 }
-/* ===== Custom Cursor ===== */
+
+/* === Custom Cursor === */
+/* Recommended size: ≤32x32px, PNG format, transparent background */
 body {
-  cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%20logo%201.png') 16 16, auto;
+  cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
 }
