@@ -7,18 +7,24 @@ author_profile: false
   <div class="intro-text">
     <h1>👋 Hi, I'm <span class="highlight">Yera</span></h1>
     <p class="tagline">Exploring <strong>AI · AR · Interactive Media</strong> to craft <em>immersive cultural experiences</em>.</p>
-    <a href="/about/" class="about-btn">ABOUT ME</a>
+    <a href="/about/" class="about-button">ABOUT ME</a>
   </div>
   <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile Photo" class="profile-photo">
 </div>
 
-<!-- ===== 第二屏：Works 区域 ===== -->
+<!-- ===== 精选作品区域 ===== -->
 <div class="works-section">
-  <h2 class="works-title">Featured Works</h2>
+  <h2>✨ Featured Works</h2>
   <div class="works-grid">
-    <div class="work-card">Work 1</div>
-    <div class="work-card">Work 2</div>
-    <div class="work-card">Work 3</div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1">
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2">
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3">
+    </div>
   </div>
 </div>
 
@@ -79,24 +85,24 @@ body {
   animation: fadeInUp 1.2s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
-  margin-bottom: 30px;
 }
 
-.about-btn {
+/* ===== About 按钮 ===== */
+.about-button {
   display: inline-block;
-  padding: 12px 35px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: white;
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
   background: linear-gradient(90deg, #4facfe, #00f2fe);
   border-radius: 50px;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.about-btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.about-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* ===== 右侧图片 ===== */
@@ -109,43 +115,44 @@ body {
   animation: zoomIn 1.2s ease forwards 0.6s;
 }
 
-/* ===== Works Section ===== */
+/* ===== 精选作品样式 ===== */
 .works-section {
-  max-width: 1100px;
   margin: 120px auto;
+  max-width: 1100px;
+  padding: 0 40px;
   text-align: center;
-  padding: 0 30px;
 }
 
-.works-title {
-  font-size: 2em;
-  margin-bottom: 40px;
+.works-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
   color: #111;
   font-weight: 700;
 }
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.work-card {
-  height: 180px;
-  border-radius: 15px;
+.work-item {
   background: rgba(255,255,255,0.85);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #444;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.work-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.work-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
 /* ===== 动画 ===== */
@@ -180,9 +187,6 @@ body {
   .profile-photo {
     width: 75%;
     margin-top: 30px;
-  }
-  .works-grid {
-    grid-template-columns: 1fr;
   }
 }
 </style>
