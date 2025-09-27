@@ -7,18 +7,19 @@ author_profile: false
   <div class="intro-text">
     <h1>👋 Hi, I'm <span class="highlight">Yera</span></h1>
     <p class="tagline">Exploring <strong>AI · AR · Interactive Media</strong> to craft <em>immersive cultural experiences</em>.</p>
-    
-    <!-- About Me 按钮 -->
     <a href="/about/" class="about-btn">ABOUT ME</a>
-
-    <!-- 精选作品占位区 -->
-    <div class="featured-works">
-      <div class="work-box">Work 1</div>
-      <div class="work-box">Work 2</div>
-      <div class="work-box">Work 3</div>
-    </div>
   </div>
   <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile Photo" class="profile-photo">
+</div>
+
+<!-- ===== 第二屏：Works 区域 ===== -->
+<div class="works-section">
+  <h2 class="works-title">Featured Works</h2>
+  <div class="works-grid">
+    <div class="work-card">Work 1</div>
+    <div class="work-card">Work 2</div>
+    <div class="work-card">Work 3</div>
+  </div>
 </div>
 
 <style>
@@ -29,6 +30,7 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
 }
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -51,7 +53,10 @@ body {
 }
 
 /* ===== 左侧文字 ===== */
-.intro-text { flex: 1; }
+.intro-text {
+  flex: 1;
+}
+
 .intro-text h1 {
   font-size: 3.5em;
   font-weight: 800;
@@ -59,11 +64,13 @@ body {
   line-height: 1.2;
   color: #111;
 }
+
 .intro-text .highlight {
   background: linear-gradient(90deg, #4facfe, #00f2fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .intro-text .tagline {
   font-size: 1.6em;
   line-height: 1.6;
@@ -72,49 +79,24 @@ body {
   animation: fadeInUp 1.2s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
+  margin-bottom: 30px;
 }
 
-/* ===== About Me 按钮 ===== */
 .about-btn {
   display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
+  padding: 12px 35px;
   font-size: 1.1em;
   font-weight: bold;
-  color: #fff;
-  background: linear-gradient(90deg,#4facfe,#00f2fe);
-  border-radius: 30px;
+  color: white;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 50px;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.about-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== 精选作品方框 ===== */
-.featured-works {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.work-box {
-  height: 150px;
-  background: rgba(255,255,255,0.7);
-  border: 2px dashed #aaa;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1em;
-  font-weight: 600;
-  color: #555;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-.work-box:hover {
-  transform: scale(1.05);
-  background: rgba(255,255,255,0.9);
+.about-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* ===== 右侧图片 ===== */
@@ -127,12 +109,57 @@ body {
   animation: zoomIn 1.2s ease forwards 0.6s;
 }
 
+/* ===== Works Section ===== */
+.works-section {
+  max-width: 1100px;
+  margin: 120px auto;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.works-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #111;
+  font-weight: 700;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.work-card {
+  height: 180px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
 /* ===== 动画 ===== */
 @keyframes fadeInUp {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes zoomIn {
-  to { transform: scale(1); opacity: 1; }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ===== 手机端优化 ===== */
@@ -143,9 +170,19 @@ body {
     margin: 50px auto;
     padding: 30px 20px;
   }
-  .intro-text h1 { font-size: 2.5em; }
-  .intro-text .tagline { font-size: 1.3em; max-width: 100%; }
-  .profile-photo { width: 75%; margin-top: 30px; }
-  .featured-works { grid-template-columns: 1fr; }
+  .intro-text h1 {
+    font-size: 2.5em;
+  }
+  .intro-text .tagline {
+    font-size: 1.3em;
+    max-width: 100%;
+  }
+  .profile-photo {
+    width: 75%;
+    margin-top: 30px;
+  }
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
