@@ -41,3 +41,15 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* === 自定义导航栏右对齐 === */
+.masthead__menu #site-nav.greedy-nav {
+  justify-content: flex-end;   // 导航整体靠右
+}
+
+.masthead__menu #site-nav.greedy-nav .visible-links {
+  margin: 0;                   // 去掉居中
+}
+
+.greedy-nav .site-title {
+  margin-right: auto;          // 保证左边的 logo 靠左
+}
