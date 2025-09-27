@@ -1,53 +1,151 @@
 ---
-permalink: /
-title: "Yanrou GE - Design & Technology"
-layout: single
+layout: home
 author_profile: false
 ---
 
-<div style="display: flex; align-items: center; justify-content: space-between; min-height: 85vh; padding: 60px;">
-
-  <!-- 左侧文字 -->
-  <div style="flex: 3; padding-right: 40px;">
-    <h1 style="font-size: 3.2em; font-weight: 700; line-height: 1.3; margin-bottom: 20px; background: linear-gradient(90deg,#4facfe,#00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-      Exploring AI · AR · Interactive Media to craft immersive cultural experiences.
-    </h1>
-
+<div class="intro-container">
+  <div class="intro-text">
+    <h1>👋 Hi, I'm <span class="highlight">Yera</span></h1>
+    <p class="tagline">Exploring <strong>AI · AR · Interactive Media</strong> to craft <em>immersive cultural experiences</em>.</p>
+    
     <!-- About Me 按钮 -->
-    <a href="/about/" style="display: inline-block; margin-top: 30px; padding: 14px 40px; font-size: 1.1em; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; background: linear-gradient(90deg,#4facfe,#00f2fe); color: #fff; border-radius: 30px; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-      ABOUT ME
-    </a>
-  </div>
+    <a href="/about/" class="about-btn">ABOUT ME</a>
 
-  <!-- 右侧图片 -->
-  <div style="flex: 1; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile Photo" style="width: 100%; max-width: 260px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+    <!-- 精选作品占位区 -->
+    <div class="featured-works">
+      <div class="work-box">Work 1</div>
+      <div class="work-box">Work 2</div>
+      <div class="work-box">Work 3</div>
+    </div>
   </div>
+  <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg" alt="Profile Photo" class="profile-photo">
 </div>
 
----
-
-<!-- 精选作品 -->
-<section style="padding: 60px 40px; text-align: center;">
-  <h2 style="font-size: 2.2em; font-weight: 700; margin-bottom: 40px;">Featured Works</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-    <div style="background: #f5f5f5; height: 200px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-    </div>
-    <div style="background: #f5f5f5; height: 200px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-    </div>
-    <div style="background: #f5f5f5; height: 200px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-    </div>
-  </div>
-</section>
-
 <style>
-/* hover 效果 */
-a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(79,172,254,0.3);
+/* ===== 背景动画 ===== */
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, #e0f7fa, #e1bee7, #bbdefb, #c8e6c9);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-section div:hover {
-  transform: translateY(-5px);
+/* ===== 主容器 ===== */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 100px auto;
+  max-width: 1100px;
+  padding: 0 50px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== 左侧文字 ===== */
+.intro-text { flex: 1; }
+.intro-text h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  color: #111;
+}
+.intro-text .highlight {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text .tagline {
+  font-size: 1.6em;
+  line-height: 1.6;
+  color: #333;
+  max-width: 90%;
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* ===== About Me 按钮 ===== */
+.about-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg,#4facfe,#00f2fe);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== 精选作品方框 ===== */
+.featured-works {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.work-box {
+  height: 150px;
+  background: rgba(255,255,255,0.7);
+  border: 2px dashed #aaa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: #555;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.work-box:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.9);
+}
+
+/* ===== 右侧图片 ===== */
+.profile-photo {
+  width: 28%;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: scale(0.85);
+  animation: zoomIn 1.2s ease forwards 0.6s;
+}
+
+/* ===== 动画 ===== */
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ===== 手机端优化 ===== */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px 20px;
+  }
+  .intro-text h1 { font-size: 2.5em; }
+  .intro-text .tagline { font-size: 1.3em; max-width: 100%; }
+  .profile-photo { width: 75%; margin-top: 30px; }
+  .featured-works { grid-template-columns: 1fr; }
 }
 </style>
