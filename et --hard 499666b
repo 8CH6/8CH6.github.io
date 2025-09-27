@@ -1,0 +1,138 @@
+[33m246b4ca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Layout: place image on right (25%) and text on left; responsive hero
+[33m95b388d[m Add home hero section with text and photo
+[33m8464994[m Update index to use new home layout
+[33m2dc3c8b[m Update about page with personal info
+[33m499666b[m Set About as homepage and center navbar
+[33mecbc7c9[m Center navigation bar buttons
+[33mf1ea861[m Move homepage content under About page
+[33mdba8ea4[m Redesign About page like INTRODUCTION.png
+[33m2b894bf[m Update About page with new design
+[33m7f50a96[m Replace site title with logo in navbar
+[33m8f719da[m Update email display
+[33mfaa1c83[m Update logo URL
+[33maf9282e[m Update config and profile photo
+[33m4195514[m Add tools icons images and update index
+[33m9ff921f[m Fix Tools section layout with grid
+[33m9416a00[m Add logo to navigation bar
+[33mb1ad944[m Clean sidebar links and update avatar
+[33m30a8920[m Fix avatar with external CDN URL
+[33m9802474[m Update homepage with logo-based tools
+[33m8fb8d3e[m Update homepage content
+[33m99b14a5[m Update navigation: remove publications, add contact page
+[33m94b6822[m Update config, fix bio, and add About page
+[33m7a580f6[m Update navigation menu
+[33m1d12332[m Add custom homepage index.md
+[33m41abb2e[m Update about.md and homepage
+[33m4c10e50[m Fix author config: avatar and email
+[33mddc9889[m Fix avatar photo
+[33m4dec36c[m Fix email link with mailto
+[33md5cfdd1[m Fix author section and clean links
+[33m8ac87e9[m Fix bio format
+[33md994e68[m Update avatar to profile.png
+[33med46517[m Update config
+[33mc92f527[m Add CV PDF file
+[33m9b5f190[m Update CV page
+[33m56911cf[m Update config again
+[33m96db5fc[m Update config with personal information
+[33m2f67ec1[m Update usage of description from config, close #3291
+[33m7bb2b70[m RM unused images
+[33m55fe397[m #3249 update image used by README
+[33m4962bc1[m #3249 update theme examples
+[33m06c0215[m Merge pull request #3290 from ITX351/fix-docker-config-syntax
+[33mf6d7f2c[m Fix Docker config and revert PR #3029 changes
+[33m0a00218[m MV CSS into SCSS, use theme var variables, close #3248
+[33mbfec63d[m Update mix of default light-gray
+[33m520f7b7[m Merge pull request #3236 from Gabri110/main
+[33mdcf89f7[m Ameliorated the colour choices for the footbar
+[33m4ba67c3[m Fixed link colour
+[33m24d3e2b[m Added the option to toggle between themes and the new theme 'air'
+[33m5e8dc5e[m Merge pull request #3231 from vigneshragupathy/fix-disqus-comment
+[33md12faab[m Fix Disqus comments integration by ensuring the include statement is correctly placed
+[33m02c8243[m Update publications.py
+[33m5eb0cd8[m Update scrape_talks.yml
+[33mb225a3a[m Merge pull request #3221 from Gabri110/main
+[33m0bc22f6[m Update _config.yml
+[33mb7f6f53[m Added inspire-hep logo to author-profile.html
+[33mb9b9ac0[m Added inspire-hep logo to _config.yml
+[33mf746377[m Merge pull request #3203 from hosiet/pr-fix-footer-last-updated-template
+[33mde4613b[m _includes/footer.html: Fix site last updated template
+[33m9b33e6e[m Merge pull request #3171 from quangbhdang/master
+[33m8bc5ee1[m Merge pull request #1 from quangbhdang/quangbhdang-patch-1
+[33mf6f6127[m Update .gitignore to avoid not including change in _sass/vendor
+[33m9e70db1[m #3151 adjust order that scripts are loaded
+[33mb9b8e17[m #3151, #3138 better wrapping of Plotly
+[33m25484a8[m #3151 update avatar priority
+[33mcfa418d[m #3151 defer loading
+[33m0104eca[m Update aria of toggle
+[33mb014e41[m #3151 updated role of anchor
+[33m54ce74b[m #3151 tag theme switch link as nofollow
+[33m6d254c5[m #3151 add async to scripts
+[33m085919b[m Minor clean-up to _main.js, plus some more comments
+[33mc4a2829[m Remove deprecated package, close #2428
+[33md1b2c8e[m Merge branch 'master' of https://github.com/academicpages/academicpages.github.io
+[33m692cad4[m Close #3096 with addition of Artstation, with code from @itsdombo
+[33ma3a2936[m Merge pull request #3142 from ferrolho/hf/dev
+[33m6cb2f0c[m Fix theme toggle issue by defining browserPref before use
+[33mb99c36e[m[33m ([m[1;33mtag: [m[1;33mv0.8.4[m[33m)[m Close #3137 with support for Plotly and examples
+[33m7f21c2d[m #3137 initial code for Plotly support
+[33m552e9af[m Updates to the template documentation
+[33ma3af681[m Close #2303 with updated information on Mermaid diagram
+[33m742a202[m #2303 correct syntax error
+[33mca43bb5[m #2303 syntax error in Markdown
+[33mc9ffa9f[m Merge branch 'master' of https://github.com/academicpages/academicpages.github.io
+[33mbaea66d[m #2303 adding Mermaid diagram
+[33m96880f4[m Merge pull request #3130 from shivamtawari/patch-1
+[33m443d4cc[m Merge pull request #3129 from shivamtawari/patch-2
+[33m6bfc213[m Update pubsFromBib.py
+[33m87ab447[m Update talks.py
+[33m838c072[m #3062 update MathJax oddities
+[33m61caa53[m + TOC in guide
+[33md9293eb[m #3062 + demo publication with MathJax
+[33m0f054bf[m Merge branch 'master' of https://github.com/academicpages/academicpages.github.io
+[33m286bf77[m #3097 update SEO organization, add og_description to _config.yml
+[33me833c7a[m Merge pull request #3052 from MPK1/fix-icon-width
+[33mfac3272[m fix icon classes
+[33ma2dee16[m Merge branch 'master' of https://github.com/academicpages/academicpages.github.io
+[33m04fc70a[m Minor adjustments to README, .gitignore
+[33md4e74ea[m Merge pull request #3029 from nathanpainchaud/fix/docker-serve-url
+[33m28274dc[m #3019 fixes width of the sidebar
+[33m6f5947f[m Remove override of `JEKYLL_ENV` env var and `url` config option
+[33mbd1b35d[m Update bug_report.md
+[33mef8e08b[m Merge pull request #3004 from msk-nightly/master
+[33mb507858[m Update _config.yml
+[33ma9c5bd0[m Update author-profile.html
+[33m0778a24[m Merge pull request #2981 from adriandavidauer/fix_docker
+[33m81b71e3[m Update README.md
+[33m1c57822[m Update devcontainer.json
+[33m31bdab4[m Merge pull request #3001 from librautoo/master
+[33m5ba6062[m adding Port to DevContainer and added description in README
+[33m37a2589[m added devContainer Support and moved all Container related Issues intto the Dockerfile
+[33me9dd077[m Update _config.yml
+[33m3ee0215[m Update README.md
+[33m1e56b29[m Update author-profile.html
+[33m08ee206[m Update _config.yml
+[33m71ad192[m Merge pull request #2990 from Samir-Rashid/more-theme-fixes
+[33m1ea82d9[m js: upload updated compiled js blob
+[33m1de3d66[m js: fix lightbox popup image previews
+[33m259ee5a[m js: fix smoothscroll header offset, fix changing URL
+[33m0e160dc[m theme: respect user browser light/dark preference
+[33m3d308f4[m fix figcaption dark css
+[33mdea5087[m added chmod to docu and connection_pool to gemfile
+[33mc755f3e[m Merge pull request #2952 from Samir-Rashid/fix-theme-color-regressions
+[33mb755aea[m Fix theme color regressions
+[33m3d078df[m Merge pull request #2923 from FHYQ-Dong/master
+[33maf16ab9[m add `Download Bibtex` link in publication items and publication page. if the metadata of .md files contains `bibtexurl` item, then a link pointing to that url will be added. see `_publications/2009-10-01-paper-title-number-1.md`.
+[33mf40366b[m Close #2894, add Bluesky to social sharing, update order
+[33m6932e88[m #2883 update navigation, add documentation
+[33mec68bcf[m Merge pull request #2901 from chenyuan99/parent-feature-#2883
+[33m89773fc[m Merge pull request #2900 from SijieFu/theme-switch
+[33m5ca2d65[m feat: add json csv page and related scripts
+[33m976130b[m allow theme change on client side; a theme toggle button is added to the navbar
+[33m173be24[m deprecate $masthead-height variable, use automatic padding instead in case of height overflows
+[33m176e565[m Merge pull request #2871 from mbrz97/fixMobileProfile
+[33mee1d939[m Update _sidebar.scss
+[33m7729f66[m Merge pull request #2869 from AustinTI/patch-1
+[33m1a3fc5a[m Update README.md
+[33mbf65e10[m Automated update of talk locations
+[33mc2921a8[m #2865 Try to add a bit of error handling
+[33m313e1dd[m Close #30, up
