@@ -66,3 +66,20 @@
   font-size: 0.9rem;
   font-weight: bold;
 }
+/* ===== 导航栏按钮居中样式 ===== */
+.greedy-nav {
+  display: flex;
+  justify-content: center; /* 整体居中 */
+  align-items: center;
+}
+
+.greedy-nav .visible-links {
+  margin: 0 auto; /* 按钮组居中 */
+  display: flex;
+  gap: 20px; /* 按钮间距 */
+}
+
+.greedy-nav .site-title {
+  margin-right: auto; /* logo 固定在最左，按钮依然居中 */
+}
+
