@@ -82,4 +82,12 @@
 .greedy-nav .site-title {
   margin-right: auto; /* logo 固定在最左，按钮依然居中 */
 }
+/* 导航栏居中 */
+.masthead__menu #site-nav.greedy-nav {
+  justify-content: center;   /* 居中对齐 */
+}
+
+.masthead__menu #site-nav.greedy-nav .visible-links {
+  margin: 0 auto;            /* 左右自动留白 */
+}
 

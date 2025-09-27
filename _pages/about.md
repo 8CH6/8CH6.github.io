@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Yanrou GE - Design & Technology"
-author_profile: true
+author_profile: false
 ---
 
 # 👋 Hi, I'm **Yera**
