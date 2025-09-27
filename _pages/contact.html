@@ -1,58 +1,80 @@
 ---
-permalink: /contact/
 layout: single
-author_profile: false
+permalink: /contact/
 ---
 
-<style>
-.contact-section {
-  background: transparent; /* 背景透明，随主题变化 */
-  color: inherit;          /* 跟随主题文字颜色 */
-  padding: 2rem;
-  text-align: center;
-}
+<div style="text-align: center; background: white; color: black; padding: 50px 20px;">
+  <h1 style="font-size: 80px; font-weight: 900; margin-bottom: 20px;">CONTACT ME.</h1>
 
-.contact-section a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <p style="font-size: 20px; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+    For inquiries and comments,<br>
+    please feel free to contact me using the enquiry form below,<br>
+    by telephone <b>(17805830516)</b> or by E-mail <b>(17805830516@qq.com)</b>
+  </p>
 
-.social-icons {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icons img {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2); /* 悬停放大 */
-}
-</style>
-
-<div class="contact-section">
-  <h1>📬 Contact</h1>
-  <p>欢迎联系我：</p>
-  <p><strong>Email：</strong> <a href="mailto:17805830516@qq.com">17805830516@qq.com</a></p>
-
-  <div class="social-icons">
-    <a href="https://www.youtube.com/@Yera0806" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/YouTube.png" alt="YouTube">
-    </a>
-    <a href="https://xhslink.com/m/8xdQY8pYrgK" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/rednote.png" alt="Rednote">
-    </a>
-    <a href="https://v.douyin.com/ekEve2D-5GU/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/tiktok.png" alt="Douyin">
-    </a>
-    <a href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wechat.png" alt="WeChat">
-    </a>
+  <div style="margin-top: 50px; display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+    <div class="social-item fade-in" style="animation-delay: 0.2s;">
+      <a href="https://www.youtube.com/@Yera0806" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/YouTube.png" alt="YouTube" class="social-icon">
+      </a>
+      <div class="social-label">YouTube</div>
+    </div>
+    <div class="social-item fade-in" style="animation-delay: 0.4s;">
+      <a href="https://xhslink.com/m/8xdQY8pYrgK" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/rednote.png" alt="Rednote" class="social-icon">
+      </a>
+      <div class="social-label">Rednote</div>
+    </div>
+    <div class="social-item fade-in" style="animation-delay: 0.6s;">
+      <a href="https://v.douyin.com/ekEve2D-5GU/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/tiktok.png" alt="TikTok" class="social-icon">
+      </a>
+      <div class="social-label">TikTok</div>
+    </div>
+    <div class="social-item fade-in" style="animation-delay: 0.8s;">
+      <a href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wechat.png" alt="WeChat" class="social-icon">
+      </a>
+      <div class="social-label">WeChat</div>
+    </div>
   </div>
 </div>
+
+<style>
+  .social-item {
+    text-align: center;
+    opacity: 0;
+  }
+  .social-icon {
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  .social-label {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  .social-item:hover .social-label {
+    color: #555;
+  }
+
+  /* 淡入动画 */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+</style>
