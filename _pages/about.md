@@ -1,7 +1,8 @@
 ---
-permalink: /
-title: "Yanrou GE - Design & Technology"
-author_profile: false
+title: "About"
+layout: single
+permalink: /about/
+author_profile: true
 ---
 
 # 👋 Hi, I'm **Yera**
