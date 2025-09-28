@@ -44,15 +44,15 @@
 // Custom Styles
 // ============================================================================
 
-/* === Custom Navigation Alignment === */
+/* === Navigation Alignment === */
 .masthead__menu #site-nav.greedy-nav {
-  justify-content: flex-end;   /* Align nav items to the right */
+  justify-content: flex-end;
 }
 .masthead__menu #site-nav.greedy-nav .visible-links {
   margin: 0;
 }
 .greedy-nav .site-title {
-  margin-right: auto;          /* Keep logo/title aligned left */
+  margin-right: auto;
 }
 
 /* === Custom Cursor === */
@@ -60,146 +60,6 @@ body {
   cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
 }
 
-/* ==========================================================================
-   Portfolio Page Styles
-   ========================================================================== */
-.portfolio-page {
-  max-width: 1100px;
-  margin: 0 auto;
-  float: none;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.portfolio-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.categories {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.categories a {
-  margin: 0 12px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
-}
-.categories a:hover {
-  color: #007acc;
-}
-
-/* === Works Grid: 2 per Row === */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  justify-items: center;
-  margin-top: 30px;
-}
-
-.work-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  width: 100%;
-  max-width: 460px;   /* 稍大 */
-}
-.work-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-.work-item img {
-  width: 100%;
-  max-height: 360px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.work-item p {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0;
-  color: #333;
-}
-
-/* === Responsive: 1 per Row on Mobile === */
-@media (max-width: 768px) {
-  .works-grid {
-    grid-template-columns: 1fr;
-  }
-  .work-item {
-    max-width: 90%;
-  }
-}
-
-/* ==========================================================================
-   Home Page Featured Works
-   ========================================================================== */
-.home .featured-works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
-}
-.home .featured-works img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* ==========================================================================
-   Back Button
-   ========================================================================== */
-.back-button {
-  display: inline-block;
-  margin-top: 50px;
-  padding: 14px 32px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #fff;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  border-radius: 50px;
-  box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-  letter-spacing: 1px;
-  animation: back-btn-glow 3s infinite alternate ease-in-out;
-}
-.back-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
-  transition: all 0.6s ease;
-}
-.back-button:hover::before {
-  left: 120%;
-}
-.back-button:hover {
-  transform: translateY(-5px) scale(1.08);
-  box-shadow: 0 0 25px rgba(255, 75, 43, 0.6);
-}
-@keyframes back-btn-glow {
-  from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
-  to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
-}
 /* ========================================================================== */
 /* === Portfolio Title === */
 /* ========================================================================== */
@@ -215,7 +75,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .portfolio-title::after {
   content: "";
   position: absolute;
@@ -235,7 +94,6 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .categories a {
   display: inline-block;
   margin: 0 10px;
@@ -248,14 +106,11 @@ body {
   border-radius: 30px;
   transition: all 0.35s ease;
 }
-
 .categories a:hover {
   border-color: #6a11cb;
   color: #6a11cb;
   box-shadow: 0 0 12px rgba(106, 17, 203, 0.2);
 }
-
-/* 当前激活分类 */
 .categories a.active {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
@@ -268,11 +123,11 @@ body {
 /* ========================================================================== */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   justify-items: center;
+  margin-top: 30px;
 }
-
 .work-item {
   position: relative;
   background: #fff;
@@ -282,24 +137,20 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 480px;
 }
-
 .work-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
-
 .work-item img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.4s ease;
 }
-
 .work-item:hover img {
   transform: scale(1.05);
 }
-
-/* 底部文字条 */
+/* Caption overlay */
 .work-item p {
   position: absolute;
   bottom: 0;
@@ -312,4 +163,74 @@ body {
   text-align: center;
   color: #fff;
   background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+}
+
+/* Responsive: single column on mobile */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-item {
+    max-width: 90%;
+  }
+}
+
+/* ========================================================================== */
+/* === Home Page Featured Works === */
+/* ========================================================================== */
+.home .featured-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+.home .featured-works img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ========================================================================== */
+/* === Back Button === */
+/* ========================================================================== */
+.back-button, .back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+  animation: back-btn-glow 3s infinite alternate ease-in-out;
+}
+.back-button::before, .back-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
+  transition: all 0.6s ease;
+}
+.back-button:hover::before, .back-btn:hover::before {
+  left: 120%;
+}
+.back-button:hover, .back-btn:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 75, 43, 0.6);
+}
+@keyframes back-btn-glow {
+  from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
+  to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
 }
