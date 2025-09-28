@@ -1,67 +1,30 @@
 ---
+layout: default
 title: "Lightroom"
-layout: single
 permalink: /portfolio/lightroom/
 author_profile: false
 ---
 
-<div class="category-wrap">
-  <header class="category-header">
-    <h1>Illustrator</h1>
-    <p class="lead">A selection of Illustrator works. Click an item to view larger.</p>
-    <p><a href="/portfolio/" class="back-link">← Back to Works</a></p>
-  </header>
-
-  <section class="category-grid">
-    <div class="grid">
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Illustrator 1">
-        <h3>Illustration A</h3>
-      </article>
-
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Illustrator 2">
-        <h3>Illustration B</h3>
-      </article>
-
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Illustrator 3">
-        <h3>Illustration C</h3>
-      </article>
-
-      <!-- add more Illustrator items here -->
-    </div>
-  </section>
+<div class="portfolio-page">
+  <h1 class="portfolio-title">Lightroom Works</h1>
+  <div class="works-grid">
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(10)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA-4.jpg"><p>Hope in the Crevice</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(2)-2.jpg"><p>Reflection in water</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(3)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA.jpg"><p>Leg in the Crevice</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(4)-2.jpg"><p>Gaze</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(5)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA.jpg"><p>Person Under the Cow</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(7)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA-2.jpg"><p>Perspective Mirror</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(1)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA-2.jpg"><p>Architectural Mirage in Water</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(23)-2.jpg"><p>Cozy Nook</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(27)-%E5%B7%B2%E5%A2%9E%E5%BC%BA-%E9%99%8D%E5%99%AA-2.jpg"><p>Solitude and Promise</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(30)-2.jpg"><p>Santa's Present of Joy</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/1%20(100).jpg"><p>Infinite Prolongation</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/33eefd55784dad18d5d6deb71a6a32e.jpg"><p>Dangerous “Escort”</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E6%95%B0%E5%AD%973_%E7%94%BB%E6%9D%BF%201.png"><p>Day and Night</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E6%95%B0%E5%AD%974_%E7%94%BB%E6%9D%BF%201.png"><p>Dawn's Glow</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E6%95%B0%E5%AD%976_%E7%94%BB%E6%9D%BF%201.png"><p>Echoes of Camel Bells on Timeworn Pathways</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E6%95%B0%E5%AD%978_%E7%94%BB%E6%9D%BF%201.png"><p>Dawn's Glow</p></div>
+    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E6%95%B0%E5%AD%979_%E7%94%BB%E6%9D%BF%201.png"><p>Majestic Drum Tower</p></div>
+  </div>
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-btn">← Back to Portfolio</a>
 </div>
-
-<style>
-.category-wrap{ max-width:1200px; margin:40px auto; padding:0 20px; }
-.category-header{text-align:center; margin-bottom:28px;}
-.category-header h1{
-  font-size:3.2rem; font-weight:900; letter-spacing:4px;
-  background: linear-gradient(90deg,#4facfe,#00f2fe);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-}
-.category-header .lead{ color:#444; margin-top:8px; }
-.back-link{ color:#0477d9; text-decoration:none; font-weight:700; }
-
-/* grid */
-.category-grid .grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-.item{
-  background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.06);
-  transition:transform .22s ease, box-shadow .22s ease;
-  text-align:center; padding-bottom:14px;
-}
-.item img{ width:100%; height:200px; object-fit:cover; display:block; }
-.item h3{ margin:12px 0 0; font-size:1rem; color:#111; font-weight:700; }
-.item:hover{ transform: translateY(-8px); box-shadow: 0 16px 36px rgba(0,0,0,0.12); }
-
-@media (max-width:720px){
-  .category-header h1{ font-size:2.2rem; }
-  .item img{ height:160px; }
-}
-</style>
