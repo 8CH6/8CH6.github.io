@@ -200,3 +200,116 @@ body {
   from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
   to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
 }
+/* ========================================================================== */
+/* === Portfolio Title === */
+/* ========================================================================== */
+.portfolio-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* ========================================================================== */
+/* === Categories (Tags) === */
+/* ========================================================================== */
+.categories {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.categories a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  transition: all 0.35s ease;
+}
+
+.categories a:hover {
+  border-color: #6a11cb;
+  color: #6a11cb;
+  box-shadow: 0 0 12px rgba(106, 17, 203, 0.2);
+}
+
+/* 当前激活分类 */
+.categories a.active {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+}
+
+/* ========================================================================== */
+/* === Works Grid (Cards) === */
+/* ========================================================================== */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+  gap: 32px;
+  justify-items: center;
+}
+
+.work-item {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 480px;
+}
+
+.work-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 底部文字条 */
+.work-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+}
