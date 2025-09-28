@@ -133,3 +133,22 @@ author_profile: false
   .work-card img{ height:180px; }
 }
 </style>
+<style>
+.work-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;  /* 保持原比例不裁剪 */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.work-card img:hover {
+  transform: scale(1.05);
+}
+.work-card {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+</style>
