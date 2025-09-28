@@ -5,8 +5,8 @@ permalink: /portfolio/illustrator/
 author_profile: false
 ---
 
-<div class="illustrator-page">
-  <h1 class="illustrator-title">Illustrator Works</h1>
+<div class="portfolio-page">
+  <h1 class="portfolio-title">Illustrator</h1>
 
   <div class="works-grid">
     <div class="work-item">
@@ -21,24 +21,78 @@ author_profile: false
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%E3%80%8113_%E7%94%BB%E6%9D%BF%201.jpg" alt="The Lament of Pollution">
       <p>The Lament of Pollution</p>
     </div>
-    <!-- 你可以继续添加更多作品 -->
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl2%20%5B%E5%B7%B2%E6%81%A2%E5%A4%8D%5D-01.jpg" alt="The Wind of Freedom">
+      <p>The Wind of Freedom</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Black and White Illusion">
+      <p>Black and White Illusion</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/D323C05.jpeg" alt="Colorful Reflection of Tradition">
+      <p>Colorful Reflection of Tradition</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl3_%E7%94%BB%E6%9D%BF%201.jpg" alt="Dusk and Dawn">
+      <p>Dusk and Dawn</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/poster%20%E6%94%B9%E4%BA%86_%E7%94%BB%E6%9D%BF%201.png" alt="Color Dyed Geometry">
+      <p>Color Dyed Geometry</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E7%AC%A6%E5%8F%B7%E6%B5%B7%E6%8A%A5624_%E7%94%BB%E6%9D%BF%201.png" alt="Fading Home">
+      <p>Fading Home</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/513_%E7%94%BB%E6%9D%BF%201.png" alt="The Land of Melancholy">
+      <p>The Land of Melancholy</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.2_%E7%94%BB%E6%9D%BF%201.jpg" alt="Creative Twelve Shapes">
+      <p>Creative Twelve Shapes</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/5121_%E7%94%BB%E6%9D%BF%201.png" alt="Knitted Future Fashion">
+      <p>Knitted Future Fashion</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E8%B7%86%E6%8B%B3%E9%81%93%E6%B5%B7%E6%8A%A53_%E7%94%BB%E6%9D%BF%201.png" alt="Taekwondo Power, Future Dreams">
+      <p>Taekwondo Power, Future Dreams</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Group%201157.png" alt="Colorful Geometric Mosaic Painting">
+      <p>Colorful Geometric Mosaic Painting</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png" alt="Personal LOGO">
+      <p>Personal LOGO</p>
+    </div>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique">
+      <p>Random Word Technique</p>
+    </div>
   </div>
 
-  <!-- Back button -->
+  <!-- 炫酷 Back 按钮 -->
   <a href="/portfolio/" class="back-button">← Back to Portfolio</a>
 </div>
 
 <style>
-/* ===== Illustrator Page Layout ===== */
-.illustrator-page {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 20px;
+body {
+  background: #fafafa;
+}
+
+/* 页面居中 */
+.portfolio-page {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
   text-align: center;
 }
 
-.illustrator-title {
+.portfolio-title {
   font-size: 2.8rem;
   font-weight: 900;
   color: #111;
@@ -46,7 +100,7 @@ author_profile: false
   position: relative;
   display: inline-block;
 }
-.illustrator-title::after {
+.portfolio-title::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -58,42 +112,40 @@ author_profile: false
   border-radius: 2px;
 }
 
+/* 作品展示网格 */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  justify-items: center;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
 }
-
 .work-item {
   background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 320px;
-  text-align: center;
 }
 .work-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 .work-item img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border-radius: 12px;
   margin-bottom: 12px;
 }
 .work-item p {
   font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
+  font-weight: 600;
+  color: #444;
 }
 
-/* ===== Back Button Style ===== */
+/* 炫酷 Back Button */
 .back-button {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
@@ -106,6 +158,7 @@ author_profile: false
   position: relative;
   overflow: hidden;
 }
+
 .back-button::before {
   content: "";
   position: absolute;
@@ -116,9 +169,11 @@ author_profile: false
   background: linear-gradient(120deg, rgba(255,255,255,0.5), rgba(255,255,255,0));
   transition: all 0.5s ease;
 }
+
 .back-button:hover::before {
   left: 100%;
 }
+
 .back-button:hover {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 12px 30px rgba(37,117,252,0.45);
