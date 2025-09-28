@@ -7,7 +7,7 @@
 //
 // Note that the files are processed in the order they are imported, so they are partly
 // sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
-//
+// ============================================================================
 
 @import
     "vendor/breakpoint/breakpoint",
@@ -65,11 +65,15 @@
 body {
   cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
 }
+
+/* ========================================================================== */
+/* === Portfolio Page Styles === */
+/* ========================================================================== */
 .portfolio-page {
-  max-width: 1200px;
-  margin: 0 auto; /* 居中 */
-  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;       /* 全部居中 */
   padding: 40px 20px;
+  text-align: center;
 }
 
 .portfolio-title {
@@ -77,9 +81,11 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .categories {
+  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -95,11 +101,12 @@ body {
   color: #007acc;
 }
 
+/* Works grid */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  justify-items: center; /* 保证卡片居中 */
+  justify-items: center; /* 卡片居中 */
 }
 
 .work-item {
@@ -110,6 +117,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 320px;
+  text-align: center;
 }
 
 .work-item:hover {
@@ -119,7 +127,7 @@ body {
 
 .work-item img {
   width: 100%;
-  height: auto; /* 自适应，不裁剪 */
+  height: auto; /* 自适应图片，不裁剪 */
   border-radius: 8px;
   margin-bottom: 12px;
 }
