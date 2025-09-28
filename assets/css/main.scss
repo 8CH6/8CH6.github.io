@@ -256,3 +256,22 @@ body {
   border-radius: 8px;   /* 保持圆角风格 */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+/* ========================================================================== */
+/* === Home Page Featured Works Override === */
+/* ========================================================================== */
+.home .featured-works {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important; /* 一行三张 */
+  gap: 20px; /* 间隔 */
+  justify-items: center;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.home .featured-works img {
+  width: 100%;          /* 填满格子 */
+  height: auto;         /* 保持原始比例 */
+  object-fit: contain !important; /* 显示完整，不裁切 */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

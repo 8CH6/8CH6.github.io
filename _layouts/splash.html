@@ -18,5 +18,96 @@ layout: default
     <section class="page__content" itemprop="text">
       {{ content }}
     </section>
+
+    <!-- ===== Featured Works Section ===== -->
+    <section class="featured-works-section">
+      <h2 class="featured-title">FEATURED WORKS</h2>
+      <div class="featured-works">
+        <div class="work-item">
+          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1">
+        </div>
+        <div class="work-item">
+          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2">
+        </div>
+        <div class="work-item">
+          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3">
+        </div>
+      </div>
+
+      <!-- See More Button -->
+      <a href="{{ '/portfolio/' | relative_url }}" class="see-more-btn">SEE MORE →</a>
+    </section>
   </article>
 </div>
+
+<!-- Featured Works Styles -->
+<style>
+.featured-works-section {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.featured-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #111;
+  position: relative;
+  display: inline-block;
+}
+
+.featured-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.featured-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 三列 */
+  gap: 20px;
+}
+
+.featured-works img {
+  width: 100%;
+  height: auto; /* 完整显示，不裁剪 */
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-works img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* See More Button */
+.see-more-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(37,117,252,0.3);
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(37,117,252,0.45);
+}
+</style>
