@@ -213,3 +213,28 @@ body {
   grid-column: 1 / -1;  /* 横跨所有列 */
   max-width: 1000px;   /* 限制最大宽度，避免太宽 */
 }
+/* === Portfolio Works Grid Custom Layout === */
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.work-item.portrait {
+  flex: 1 1 calc(45% - 24px);
+  max-width: 400px;
+  order: 1;
+}
+
+.work-item.landscape {
+  flex: 1 1 100%;
+  max-width: 900px;
+  order: 2;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

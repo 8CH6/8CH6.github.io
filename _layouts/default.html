@@ -47,3 +47,17 @@ layout: compress
     });
   });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".work-item img").forEach(img => {
+    img.onload = function () {
+      const item = img.closest(".work-item");
+      if (img.naturalWidth > img.naturalHeight) {
+        item.classList.add("landscape");
+      } else {
+        item.classList.add("portrait");
+      }
+    };
+  });
+});
+</script>
