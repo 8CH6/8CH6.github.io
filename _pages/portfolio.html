@@ -2,6 +2,7 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
+author_profile: false
 ---
 
 <div class="portfolio-landing">
@@ -24,14 +25,54 @@ permalink: /portfolio/
 
 <style>
 body {
-  background: #111; /* 深色背景 */
+  background: #fafafa; /* 白色背景 */
 }
 .portfolio-landing {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 80px auto;
   padding: 20px;
   text-align: center;
 }
 .portfolio-title {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+.portfolio-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.categories a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  padding: 14px 22px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+.categories a:hover {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+</style>
