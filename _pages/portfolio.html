@@ -2,125 +2,36 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: true
 ---
 
-<div class="portfolio-container">
+<div class="portfolio-landing">
   <h1 class="portfolio-title">WORKS</h1>
 
-  <!-- Category Menu -->
-  <div class="category-menu">
-    <a href="{{ '/portfolio/illustrator/' | relative_url }}">Illustrator</a>
-    <a href="{{ '/portfolio/photoshop/' | relative_url }}">Photoshop</a>
-    <a href="{{ '/portfolio/cinema4d/' | relative_url }}">Cinema 4D</a>
-    <a href="{{ '/portfolio/solidworks/' | relative_url }}">Solidworks</a>
-    <a href="{{ '/portfolio/processing/' | relative_url }}">Processing</a>
-    <a href="{{ '/portfolio/aftereffects/' | relative_url }}">After Effects</a>
-    <a href="{{ '/portfolio/touchdesigner/' | relative_url }}">TouchDesigner</a>
-    <a href="{{ '/portfolio/lightroom/' | relative_url }}">Lightroom</a>
-    <a href="{{ '/portfolio/arduino/' | relative_url }}">Arduino</a>
-    <a href="{{ '/portfolio/unity/' | relative_url }}">Unity</a>
-    <a href="{{ '/portfolio/vroid/' | relative_url }}">Vroid</a>
-  </div>
-
-  <!-- Featured Works -->
-  <h2 class="section-title">Featured: Illustrator</h2>
-  <div class="works-grid">
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/kdsj2_%E7%94%BB%E6%9D%BF%2011.png" alt="The Spiritual Charm of Nature">
-      <p>The Spiritual Charm of Nature</p>
-    </div>
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl1.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Tree of Life">
-      <p>Tree of Life</p>
-    </div>
-    <div class="work-card">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%E3%80%8113_%E7%94%BB%E6%9D%BF%201.jpg" alt="The Lament of Pollution">
-      <p>The Lament of Pollution</p>
-    </div>
-  </div>
-
-  <!-- Button -->
-  <div class="view-all">
-    <a href="{{ '/portfolio/illustrator/' | relative_url }}" class="btn">View All Illustrator Works</a>
+  <div class="categories">
+    <a href="/portfolio/illustrator/">Illustrator</a>
+    <a href="/portfolio/photoshop/">Photoshop</a>
+    <a href="/portfolio/cinema4d/">Cinema 4D</a>
+    <a href="/portfolio/solidworks/">Solidworks</a>
+    <a href="/portfolio/processing/">Processing</a>
+    <a href="/portfolio/aftereffects/">After Effects</a>
+    <a href="/portfolio/touchdesigner/">TouchDesigner</a>
+    <a href="/portfolio/lightroom/">Lightroom</a>
+    <a href="/portfolio/arduino/">Arduino</a>
+    <a href="/portfolio/unity/">Unity</a>
+    <a href="/portfolio/vroid/">VRoid</a>
   </div>
 </div>
 
 <style>
-.portfolio-container {
-  max-width: 1100px;
+body {
+  background: #111; /* 深色背景 */
+}
+.portfolio-landing {
+  max-width: 1000px;
   margin: 80px auto;
-  padding: 40px;
-  background: rgba(255,255,255,0.9);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  backdrop-filter: blur(6px);
+  padding: 20px;
+  text-align: center;
 }
 .portfolio-title {
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.category-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-}
-.category-menu a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #333;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-.category-menu a:hover {
-  background: #f0f0f0;
-}
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.work-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 15px;
-  text-align: center;
-}
-.work-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.work-card p {
-  margin-top: 0.8rem;
-  font-weight: 500;
-}
-.view-all {
-  text-align: center;
-  margin-top: 2rem;
-}
-.btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  color: #fff;
-  transition: transform 0.2s;
-}
-.btn:hover {
-  transform: translateY(-2px);
-}
-</style>

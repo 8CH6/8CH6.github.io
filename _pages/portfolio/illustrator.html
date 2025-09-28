@@ -2,13 +2,13 @@
 layout: archive
 title: "Illustrator Works"
 permalink: /portfolio/illustrator/
-author_profile: true
 ---
 
-<div class="portfolio-container">
+<div class="illustrator-portfolio">
   <h1 class="portfolio-title">Illustrator Works</h1>
 
   <div class="works-grid">
+
     <div class="work-card">
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/kdsj2_%E7%94%BB%E6%9D%BF%2011.png" alt="The Spiritual Charm of Nature">
       <p>The Spiritual Charm of Nature</p>
@@ -88,44 +88,56 @@ author_profile: true
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique">
       <p>Random Word Technique</p>
     </div>
+
   </div>
 </div>
 
 <style>
-.portfolio-container {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 40px;
-  background: rgba(255,255,255,0.9);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  backdrop-filter: blur(6px);
+body {
+  background: #111; /* 深色背景，突出作品 */
+}
+.illustrator-portfolio {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
 }
 .portfolio-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 2.5rem;
+  color: #f8f8f8;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 .work-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 15px;
-  text-align: center;
+  background: #1a1a1a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.work-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
 }
 .work-card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  display: block;
 }
 .work-card p {
-  margin-top: 0.8rem;
+  padding: 15px;
+  margin: 0;
+  font-size: 1rem;
   font-weight: 500;
+  color: #ddd;
+  background: #1a1a1a;
 }
 </style>
