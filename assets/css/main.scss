@@ -1,121 +1,71 @@
----
----
-
-// ============================================================================
-// Imports from /_sass
-// Jekyll requires these imports for theme + layout
-// ============================================================================
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
-// ============================================================================
-// Custom Styles
-// ============================================================================
-
-/* === Navigation Alignment === */
-.masthead__menu #site-nav.greedy-nav {
-  justify-content: flex-end;
-}
-.masthead__menu #site-nav.greedy-nav .visible-links {
-  margin: 0;
-}
-.greedy-nav .site-title {
-  margin-right: auto;
-}
-
-/* === Custom Cursor === */
-body {
-  cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
-}
-
 /* ========================================================================== */
+/* === Portfolio Page Styles === */
+/* ========================================================================== */
+.portfolio-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
 /* === Portfolio Title === */
-/* ========================================================================== */
 .portfolio-title {
   font-size: 3.2rem;
   font-weight: 900;
   letter-spacing: 3px;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   position: relative;
   display: inline-block;
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .portfolio-title::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -12px;
+  bottom: -14px;
   width: 60%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   transform: translateX(-50%);
   border-radius: 2px;
 }
 
 /* ========================================================================== */
-/* === Categories (Tags) === */
+/* === Categories (Tags) — Modern Clean Style === */
 /* ========================================================================== */
 .categories {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 60px 0 50px;   /* 上下更宽松 */
 }
+
 .categories a {
   display: inline-block;
-  margin: 0 10px;
-  padding: 10px 18px;
+  margin: 8px 12px;
+  padding: 8px 18px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
-  color: #333;
-  border: 2px solid #ddd;
-  border-radius: 30px;
-  transition: all 0.35s ease;
+  color: #444;
+  border: 1.5px solid #ccc;
+  border-radius: 24px;
+  background: #fafafa;
+  transition: all 0.25s ease;
 }
+
 .categories a:hover {
-  border-color: #6a11cb;
+  background: linear-gradient(135deg, #6a11cb20, #2575fc20);
   color: #6a11cb;
-  box-shadow: 0 0 12px rgba(106, 17, 203, 0.2);
+  border-color: #6a11cb;
 }
+
 .categories a.active {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
-  border-color: transparent;
-  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+  border: none;
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.25);
 }
 
 /* ========================================================================== */
@@ -123,49 +73,53 @@ body {
 /* ========================================================================== */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 两列 */
   gap: 32px;
   justify-items: center;
-  margin-top: 30px;
 }
+
 .work-item {
   position: relative;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   max-width: 480px;
+  width: 100%;
 }
+
 .work-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
+
 .work-item img {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.4s ease;
-}
-.work-item:hover img {
-  transform: scale(1.05);
-}
-/* Caption overlay */
-.work-item p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive: single column on mobile */
+.work-item:hover img {
+  transform: scale(1.04);
+}
+
+/* 标题条 */
+.work-item p {
+  margin: 0;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+/* ========================================================================== */
+/* === Responsive === */
+/* ========================================================================== */
 @media (max-width: 768px) {
   .works-grid {
     grid-template-columns: 1fr;
@@ -174,63 +128,26 @@ body {
     max-width: 90%;
   }
 }
-
 /* ========================================================================== */
-/* === Home Page Featured Works === */
+/* === Back Button (Unified Modern Style) === */
 /* ========================================================================== */
-.home .featured-works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
-}
-.home .featured-works img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* ========================================================================== */
-/* === Back Button === */
-/* ========================================================================== */
-.back-button, .back-btn {
+.back-button {
   display: inline-block;
   margin-top: 50px;
-  padding: 14px 32px;
-  font-size: 1.1rem;
+  padding: 12px 28px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
-  border-radius: 50px;
-  box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-  letter-spacing: 1px;
-  animation: back-btn-glow 3s infinite alternate ease-in-out;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.25);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
-.back-button::before, .back-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
-  transition: all 0.6s ease;
-}
-.back-button:hover::before, .back-btn:hover::before {
-  left: 120%;
-}
-.back-button:hover, .back-btn:hover {
-  transform: translateY(-5px) scale(1.08);
-  box-shadow: 0 0 25px rgba(255, 75, 43, 0.6);
-}
-@keyframes back-btn-glow {
-  from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
-  to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
+
+.back-button:hover {
+  background: linear-gradient(135deg, #7d3cff, #2b8bff);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.35);
 }
