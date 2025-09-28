@@ -1,154 +1,48 @@
 ---
+layout: archive
 title: "Portfolio"
-layout: single
 permalink: /portfolio/
-author_profile: false
+author_profile: true
 ---
 
-<!-- Portfolio landing: large title + mixed featured works + category links -->
-<div class="portfolio-wrap">
+<h1 style="font-size:3rem; font-weight:700; margin-bottom:1.5rem;">WORKS</h1>
 
-  <header class="portfolio-header">
-    <h1>WORKS</h1>
-    <p class="subtitle">Selected projects across media & tools — click a category to explore more.</p>
-
-    <!-- category buttons -->
-    <nav class="portfolio-categories" aria-label="portfolio categories">
-      <a href="/portfolio/illustrator/">Illustrator</a>
-      <a href="/portfolio/photoshop/">Photoshop</a>
-      <a href="/portfolio/cinema4d/">Cinema 4D</a>
-      <a href="/portfolio/solidworks/">SolidWorks</a>
-      <a href="/portfolio/processing/">Processing</a>
-      <a href="/portfolio/after-effects/">After Effects</a>
-      <a href="/portfolio/touchdesigner/">TouchDesigner</a>
-      <a href="/portfolio/lightroom/">Lightroom</a>
-      <a href="/portfolio/arduino/">Arduino</a>
-      <a href="/portfolio/unity/">Unity</a>
-      <a href="/portfolio/vroid/">Vroid</a>
-    </nav>
-  </header>
-
-  <!-- Mixed featured works grid (homepage of portfolio: not filtered) -->
-  <section class="featured-works">
-    <div class="works-grid">
-      <!-- card 1 -->
-      <article class="work-card">
-        <a href="/portfolio/illustrator/">
-          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1">
-          <div class="meta">
-            <h3>Work 1</h3>
-            <span class="badge">Illustrator</span>
-          </div>
-        </a>
-      </article>
-
-      <!-- card 2 -->
-      <article class="work-card">
-        <a href="/portfolio/photoshop/">
-          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2">
-          <div class="meta">
-            <h3>Work 2</h3>
-            <span class="badge">Photoshop</span>
-          </div>
-        </a>
-      </article>
-
-      <!-- card 3 -->
-      <article class="work-card">
-        <a href="/portfolio/cinema4d/">
-          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3">
-          <div class="meta">
-            <h3>Work 3</h3>
-            <span class="badge">Cinema 4D</span>
-          </div>
-        </a>
-      </article>
-
-      <!-- you can add more mixed cards here -->
-    </div>
-  </section>
-
+<!-- Category Menu -->
+<div style="display:flex; flex-wrap:wrap; gap:1.5rem; margin-bottom:2rem;">
+  <a href="{{ '/portfolio/illustrator/' | relative_url }}" style="font-weight:600;">Illustrator</a>
+  <a href="{{ '/portfolio/photoshop/' | relative_url }}" style="font-weight:600;">Photoshop</a>
+  <a href="{{ '/portfolio/cinema4d/' | relative_url }}" style="font-weight:600;">Cinema 4D</a>
+  <a href="{{ '/portfolio/solidworks/' | relative_url }}" style="font-weight:600;">Solidworks</a>
+  <a href="{{ '/portfolio/processing/' | relative_url }}" style="font-weight:600;">Processing</a>
+  <a href="{{ '/portfolio/aftereffects/' | relative_url }}" style="font-weight:600;">After Effects</a>
+  <a href="{{ '/portfolio/touchdesigner/' | relative_url }}" style="font-weight:600;">TouchDesigner</a>
+  <a href="{{ '/portfolio/lightroom/' | relative_url }}" style="font-weight:600;">Lightroom</a>
+  <a href="{{ '/portfolio/arduino/' | relative_url }}" style="font-weight:600;">Arduino</a>
+  <a href="{{ '/portfolio/unity/' | relative_url }}" style="font-weight:600;">Unity</a>
+  <a href="{{ '/portfolio/vroid/' | relative_url }}" style="font-weight:600;">Vroid</a>
 </div>
 
-<style>
-/* ===== Portfolio layout ===== */
-.portfolio-wrap{ max-width:1200px; margin:40px auto; padding:0 20px; }
+<!-- Featured Illustrator Works -->
+<h2 style="font-size:2rem; font-weight:700; margin:2rem 0 1rem;">Featured: Illustrator</h2>
 
-/* Header */
-.portfolio-header { text-align:center; margin-bottom:36px; }
-.portfolio-header h1{
-  font-size:4.2rem; font-weight:900; margin:0 0 8px;
-  letter-spacing:6px;
-  background: linear-gradient(90deg,#4facfe,#00f2fe);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-}
-.portfolio-header .subtitle{ color:#444; margin-bottom:18px; font-size:1.05rem; }
+<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:2rem;">
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/kdsj2_%E7%94%BB%E6%9D%BF%2011.png" alt="The Spiritual Charm of Nature" style="width:100%; height:auto; border-radius:8px;">
+    <p style="margin-top:0.5rem; font-weight:500;">The Spiritual Charm of Nature</p>
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl1.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Tree of Life" style="width:100%; height:auto; border-radius:8px;">
+    <p style="margin-top:0.5rem; font-weight:500;">Tree of Life</p>
+  </div>
+  <div>
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%E3%80%8113_%E7%94%BB%E6%9D%BF%201.jpg" alt="The Lament of Pollution" style="width:100%; height:auto; border-radius:8px;">
+    <p style="margin-top:0.5rem; font-weight:500;">The Lament of Pollution</p>
+  </div>
+</div>
 
-/* Category buttons (horizontal) */
-.portfolio-categories{
-  display:flex; justify-content:center; flex-wrap:wrap; gap:14px;
-  margin: 16px 0 36px;
-}
-.portfolio-categories a{
-  font-weight:700; font-size:0.95rem; text-decoration:none; color:#222;
-  padding:10px 14px; border-radius:8px; transition: all .18s ease;
-  background: rgba(0,0,0,0.03);
-}
-.portfolio-categories a:hover{
-  transform: translateY(-4px) scale(1.02);
-  background: linear-gradient(90deg,#eaf6ff,#e6f7ff);
-  color:#0477d9;
-}
-
-/* Works grid */
-.featured-works{ margin-top:10px; }
-.works-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap:22px;
-}
-.work-card{
-  background:#fff; border-radius:12px; overflow:hidden;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-.work-card a{ color:inherit; text-decoration:none; display:block; }
-.work-card img{
-  width:100%; height:220px; object-fit:cover; display:block;
-}
-.work-card .meta{
-  padding:14px;
-  display:flex; justify-content:space-between; align-items:center;
-}
-.work-card .meta h3{ margin:0; font-size:1.05rem; font-weight:700; color:#111; }
-.badge{
-  font-size:.78rem; padding:6px 8px; border-radius:8px; background:rgba(4,119,217,0.1); color:#0477d9;
-  font-weight:700;
-}
-.work-card:hover{ transform: translateY(-8px); box-shadow: 0 18px 44px rgba(0,0,0,0.12); }
-
-/* responsive tweaks */
-@media (max-width:720px){
-  .portfolio-header h1{ font-size:2.6rem; letter-spacing:3px; }
-  .work-card img{ height:180px; }
-}
-</style>
-<style>
-.work-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;  /* 保持原比例不裁剪 */
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-.work-card img:hover {
-  transform: scale(1.05);
-}
-.work-card {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-}
-</style>
+<!-- View All Button -->
+<div style="text-align:center; margin-top:2rem;">
+  <a href="{{ '/portfolio/illustrator/' | relative_url }}" style="display:inline-block; padding:0.75rem 2rem; background:#000; color:#fff; text-decoration:none; font-weight:600; border-radius:6px;">
+    VIEW ALL ILLUSTRATOR WORKS
+  </a>
+</div>
