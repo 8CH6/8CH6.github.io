@@ -2,11 +2,8 @@
 ---
 
 // ============================================================================
-// This file controls what is imported from /_sass
-// ============================================================================
-//
-// Note that the files are processed in the order they are imported, so they are partly
-// sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+// Imports from /_sass
+// Jekyll requires these imports for theme + layout
 // ============================================================================
 
 @import
@@ -71,9 +68,11 @@ body {
 /* ========================================================================== */
 .portfolio-page {
   max-width: 1100px;
-  margin: 0 auto;       /* 全部居中 */
-  padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;         /* 取消主题默认 float */
   text-align: center;
+  padding: 40px 20px;
 }
 
 .portfolio-title {
@@ -137,32 +136,7 @@ body {
   font-weight: 500;
   margin: 0;
 }
-/* === Force Center Content on Portfolio & Illustrator Pages === */
-/* === Force Center Content ONLY on Portfolio pages === */
-.portfolio-page {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;  /* 取消 float */
-}
 
-/* === Back Button Style === */
-.back-button {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 16px;
-  background: #f5f5f5;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.back-button:hover {
-  background: #007acc;
-  color: #fff;
-}
 /* ========================================================================== */
 /* === Back Button Global Style === */
 /* ========================================================================== */
