@@ -243,3 +243,23 @@
     }
   }
 }
+/* === Portfolio images global fix === */
+.work-card img {
+  width: 100%;
+  height: auto;           /* 图片保持比例，不会被裁剪 */
+  object-fit: contain;    /* 保证整个图像完整显示 */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.work-card img:hover {
+  transform: scale(1.05); /* 悬停放大 */
+}
+
+.work-card {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
