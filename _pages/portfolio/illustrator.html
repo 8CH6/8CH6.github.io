@@ -6,7 +6,6 @@ author_profile: false
 ---
 
 <div class="portfolio-page">
-  <a href="/portfolio/" class="back-button">← Back to Portfolio</a>
   <h1 class="portfolio-title">Illustrator</h1>
 
   <div class="works-grid">
@@ -75,18 +74,24 @@ author_profile: false
       <p>Random Word Technique</p>
     </div>
   </div>
+
+  <!-- 炫酷 Back 按钮 -->
+  <a href="/portfolio/" class="back-button">← Back to Portfolio</a>
 </div>
 
 <style>
 body {
   background: #fafafa;
 }
+
+/* 页面居中 */
 .portfolio-page {
   max-width: 1200px;
   margin: 80px auto;
   padding: 20px;
   text-align: center;
 }
+
 .portfolio-title {
   font-size: 2.8rem;
   font-weight: 900;
@@ -106,12 +111,13 @@ body {
   transform: translateX(-50%);
   border-radius: 2px;
 }
+
+/* 作品展示网格 */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 40px;
-  justify-items: center; /* 居中 */
 }
 .work-item {
   background: #fff;
@@ -119,7 +125,6 @@ body {
   padding: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
 }
 .work-item:hover {
   transform: translateY(-6px);
@@ -136,20 +141,41 @@ body {
   font-weight: 600;
   color: #444;
 }
-/* Back Button */
+
+/* 炫酷 Back Button */
 .back-button {
   display: inline-block;
-  margin-bottom: 30px;
-  padding: 10px 18px;
-  background: #f5f5f5;
-  border-radius: 6px;
+  margin-top: 50px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-.back-button:hover {
-  background: #007acc;
   color: #fff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(37,117,252,0.3);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.back-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.5), rgba(255,255,255,0));
+  transition: all 0.5s ease;
+}
+
+.back-button:hover::before {
+  left: 100%;
+}
+
+.back-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(37,117,252,0.45);
 }
 </style>
