@@ -194,3 +194,22 @@ body {
     box-shadow: 0 0 22px rgba(255, 75, 43, 0.7);
   }
 }
+/* Works grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Portrait 图片：两张并排 */
+.work-item.portrait {
+  grid-column: span 1;
+  max-width: 320px;
+}
+
+/* Landscape 图片：占满整行 */
+.work-item.landscape {
+  grid-column: 1 / -1;  /* 横跨所有列 */
+  max-width: 1000px;   /* 限制最大宽度，避免太宽 */
+}

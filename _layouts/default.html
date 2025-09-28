@@ -29,3 +29,21 @@ layout: compress
 
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".work-item img").forEach(img => {
+      function setClass() {
+        if (img.naturalWidth > img.naturalHeight) {
+          img.parentElement.classList.add("landscape");
+        } else {
+          img.parentElement.classList.add("portrait");
+        }
+      }
+      if (img.complete) {
+        setClass();
+      } else {
+        img.onload = setClass;
+      }
+    });
+  });
+</script>
