@@ -1,67 +1,23 @@
 ---
+layout: default
 title: "Arduino"
-layout: single
 permalink: /portfolio/arduino/
 author_profile: false
 ---
 
-<div class="category-wrap">
-  <header class="category-header">
-    <h1>Illustrator</h1>
-    <p class="lead">A selection of Illustrator works. Click an item to view larger.</p>
-    <p><a href="/portfolio/" class="back-link">← Back to Works</a></p>
-  </header>
+<div class="portfolio-page">
+  <h1 class="portfolio-title">Arduino Works</h1>
 
-  <section class="category-grid">
-    <div class="grid">
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Illustrator 1">
-        <h3>Illustration A</h3>
-      </article>
-
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Illustrator 2">
-        <h3>Illustration B</h3>
-      </article>
-
-      <article class="item">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Illustrator 3">
-        <h3>Illustration C</h3>
-      </article>
-
-      <!-- add more Illustrator items here -->
+  <div class="works-grid">
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Hcare Emergency Call Bell">
+      <p>Hcare Emergency Call Bell</p>
     </div>
-  </section>
+    <div class="work-item">
+      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Intelligent Liquid Analysis and Reuse System">
+      <p>Intelligent Liquid Analysis and Reuse System</p>
+    </div>
+  </div>
+
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
-
-<style>
-.category-wrap{ max-width:1200px; margin:40px auto; padding:0 20px; }
-.category-header{text-align:center; margin-bottom:28px;}
-.category-header h1{
-  font-size:3.2rem; font-weight:900; letter-spacing:4px;
-  background: linear-gradient(90deg,#4facfe,#00f2fe);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-}
-.category-header .lead{ color:#444; margin-top:8px; }
-.back-link{ color:#0477d9; text-decoration:none; font-weight:700; }
-
-/* grid */
-.category-grid .grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-.item{
-  background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.06);
-  transition:transform .22s ease, box-shadow .22s ease;
-  text-align:center; padding-bottom:14px;
-}
-.item img{ width:100%; height:200px; object-fit:cover; display:block; }
-.item h3{ margin:12px 0 0; font-size:1rem; color:#111; font-weight:700; }
-.item:hover{ transform: translateY(-8px); box-shadow: 0 16px 36px rgba(0,0,0,0.12); }
-
-@media (max-width:720px){
-  .category-header h1{ font-size:2.2rem; }
-  .item img{ height:160px; }
-}
-</style>
