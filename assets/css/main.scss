@@ -238,3 +238,21 @@ body {
   height: auto;
   border-radius: 8px;
 }
+/* ========================================================================== */
+/* === Home Page Featured Works (Only index.html) === */
+/* ========================================================================== */
+.home .featured-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 一行三张 */
+  gap: 20px; /* 图片之间留点间隔 */
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.home .featured-works img {
+  width: 100%;          /* 填满格子宽度 */
+  height: auto;         /* 保持比例 */
+  object-fit: contain;  /* 确保完整展示，不裁剪 */
+  border-radius: 8px;   /* 保持圆角风格 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
