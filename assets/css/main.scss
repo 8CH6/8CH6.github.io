@@ -1,6 +1,68 @@
-/* ========================================================================== */
-/* === Portfolio Page Styles === */
-/* ========================================================================== */
+---
+---
+
+// ============================================================================
+// Imports from /_sass
+// Jekyll requires these imports for theme + layout
+// ============================================================================
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+
+// ============================================================================
+// Custom Styles
+// ============================================================================
+
+/* === Custom Navigation Alignment === */
+.masthead__menu #site-nav.greedy-nav {
+  justify-content: flex-end;   /* Align nav items to the right */
+}
+.masthead__menu #site-nav.greedy-nav .visible-links {
+  margin: 0;
+}
+.greedy-nav .site-title {
+  margin-right: auto;          /* Keep logo/title aligned left */
+}
+
+/* === Custom Cursor === */
+body {
+  cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
+}
+
+/* ==========================================================================
+   Portfolio Page Styles
+   ========================================================================== */
 .portfolio-page {
   max-width: 1100px;
   margin: 0 auto;
@@ -21,7 +83,6 @@
   text-align: center;
   margin-bottom: 40px;
 }
-
 .categories a {
   margin: 0 12px;
   font-weight: 600;
@@ -29,21 +90,19 @@
   color: #333;
   transition: color 0.3s ease;
 }
-
 .categories a:hover {
   color: #007acc;
 }
 
-/* === Works Grid: Two per Row === */
+/* === Works Grid: 2 per Row === */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 一行固定两个 */
-  gap: 30px; /* 留空隙 */
-  justify-items: center; /* 居中 */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
   margin-top: 30px;
 }
 
-/* Work Item */
 .work-item {
   background: #fff;
   border-radius: 12px;
@@ -52,22 +111,19 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   width: 100%;
-  max-width: 420px;   /* 比之前 320px 稍大 */
+  max-width: 460px;   /* 稍大 */
 }
-
 .work-item:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
-
 .work-item img {
   width: 100%;
-  max-height: 350px;   /* 稍稍大点，但不撑爆 */
-  object-fit: contain; /* 确保完整显示 */
+  max-height: 360px;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
 }
-
 .work-item p {
   font-size: 1.05rem;
   font-weight: 600;
@@ -75,17 +131,26 @@
   color: #333;
 }
 
-/* ========================================================================== */
-/* === Home Page Featured Works === */
-/* ========================================================================== */
+/* === Responsive: 1 per Row on Mobile === */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-item {
+    max-width: 90%;
+  }
+}
+
+/* ==========================================================================
+   Home Page Featured Works
+   ========================================================================== */
 .home .featured-works {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 一行三张 */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
   margin-top: 30px;
 }
-
 .home .featured-works img {
   width: 100%;
   height: auto;
@@ -94,9 +159,9 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ========================================================================== */
-/* === Back Button === */
-/* ========================================================================== */
+/* ==========================================================================
+   Back Button
+   ========================================================================== */
 .back-button {
   display: inline-block;
   margin-top: 50px;
@@ -114,7 +179,6 @@
   letter-spacing: 1px;
   animation: back-btn-glow 3s infinite alternate ease-in-out;
 }
-
 .back-button::before {
   content: "";
   position: absolute;
@@ -125,21 +189,14 @@
   background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
   transition: all 0.6s ease;
 }
-
 .back-button:hover::before {
   left: 120%;
 }
-
 .back-button:hover {
   transform: translateY(-5px) scale(1.08);
   box-shadow: 0 0 25px rgba(255, 75, 43, 0.6);
 }
-
 @keyframes back-btn-glow {
-  from {
-    box-shadow: 0 0 12px rgba(255, 65, 108, 0.4);
-  }
-  to {
-    box-shadow: 0 0 22px rgba(255, 75, 43, 0.7);
-  }
+  from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
+  to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
 }
