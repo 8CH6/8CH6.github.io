@@ -65,3 +65,67 @@
 body {
   cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
 }
+.portfolio-page {
+  max-width: 1200px;
+  margin: 0 auto; /* 居中 */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.categories {
+  margin-bottom: 40px;
+}
+
+.categories a {
+  margin: 0 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.categories a:hover {
+  color: #007acc;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center; /* 保证卡片居中 */
+}
+
+.work-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.work-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto; /* 自适应，不裁剪 */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.work-item p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
