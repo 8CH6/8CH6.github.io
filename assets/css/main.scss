@@ -138,14 +138,14 @@ body {
   margin: 0;
 }
 /* === Force Center Content on Portfolio & Illustrator Pages === */
-.page,
-.archive,
+/* === Force Center Content ONLY on Portfolio pages === */
 .portfolio-page {
-  max-width: 1100px;   /* 控制内容宽度 */
-  margin-left: auto;   /* 强制居中 */
-  margin-right: auto;  /* 强制居中 */
-  float: none;         /* 取消主题默认 float */
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;  /* 取消 float */
 }
+
 /* === Back Button Style === */
 .back-button {
   display: inline-block;
