@@ -1,76 +1,10 @@
----
----
-
-// ============================================================================
-// Imports from /_sass
-// Jekyll requires these imports for theme + layout
-// ============================================================================
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
-// ============================================================================
-// Custom Styles
-// ============================================================================
-
-/* === Custom Navigation Alignment === */
-.masthead__menu #site-nav.greedy-nav {
-  justify-content: flex-end;   /* Align nav items to the right */
-}
-
-.masthead__menu #site-nav.greedy-nav .visible-links {
-  margin: 0;                   /* Remove default centering */
-}
-
-.greedy-nav .site-title {
-  margin-right: auto;          /* Keep logo/title aligned left */
-}
-
-/* === Custom Cursor === */
-/* Recommended size: ≤32x32px, PNG format, transparent background */
-body {
-  cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
-}
-
 /* ========================================================================== */
 /* === Portfolio Page Styles === */
 /* ========================================================================== */
 .portfolio-page {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;         /* 取消主题默认 float */
+  margin: 0 auto;
+  float: none;
   text-align: center;
   padding: 40px 20px;
 }
@@ -100,12 +34,22 @@ body {
   color: #007acc;
 }
 
-/* Works grid */
+/* === Works Grid === */
 .works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  justify-items: center; /* 卡片居中 */
+}
+
+.work-item.portrait {
+  flex: 1 1 calc(45% - 24px);
+  max-width: 400px;
+}
+
+.work-item.landscape {
+  flex: 1 1 100%;
+  max-width: 900px;
 }
 
 .work-item {
@@ -114,8 +58,6 @@ body {
   padding: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 320px;
   text-align: center;
 }
 
@@ -126,22 +68,40 @@ body {
 
 .work-item img {
   width: 100%;
-  height: auto; /* 自适应图片，不裁剪 */
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 12px;
 }
 
 .work-item p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
+  color: #333;
 }
 
 /* ========================================================================== */
-/* === Back Button Global Style === */
+/* === Home Page Featured Works === */
 /* ========================================================================== */
+.home .featured-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 一行三张 */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.home .featured-works img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* ========================================================================== */
-/* === Back Button Global Style (Upgraded) === */
+/* === Back Button === */
 /* ========================================================================== */
 .back-button {
   display: inline-block;
@@ -168,11 +128,7 @@ body {
   left: -120%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
   transition: all 0.6s ease;
 }
 
@@ -185,7 +141,6 @@ body {
   box-shadow: 0 0 25px rgba(255, 75, 43, 0.6);
 }
 
-/* === subtle breathing glow === */
 @keyframes back-btn-glow {
   from {
     box-shadow: 0 0 12px rgba(255, 65, 108, 0.4);
@@ -193,124 +148,4 @@ body {
   to {
     box-shadow: 0 0 22px rgba(255, 75, 43, 0.7);
   }
-}
-/* Works grid */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
-
-/* Portrait 图片：两张并排 */
-.work-item.portrait {
-  grid-column: span 1;
-  max-width: 320px;
-}
-
-/* Landscape 图片：占满整行 */
-.work-item.landscape {
-  grid-column: 1 / -1;  /* 横跨所有列 */
-  max-width: 1000px;   /* 限制最大宽度，避免太宽 */
-}
-/* === Portfolio Works Grid Custom Layout === */
-.works-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-
-.work-item.portrait {
-  flex: 1 1 calc(45% - 24px);
-  max-width: 400px;
-  order: 1;
-}
-
-.work-item.landscape {
-  flex: 1 1 100%;
-  max-width: 900px;
-  order: 2;
-}
-
-.work-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-/* ========================================================================== */
-/* === Home Page Featured Works (Only index.html) === */
-/* ========================================================================== */
-.home .featured-works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 一行三张 */
-  gap: 20px; /* 图片之间留点间隔 */
-  justify-items: center;
-  margin-top: 30px;
-}
-
-.home .featured-works img {
-  width: 100%;          /* 填满格子宽度 */
-  height: auto;         /* 保持比例 */
-  object-fit: contain;  /* 确保完整展示，不裁剪 */
-  border-radius: 8px;   /* 保持圆角风格 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-/* ========================================================================== */
-/* === Home Page Featured Works Override === */
-/* ========================================================================== */
-.home .featured-works {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important; /* 一行三张 */
-  gap: 20px; /* 间隔 */
-  justify-items: center;
-  align-items: start;
-  margin-top: 30px;
-}
-
-.home .featured-works img {
-  width: 100%;          /* 填满格子 */
-  height: auto;         /* 保持原始比例 */
-  object-fit: contain !important; /* 显示完整，不裁切 */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-/* Works Grid */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  justify-items: center;
-  margin-top: 30px;
-}
-
-/* Work Item */
-.work-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  max-width: 320px; /* 控制整体宽度 */
-}
-
-.work-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.work-item img {
-  width: 100%;
-  max-height: 280px; /* 限制最大高度 */
-  object-fit: contain; /* 保证完整显示 */
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-.work-item p {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-  color: #333;
 }
