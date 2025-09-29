@@ -1,89 +1,44 @@
 ---
 layout: default
-title: "The Seed of Hope"
-permalink: /portfolio/video/the-seed-of-hope/
+title: "Video"
+permalink: /portfolio/video/
 author_profile: false
 ---
 
 <div class="portfolio-page">
-  <h1 class="portfolio-title">The Seed of Hope</h1>
+  <h1 class="portfolio-title">Video Works</h1>
 
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/LbGf2YF0TSo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+  <div class="works-grid">
+    <!-- The Seed of Hope -->
+    <div class="work-item">
+      <a href="{{ '/portfolio/video/the-seed-of-hope/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/79d7f8f6eeecb497fb08903309724a1d.png" alt="The Seed of Hope">
+        <p>The Seed of Hope</p>
+      </a>
+    </div>
+
+    <!-- 其他作品可以照这个格式加 -->
+    <div class="work-item">
+      <a href="#">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/f4a282e23ebb7c07f802b4f8a7552020.png" alt="The New War">
+        <p>The New War</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="#">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/c2fbee2ac10a7502346dc159b7a5f2e4.png" alt="Guided Video">
+        <p>Guided Video</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="#">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/0efe173ca9911af2f6430d2050df4288.png" alt="Inspirational Video">
+        <p>Inspirational Video</p>
+      </a>
+    </div>
   </div>
 
-  <div class="project-meta">
-    <p class="project-description">A short cinematic piece exploring resilience and hope through visual storytelling. (Edit this description as you like.)</p>
-    <p class="project-details">Role: Director / Editor · Tools: After Effects · Year: 2024</p>
-  </div>
-
-  <div style="margin-top:28px;">
-    <a href="{{ '/portfolio/video/' | relative_url }}" class="back-button">← Back to Video</a>
-    <a href="{{ '/portfolio/' | relative_url }}" class="back-button" style="margin-left:12px;">← Back to Portfolio</a>
-  </div>
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
-
-<style>
-/* responsive video embed */
-.video-container{
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(12,28,46,0.08);
-  margin: 20px auto;
-  max-width: 1000px;
-}
-.video-container iframe{
-  position: absolute;
-  top:0; left:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-
-/* project meta */
-.project-meta{
-  max-width: 900px;
-  margin: 16px auto 0;
-  text-align: center;
-  color: #333;
-}
-.project-description{
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-}
-.project-details{
-  font-size: 0.95rem;
-  color: #666;
-}
-
-/* keep back-button consistent with your main styles */
-.back-button{
-  display:inline-block;
-  margin-top:12px;
-  padding: 10px 22px;
-  font-weight:700;
-  color:#fff;
-  text-decoration:none;
-  border-radius:999px;
-  background: linear-gradient(135deg,#6a11cb,#2575fc);
-  box-shadow: 0 8px 24px rgba(37,117,252,0.12);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-.back-button:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(37,117,252,0.18);
-  opacity: .98;
-}
-
-/* small screens */
-@media (max-width:860px){
-  .video-container{ max-width: 100%; padding-bottom:56.25%; }
-  .project-description{ font-size: 1rem; }
-}
-</style>
