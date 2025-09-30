@@ -289,3 +289,7 @@ body {
 .work-item p {
   pointer-events: none;
 }
+.detail-button {
+  position: relative;
+  z-index: 2;  /* 确保按钮浮在文字层上 */
+}
