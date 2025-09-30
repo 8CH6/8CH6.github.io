@@ -10,29 +10,53 @@ author_profile: false
 
   <div class="works-grid">
     <!-- The Seed of Hope -->
-    <a href="{{ '/portfolio/video/the-seed-of-hope/' | relative_url }}" class="work-item">
+    <div class="work-item">
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/79d7f8f6eeecb497fb08903309724a1d.png" alt="The Seed of Hope">
       <p>The Seed of Hope</p>
-    </a>
+      <a href="{{ '/portfolio/video/the-seed-of-hope/' | relative_url }}" class="detail-button">View Details →</a>
+    </div>
 
     <!-- The New War -->
-    <a href="{{ '/portfolio/video/the-new-war/' | relative_url }}" class="work-item">
+    <div class="work-item">
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/f4a282e23ebb7c07f802b4f8a7552020.png" alt="The New War">
       <p>The New War</p>
-    </a>
+      <a href="{{ '/portfolio/video/the-new-war/' | relative_url }}" class="detail-button">View Details →</a>
+    </div>
 
     <!-- Guided Video -->
-    <a href="{{ '/portfolio/video/guided-video/' | relative_url }}" class="work-item">
+    <div class="work-item">
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/c2fbee2ac10a7502346dc159b7a5f2e4.png" alt="Guided Video">
       <p>Guided Video</p>
-    </a>
+      <a href="{{ '/portfolio/video/guided-video/' | relative_url }}" class="detail-button">View Details →</a>
+    </div>
 
     <!-- Inspirational Video -->
-    <a href="{{ '/portfolio/video/inspirational-video/' | relative_url }}" class="work-item">
+    <div class="work-item">
       <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/0efe173ca9911af2f6430d2050df4288.png" alt="Inspirational Video">
       <p>Inspirational Video</p>
-    </a>
+      <a href="{{ '/portfolio/video/inspirational-video/' | relative_url }}" class="detail-button">View Details →</a>
+    </div>
   </div>
 
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
+
+<style>
+.detail-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37,117,252,0.2);
+  transition: all 0.25s ease;
+}
+.detail-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37,117,252,0.3);
+}
+</style>
