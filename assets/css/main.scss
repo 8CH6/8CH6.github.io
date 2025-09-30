@@ -60,7 +60,7 @@ body {
   cursor: url('https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final-logo-1.png') 16 16, auto;
 }
 
-/* ==========================================================================
+/* ========================================================================== 
    Portfolio Page Styles
    ========================================================================== */
 .portfolio-page {
@@ -79,6 +79,7 @@ body {
   text-align: center;
 }
 
+/* Categories */
 .categories {
   text-align: center;
   margin-bottom: 40px;
@@ -103,32 +104,54 @@ body {
   margin-top: 30px;
 }
 
+/* Work Item (Clickable Card) */
 .work-item {
+  display: block;              /* 整个卡片可点 */
+  position: relative;
   background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;       /* 去掉下划线 */
+  color: inherit;              /* 保持文字颜色 */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
   width: 100%;
-  max-width: 460px;   /* 稍大 */
+  max-width: 480px;
+  cursor: pointer;             /* 鼠标悬停显示手型 */
+  padding: 0;                  /* 去掉 padding，保持卡片干净 */
 }
+
 .work-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
+
 .work-item img {
   width: 100%;
-  max-height: 360px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: 12px;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+  border-radius: 0;
 }
+
+.work-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 底部文字条 */
 .work-item p {
-  font-size: 1.05rem;
-  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 0;
-  color: #333;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  pointer-events: none;  /* 🔥 关键：避免文字覆盖阻挡点击 */
 }
 
 /* === Responsive: 1 per Row on Mobile === */
@@ -141,7 +164,7 @@ body {
   }
 }
 
-/* ==========================================================================
+/* ========================================================================== 
    Home Page Featured Works
    ========================================================================== */
 .home .featured-works {
@@ -159,7 +182,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ==========================================================================
+/* ========================================================================== 
    Back Button
    ========================================================================== */
 .back-button {
@@ -200,9 +223,10 @@ body {
   from { box-shadow: 0 0 12px rgba(255, 65, 108, 0.4); }
   to   { box-shadow: 0 0 22px rgba(255, 75, 43, 0.7); }
 }
-/* ========================================================================== */
-/* === Portfolio Title === */
-/* ========================================================================== */
+
+/* ========================================================================== 
+   Portfolio Title (Gradient + underline)
+   ========================================================================== */
 .portfolio-title {
   font-size: 3.2rem;
   font-weight: 900;
@@ -228,9 +252,9 @@ body {
   border-radius: 2px;
 }
 
-/* ========================================================================== */
-/* === Categories (Tags) === */
-/* ========================================================================== */
+/* ========================================================================== 
+   Categories (Tags)
+   ========================================================================== */
 .categories {
   text-align: center;
   margin-bottom: 50px;
@@ -261,65 +285,4 @@ body {
   color: #fff;
   border-color: transparent;
   box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
-}
-
-/* ========================================================================== */
-/* === Works Grid (Cards) === */
-/* ========================================================================== */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 两列布局 */
-  gap: 32px;
-  justify-items: center;
-}
-
-.work-item {
-  position: relative;
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 480px;
-}
-
-.work-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
-}
-
-.work-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.work-item:hover img {
-  transform: scale(1.05);
-}
-
-/* 底部文字条 */
-.work-item p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
-}
-.work-item {
-  display: block;          /* 链接变块级，整张卡片可点 */
-  text-decoration: none;   /* 去掉下划线 */
-  color: inherit;          /* 保持文字颜色 */
-  border-radius: 14px;     /* 和原卡片一致 */
-  overflow: hidden;
-}
-.work-item p {
-  margin: 0;
 }
