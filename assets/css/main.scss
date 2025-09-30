@@ -313,3 +313,13 @@ body {
   color: #fff;
   background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
 }
+.work-item {
+  display: block;          /* 链接变块级，整张卡片可点 */
+  text-decoration: none;   /* 去掉下划线 */
+  color: inherit;          /* 保持文字颜色 */
+  border-radius: 14px;     /* 和原卡片一致 */
+  overflow: hidden;
+}
+.work-item p {
+  margin: 0;
+}
