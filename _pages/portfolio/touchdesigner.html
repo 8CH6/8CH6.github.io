@@ -7,25 +7,34 @@ author_profile: false
 
 <div class="portfolio-page">
   <h1 class="portfolio-title">TouchDesigner Works</h1>
-  <div class="works-grid">
-    <div class="work-item">
+
+  <div class="works-grid" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+
+    <!-- 第一个项目 -->
+    <div class="work-item" style="flex:1 1 250px; max-width:300px; display:flex; flex-direction:column; align-items:center;">
       <a href="/portfolio/touchdesigner/dancing-butterflies-in-enchantment/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240929090138.png" alt="Dancing Butterflies in Enchantment">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240929090138.png" alt="Dancing Butterflies in Enchantment" style="width:100%; height:auto; object-fit:contain;">
         <p>Dancing Butterflies in Enchantment</p>
       </a>
     </div>
-    <div class="work-item">
-      <a href="/portfolio/touchdesigner/cure-for-me/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/8092a60e4ae8aac05e77b34672f0f2b.png" alt="Cure For Me">
-        <p>Cure For Me</p>
-      </a>
-    </div>
-    <div class="work-item">
+
+    <!-- 第三个项目改为第二位置 -->
+    <div class="work-item" style="flex:1 1 250px; max-width:400px; display:flex; flex-direction:column; align-items:center;">
       <a href="/portfolio/touchdesigner/dragon-spring-sword/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Dragon Spring Sword">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Dragon Spring Sword" style="width:100%; height:auto; object-fit:contain;">
         <p>Dragon Spring Sword</p>
       </a>
     </div>
+
+    <!-- 第二个项目改为第三位置，并加大宽度 -->
+    <div class="work-item" style="flex:1 1 350px; max-width:500px; display:flex; flex-direction:column; align-items:center;">
+      <a href="/portfolio/touchdesigner/cure-for-me/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/8092a60e4ae8aac05e77b34672f0f2b.png" alt="Cure For Me" style="width:100%; height:auto; object-fit:contain;">
+        <p>Cure For Me</p>
+      </a>
+    </div>
+
   </div>
-  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
+
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button" style="margin-top:20px;">← Back to Portfolio</a>
 </div>
