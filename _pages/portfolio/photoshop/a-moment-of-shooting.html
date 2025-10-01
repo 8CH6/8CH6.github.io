@@ -5,17 +5,63 @@ permalink: /portfolio/photoshop/a-moment-of-shooting/
 author_profile: false
 ---
 
+<style>
+.portfolio-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.work-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-image img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.work-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.back-button {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
+</style>
+
 <div class="portfolio-page">
-  <h1 class="portfolio-title">A Moment of Shooting</h1>
-
-  <div class="work-detail-container">
-    <div class="work-image">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/420hw1.png" alt="A Moment of Shooting">
-    </div>
-    <div class="work-description">
-      <p>Against a vivid orange background, this design combines the dynamic posture of a basketball player shooting with letter elements like "EXCIT", and features the phrase "JUST DO IT" below. Through color impact and the capture of the player’s movement, the overall design showcases the passion and vitality of basketball, conveying the spirit of daring to act and enjoying the moment of sports.</p>
-    </div>
+  <div class="work-image">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/420hw1.png" alt="A Moment of Shooting">
   </div>
-
-  <a href="/portfolio/photoshop/" class="back-button">← Back to Photoshop Works</a>
+  <div class="work-description">
+    <h1 class="portfolio-title">A Moment of Shooting</h1>
+    <p>Against a vivid orange background, this design combines the dynamic posture of a basketball player shooting with letter elements like "EXCIT", and features the phrase "JUST DO IT" below. Through color impact and the capture of the player’s movement, the overall design showcases the passion and vitality of basketball, conveying the spirit of daring to act and enjoying the moment of sports.</p>
+    <a href="{{ '/portfolio/photoshop/' | relative_url }}" class="back-button">← Back to Photoshop Works</a>
+  </div>
 </div>
