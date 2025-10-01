@@ -1,102 +1,4 @@
 /* ========================================
-   全局 About 页样式
-   ======================================== */
-.about-section {
-  background: #000;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-.about-block {
-  margin-bottom: 3rem;
-}
-
-.about-block h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.about-block p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.about-links {
-  list-style: none;
-  padding: 0;
-}
-
-.about-links li {
-  margin: 0.5rem 0;
-}
-
-.about-links a {
-  color: #1da1f2;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
-}
-
-.photo-grid img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skill-tag {
-  background: #1da1f2;
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-/* ========================================
-   导航栏按钮居中样式
-   ======================================== */
-.greedy-nav {
-  display: flex;
-  justify-content: center; /* 整体居中 */
-  align-items: center;
-}
-
-.greedy-nav .visible-links {
-  margin: 0 auto; /* 按钮组居中 */
-  display: flex;
-  gap: 20px; /* 按钮间距 */
-}
-
-.greedy-nav .site-title {
-  margin-right: auto; /* logo 固定在最左，按钮依然居中 */
-}
-
-.masthead__menu #site-nav.greedy-nav {
-  justify-content: center;
-}
-
-.masthead__menu #site-nav.greedy-nav .visible-links {
-  margin: 0 auto;
-}
-
-/* ========================================
    Portfolio Page / Video 页面样式
    ======================================== */
 .portfolio-page {
@@ -169,7 +71,7 @@
 
 .work-item p {
   position: absolute;
-  bottom: 40px; /* 给按钮留空间 */
+  bottom: 40px;
   left: 0;
   right: 0;
   margin: 0;
@@ -186,7 +88,6 @@
 .detail-button {
   display: inline-block;
   padding: 8px 16px;
-  margin-bottom: 12px;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -206,6 +107,7 @@
   transform: translateX(-50%) translateY(-2px);
 }
 
+/* Back Button */
 .back-button {
   display: inline-block;
   margin-top: 50px;
