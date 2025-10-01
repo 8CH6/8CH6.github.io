@@ -6,18 +6,50 @@ author_profile: false
 ---
 
 <div class="portfolio-page">
-  <h1 class="portfolio-title">Guided Video</h1>
+  <h1 class="portfolio-title">Wenchang-Chicken-Traceability-System</h1>
 
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Uao1CtZ7u0s" frameborder="0" allowfullscreen></iframe>
+  <!-- 视频嵌入 -->
+  <div class="video-container" style="margin-bottom:20px;">
+    <iframe src="https://www.youtube.com/embed/Uao1CtZ7u0s" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="width:100%; aspect-ratio:16/9; max-width:1200px; display:block; margin:0 auto;">
+    </iframe>
   </div>
 
-  <div class="project-meta">
+  <!-- 图片展示 -->
+  <div class="image-gallery" style="display:flex; flex-direction:column; gap:20px; align-items:center;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(1).png" alt="Wenchang 1" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(2).png" alt="Wenchang 2" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(3).png" alt="Wenchang 3" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(4).png" alt="Wenchang 4" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(5).png" alt="Wenchang 5" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(6).png" alt="Wenchang 6" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(7).png" alt="Wenchang 7" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(8).png" alt="Wenchang 8" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(9).png" alt="Wenchang 9" style="max-width:100%; height:auto;">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/wcj%20(10).png" alt="Wenchang 10" style="max-width:100%; height:auto;">
+  </div>
+
+  <!-- Google Drive 文件嵌入 -->
+  <div class="drive-file" style="margin-top:20px; width:100%; max-width:1200px; display:block; margin-left:auto; margin-right:auto;">
+    <iframe src="https://drive.google.com/file/d/1or1MZjH8n51_ZWpHG-3Kl8Oye30KAdQ4/preview" 
+            width="100%" 
+            height="600" 
+            allow="autoplay" 
+            style="border:0;">
+    </iframe>
+  </div>
+
+  <!-- 项目说明 -->
+  <div class="project-meta" style="margin-top:20px; max-width:1200px; margin-left:auto; margin-right:auto;">
     <p class="project-description">An instructional video designed to guide and inspire learning.</p>
     <p class="project-details">Role: Motion Designer · Tools: After Effects · Year: 2024</p>
   </div>
 
-  <div class="back-links">
+  <!-- 返回链接 -->
+  <div class="back-links" style="margin-top:20px;">
     <a href="{{ '/portfolio/video/' | relative_url }}" class="back-button">← Back to Video</a>
     <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
   </div>
