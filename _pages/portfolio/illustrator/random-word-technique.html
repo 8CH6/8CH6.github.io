@@ -6,17 +6,63 @@ author_profile: false
 ---
 
 <style>
-.portfolio-page { display:flex; flex-direction:row; height:100vh; gap:40px; padding:20px; box-sizing:border-box; }
-.work-image { flex:1; display:flex; align-items:center; justify-content:center; }
-.work-image img { height:100%; width:auto; object-fit:contain; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.2); }
-.work-description { flex:1; display:flex; flex-direction:column; justify-content:center; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:1.6; font-size:1.05rem; color:#333; }
-.back-button { margin-top:20px; display:inline-block; text-decoration:none; color:#fff; background-color:#222; padding:10px 18px; border-radius:8px; transition:0.3s; }
-.back-button:hover { background-color:#555; }
+.portfolio-page { 
+  display:flex; 
+  flex-direction:row; 
+  height: 100vh; 
+  gap:40px; 
+  padding:20px; 
+  box-sizing:border-box; 
+}
+
+.work-images {
+  flex:1; 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  justify-content:center; 
+  gap:20px;
+}
+
+.work-images img { 
+  max-height:30%; 
+  width:auto; 
+  object-fit:contain; 
+  border-radius:12px; 
+  box-shadow:0 4px 20px rgba(0,0,0,0.2); 
+}
+
+.work-description { 
+  flex:1; 
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center; 
+  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  line-height:1.6; 
+  font-size:1.05rem; 
+  color:#333; 
+}
+
+.back-button { 
+  margin-top:20px; 
+  display:inline-block; 
+  text-decoration:none; 
+  color:#fff; 
+  background-color:#222; 
+  padding:10px 18px; 
+  border-radius:8px; 
+  transition:0.3s; 
+}
+.back-button:hover { 
+  background-color:#555; 
+}
 </style>
 
 <div class="portfolio-page">
-  <div class="work-image">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique">
+  <div class="work-images">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique - Page 1">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%BA%8C%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique - Page 2">
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%89%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E%E8%A3%81%E5%89%AA1.png" alt="Random Word Technique - Page 3">
   </div>
   <div class="work-description">
     <h1 class="portfolio-title">Random Word Technique</h1>
