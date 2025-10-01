@@ -5,13 +5,22 @@ permalink: /portfolio/illustrator/colorful-geometric-mosaic-painting/
 author_profile: false
 ---
 
-<div class="work-detail-container">
+<style>
+.portfolio-page { display:flex; flex-direction:row; height:100vh; gap:40px; padding:20px; box-sizing:border-box; }
+.work-image { flex:1; display:flex; align-items:center; justify-content:center; }
+.work-image img { height:100%; width:auto; object-fit:contain; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.2); }
+.work-description { flex:1; display:flex; flex-direction:column; justify-content:center; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:1.6; font-size:1.05rem; color:#333; }
+.back-button { margin-top:20px; display:inline-block; text-decoration:none; color:#fff; background-color:#222; padding:10px 18px; border-radius:8px; transition:0.3s; }
+.back-button:hover { background-color:#555; }
+</style>
+
+<div class="portfolio-page">
   <div class="work-image">
     <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Group%201157.png" alt="Colorful Geometric Mosaic Painting">
   </div>
   <div class="work-description">
+    <h1 class="portfolio-title">Colorful Geometric Mosaic Painting</h1>
     <p>Taking geometric shapes as the core elements, this work uses rich colors such as green, pink, and blue. By splicing and combining shapes like triangles and diamonds, it creates four sets of images with a unified style yet distinct color variations. The matching of different colors and geometric shapes produces a visual effect similar to mosaic inlays. This not only showcases the sense of order and compositional beauty of geometric shapes, but also conveys a vibrant and creative visual experience through the collision of colorful tones, embodying the exploration and expression of the integration of colors and geometric forms in digital visual language.</p>
+    <a href="{{ '/portfolio/illustrator/' | relative_url }}" class="back-button">← Back to Illustrator Works</a>
   </div>
 </div>
-
-<a href="/portfolio/illustrator/" class="back-button">← Back to Illustrator</a>
