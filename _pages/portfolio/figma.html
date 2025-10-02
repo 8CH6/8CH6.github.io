@@ -4,16 +4,39 @@ title: "Figma"
 permalink: /portfolio/figma/
 author_profile: false
 ---
+
 <style>
-.work-item img {
-  display: block;
-  margin: 0 auto;
-}
+  /* 网格布局 */
+  .works-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 水平居中 */
+    gap: 30px;
+  }
+
+  .work-item {
+    text-align: center; /* 内部文字居中 */
+  }
+
+  .work-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+  }
 </style>
 
 <div class="portfolio-page">
   <h1 class="portfolio-title">Figma Works</h1>
-    <!-- 分类导航 -->
+
+  <!-- 分类导航 -->
   <div class="categories">
     <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
     <a href="{{ '/portfolio/photoshop' | relative_url }}">Photoshop</a>
@@ -38,5 +61,8 @@ author_profile: false
       </a>
     </div>
   </div>
-  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
+
+  <div style="text-align: center;">
+    <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
+  </div>
 </div>
