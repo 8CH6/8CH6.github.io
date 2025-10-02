@@ -25,8 +25,12 @@ author_profile: false
     margin: 0 auto;
     max-width: 100%;    /* 不超过容器宽度 */
     height: auto;       /* 保持比例 */
-    transform: scale(1.5);  /* 等比例放大 1.5 倍 */
-    transition: transform 0.3s; /* 悬停放大动画可选 */
+    transition: transform 0.3s ease; /* 悬停放大动画 */
+  }
+
+  /* 鼠标悬停放大 */
+  .work-item img:hover {
+    transform: scale(1.5); /* 放大1.5倍 */
   }
 
   /* Back按钮样式 */
