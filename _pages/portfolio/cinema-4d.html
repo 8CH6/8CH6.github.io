@@ -10,35 +10,6 @@ author_profile: false
   text-align: center;
 }
 
-/* 分类导航 */
-.categories {
-  display: flex;
-  flex-wrap: wrap;          /* 自动换行 */
-  justify-content: center;   /* 居中对齐 */
-  gap: 8px;                 /* 保留原有按钮间隔 */
-  margin-bottom: 30px;
-}
-.categories a {
-  padding: 6px 12px;        /* 按钮内边距 */
-  text-decoration: none;
-  color: inherit;
-  border-radius: 6px;       /* 按钮圆角 */
-  background-color: #f0f0f0;
-  text-align: center;
-  white-space: nowrap;
-  transition: background-color 0.3s;
-}
-.categories a:hover {
-  background-color: #e0e0e0;
-}
-
-/* 第一行固定6个按钮 */
-.categories a:nth-child(-n+6) {
-  flex: 0 1 calc(16.66% - 8px); /* 平均分配宽度，减去间距 */
-}
-.categories a:nth-child(n+7) {
-  flex: 0 1 auto;               /* 其他按钮自适应宽度换行 */
-}
 
 /* 单列网格，图片居中 */
 .works-grid {
