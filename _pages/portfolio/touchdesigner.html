@@ -5,8 +5,71 @@ permalink: /portfolio/touchdesigner/
 author_profile: false
 ---
 
+<style>
+.portfolio-page {
+  text-align: center;
+}
+
+/* 分类导航 */
+.categories {
+  margin-bottom: 30px;
+}
+.categories a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 两列网格布局 */
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 居中对齐整个网格 */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.work-item {
+  flex: 1 1 calc(50% - 30px); /* 两列，每个占50%减gap */
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* 图片居中 */
+}
+
+/* 响应式：屏幕小于768px自动单列 */
+@media screen and (max-width: 768px) {
+  .work-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Back按钮居中 */
+.back-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
+</style>
+
 <div class="portfolio-page">
   <h1 class="portfolio-title">TouchDesigner Works</h1>
+
   <!-- 分类导航 -->
   <div class="categories">
     <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
@@ -24,7 +87,9 @@ author_profile: false
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>
 
-  <!-- Dragon Spring Sword -->
+  <!-- 作品网格 -->
+  <div class="works-grid">
+    <!-- Dragon Spring Sword -->
     <div class="work-item">
       <a href="/portfolio/touchdesigner/dragon-spring-sword/">
         <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Dragon Spring Sword">
@@ -41,5 +106,6 @@ author_profile: false
     </div>
   </div>
 
+  <!-- 回到 Portfolio 按钮 -->
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
