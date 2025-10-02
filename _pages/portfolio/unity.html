@@ -6,19 +6,27 @@ author_profile: false
 ---
 
 <style>
-/* 页面布局，水平+垂直居中 */
+/* 页面布局，垂直+水平居中 */
 .portfolio-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 100vh;          /* 页面高度至少占满屏幕 */
-  justify-content: center;     /* 垂直居中 */
+  min-height: 100vh;
 }
 
 /* 分类导航保持原样 */
 .categories {
   margin-bottom: 30px;
+}
+
+/* 作品和按钮的容器，使作品固定在屏幕中间 */
+.content-wrapper {
+  flex: 1;                      /* 占满剩余空间 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* 垂直居中作品 */
+  align-items: center;           /* 水平居中作品 */
 }
 
 /* work-item 内容居中 */
@@ -72,16 +80,18 @@ author_profile: false
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>
 
-  <!-- 作品 -->
-  <div class="works-grid">
-    <div class="work-item">
-      <a href="/portfolio/unity/tiffany-virtual-run/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Tiffany Virtual Run">
-        <p>Tiffany Virtual Run</p>
-      </a>
+  <!-- 作品和按钮容器 -->
+  <div class="content-wrapper">
+    <div class="works-grid">
+      <div class="work-item">
+        <a href="/portfolio/unity/tiffany-virtual-run/">
+          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Tiffany Virtual Run">
+          <p>Tiffany Virtual Run</p>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <!-- 回到 Portfolio 按钮 -->
-  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
+    <!-- 回到 Portfolio 按钮 -->
+    <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
+  </div>
 </div>
