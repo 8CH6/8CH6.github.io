@@ -10,8 +10,10 @@ author_profile: false
   .works-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 水平居中作品 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中（单个作品时居中对齐） */
     gap: 30px;
+    min-height: 60vh;        /* 给点高度保证居中效果 */
   }
 
   .work-item {
@@ -21,8 +23,24 @@ author_profile: false
   .work-item img {
     display: block;
     margin: 0 auto;
-    width: 120%;
+    width: 150%;   /* 放大图片 */
+    max-width: 150%; /* 限制最大放大比例，防止溢出 */
     height: auto;
+  }
+
+  /* Back按钮样式 */
+  .back-button {
+    display: inline-block;
+    margin: 40px auto 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  .back-button:hover {
+    background-color: #555;
   }
 </style>
 
