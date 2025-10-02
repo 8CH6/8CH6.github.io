@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Cinema 4D"
-permalink: /portfolio/cinema4d/
+title: "Figma"
+permalink: /portfolio/figma/
 author_profile: false
 ---
 
@@ -9,7 +9,6 @@ author_profile: false
 .portfolio-page {
   text-align: center;
 }
-
 
 /* 单列网格，图片居中 */
 .works-grid {
@@ -27,10 +26,15 @@ author_profile: false
 }
 
 .work-item img {
-  max-height: 600px;            /* 高度放大 */
+  max-height: 600px;            /* 最大高度 */
   width: auto;                  /* 保持比例 */
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease; /* 悬停放大动画 */
+}
+
+.work-item img:hover {
+  transform: scale(1.1);        /* 悬停放大 10% */
 }
 
 /* Back按钮居中并圆角20px */
@@ -50,7 +54,7 @@ author_profile: false
 </style>
 
 <div class="portfolio-page">
-  <h1 class="portfolio-title">Cinema 4D Works</h1>
+  <h1 class="portfolio-title">Figma Works</h1>
 
   <!-- 分类导航 -->
   <div class="categories">
@@ -72,9 +76,9 @@ author_profile: false
   <!-- 作品网格 -->
   <div class="works-grid">
     <div class="work-item">
-      <a href="/portfolio/cinema4d/fantasy-earth/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/color.png" alt="Fantasy Earth">
-        <p>Fantasy Earth</p>
+      <a href="/portfolio/figma/app-moonlight/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/484bbbe70011c1635683ba0cd0116ce.png" alt="App-Moonlight">
+        <p>App-Moonlight</p>
       </a>
     </div>
   </div>
