@@ -6,47 +6,52 @@ author_profile: false
 ---
 
 <style>
-  /* 网格布局 */
-  .works-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* 水平居中 */
-    align-items: center;     /* 垂直居中（单个作品时居中对齐） */
-    gap: 30px;
-    min-height: 60vh;        /* 给点高度保证居中效果 */
-  }
+.portfolio-page {
+  text-align: center;
+}
 
-  .work-item {
-    text-align: center; /* 内部文字居中 */
-  }
+/* 单列网格，图片居中靠上 */
+.works-grid {
+  display: flex;
+  justify-content: center;      /* 水平居中 */
+  margin-bottom: 30px;
+}
 
-  .work-item img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;    /* 不超过容器宽度 */
-    height: auto;       /* 保持比例 */
-    transition: transform 0.3s ease; /* 悬停放大动画 */
-  }
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* 靠上 */
+  align-items: center;          /* 水平居中 */
+  max-width: 600px;
+}
 
-  /* 鼠标悬停放大 */
-  .work-item img:hover {
-    transform: scale(1.5); /* 放大1.5倍 */
-  }
+.work-item img {
+  max-height: 600px;            /* 最大高度 */
+  width: auto;                  /* 保持比例 */
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* 悬停放大动画 */
+}
 
-  /* Back按钮样式 */
-  .back-button {
-    display: inline-block;
-    margin: 40px auto 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-  }
-  .back-button:hover {
-    background-color: #555;
-  }
+/* 鼠标悬停放大 */
+.work-item img:hover {
+  transform: scale(1.1);       /* 悬停放大 10% */
+}
+
+/* Back按钮样式 */
+.back-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
 </style>
 
 <div class="portfolio-page">
@@ -69,6 +74,7 @@ author_profile: false
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>
 
+  <!-- 作品网格 -->
   <div class="works-grid">
     <div class="work-item">
       <a href="/portfolio/figma/app-moonlight/">
@@ -78,5 +84,6 @@ author_profile: false
     </div>
   </div>
 
+  <!-- 回到 Portfolio 按钮 -->
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
