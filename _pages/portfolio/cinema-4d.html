@@ -1,9 +1,10 @@
----
+--- 
 layout: default
 title: "Cinema 4D"
 permalink: /portfolio/cinema4d/
 author_profile: false
 ---
+
 <style>
 .work-item img {
   display: block;
@@ -12,8 +13,25 @@ author_profile: false
   height: auto;
 }
 
+/* Back 按钮圆角居中 */
+.back-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px; /* 圆角更大 */
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
+</style>
+
 <div class="portfolio-page">
   <h1 class="portfolio-title">Cinema 4D Works</h1>
+
   <!-- 分类导航 -->
   <div class="categories">
     <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
@@ -30,6 +48,7 @@ author_profile: false
     <a href="{{ '/portfolio/figma' | relative_url }}">Figma</a>
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>  
+
   <div class="works-grid">
     <div class="work-item">
       <a href="/portfolio/cinema4d/fantasy-earth/">
@@ -38,5 +57,6 @@ author_profile: false
       </a>
     </div>
   </div>
+
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
