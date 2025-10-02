@@ -9,6 +9,10 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png" type="image/png">
   </head>
 
   <body>
@@ -29,14 +33,18 @@ layout: compress
 
   </body>
 </html>
+
 <script>
+  // 根据图片宽高给 work-item 加 class
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".work-item img").forEach(img => {
       function setClass() {
+        const item = img.closest(".work-item");
+        if (!item) return;
         if (img.naturalWidth > img.naturalHeight) {
-          img.parentElement.classList.add("landscape");
+          item.classList.add("landscape");
         } else {
-          img.parentElement.classList.add("portrait");
+          item.classList.add("portrait");
         }
       }
       if (img.complete) {
@@ -46,18 +54,4 @@ layout: compress
       }
     });
   });
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".work-item img").forEach(img => {
-    img.onload = function () {
-      const item = img.closest(".work-item");
-      if (img.naturalWidth > img.naturalHeight) {
-        item.classList.add("landscape");
-      } else {
-        item.classList.add("portrait");
-      }
-    };
-  });
-});
 </script>
