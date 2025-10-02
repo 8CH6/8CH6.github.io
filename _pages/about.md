@@ -230,6 +230,48 @@ section.visible, .skill.visible, .tooltip.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* 回到顶部按钮样式 */
+#back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: rgba(51,51,51,0.8);
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 10000;
+  display: none;
+  text-align: center;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+}
+#back-to-top:hover {
+  background-color: rgba(85,85,85,0.9);
+  transform: translateY(-2px);
+}
+
+/* 响应式：小屏幕适配 */
+@media (max-width: 768px) {
+  #back-to-top {
+    right: 15px;
+    bottom: 70px;
+    font-size: 20px;
+    padding: 10px 14px;
+  }
+}
+@media (max-width: 480px) {
+  #back-to-top {
+    right: 10px;
+    bottom: 60px;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
 </style>
 
 <script>
@@ -242,47 +284,13 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 document.querySelectorAll('section, .skill, .tooltip').forEach(el => observer.observe(el));
-</script>
-<!-- 回到顶部按钮 -->
-<div id="back-to-top" title="Back to top">⬆</div>
 
-<style>
-  #back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    background-color: #333;
-    color: #fff;
-    font-size: 24px;       /* 加大字体更明显 */
-    padding: 12px 16px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: background-color 0.3s, transform 0.2s;
-    z-index: 1000;
-    display: none;          /* 默认隐藏，滚动时显示 */
-    text-align: center;
-    line-height: 1;
-  }
-
-  #back-to-top:hover {
-    background-color: #555;
-    transform: translateY(-2px);
-  }
-</style>
-
-<script>
-  const backToTop = document.getElementById('back-to-top');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTop.style.display = 'block';
-    } else {
-      backToTop.style.display = 'none';
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+/* 回到顶部按钮逻辑 */
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  backToTop.style.display = (window.scrollY > 300) ? 'block' : 'none';
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 </script>
