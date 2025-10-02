@@ -8,6 +8,17 @@ author_profile: false
 <div class="portfolio-page">
   <h1 class="portfolio-title">Portfolio Works</h1>
 
+    <!-- ===== 分类按钮导航 ===== -->
+  <div class="portfolio-categories">
+    <a href="/portfolio/illustrator/">Illustrator</a>
+    <a href="/portfolio/photoshop/">Photoshop</a>
+    <a href="/portfolio/cinema4d/">Cinema 4D</a>
+    <a href="/portfolio/solidworks/">SolidWorks</a>
+    <a href="/portfolio/arduino/">Arduino</a>
+    <a href="/portfolio/aftereffects/">After Effects</a>
+    <a href="/portfolio/video/">Video</a>
+  </div>
+
   <div class="works-grid">
 
     <!-- Illustrator -->
@@ -237,44 +248,63 @@ author_profile: false
 <a href="#" id="back-to-top">↑</a>
 
 <style>
-.portfolio-page {
-  padding: 20px;
-}
-
 .portfolio-title {
   text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.portfolio-categories {
+  text-align: center;
   margin-bottom: 40px;
-  font-size: 2rem;
+}
+.portfolio-categories a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 18px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.portfolio-categories a:hover {
+  background: #333;
+  color: #fff;
 }
 
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 25px;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
 }
 
 .work-item {
   text-align: center;
 }
-
 .work-item img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .work-item img:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
 }
-
 .work-item p {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 1rem;
-  color: #333;
+  color: #444;
 }
-
+</style>
 /* 回到顶部按钮 */
 #back-to-top {
   position: fixed;
