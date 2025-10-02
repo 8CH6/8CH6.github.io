@@ -16,15 +16,55 @@ author_profile: false
 <section class="works-section">
   <h2 class="works-title">Featured Works</h2>
   <div class="works-grid">
+
+    <!-- Work 1 -->
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Work 1">
+      <a href="/portfolio/cinema4d/fantasy-earth/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Fantasy Earth">
+        <p class="work-title">Fantasy Earth</p>
+      </a>
     </div>
+
+    <!-- Work 2 -->
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Work 2">
+      <a href="/portfolio/aftereffects/the-seed-of-hope/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="The Seed of Hope">
+        <p class="work-title">The Seed of Hope</p>
+      </a>
     </div>
+
+    <!-- Work 3 -->
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Work 3">
+      <a href="/portfolio/illustrator/random-word-technique/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Random Word Technique">
+        <p class="work-title">Random Word Technique</p>
+      </a>
     </div>
+
+    <!-- Work 4 -->
+    <div class="work-item">
+      <a href="/portfolio/arduino/hcare-emergency-call-bell/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Hcare Emergency Call Bell">
+        <p class="work-title">Hcare Emergency Call Bell</p>
+      </a>
+    </div>
+
+    <!-- Work 5 -->
+    <div class="work-item">
+      <a href="/portfolio/solidworks/mechanical-design/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Mechanical Design">
+        <p class="work-title">Mechanical Design</p>
+      </a>
+    </div>
+
+    <!-- Work 6 -->
+    <div class="work-item">
+      <a href="/portfolio/touchdesigner/interactive-installation/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/484bbbe70011c1635683ba0cd0116ce.png" alt="Interactive Installation">
+        <p class="work-title">Interactive Installation</p>
+      </a>
+    </div>
+
   </div>
   <a href="/portfolio/" class="btn-more">SEE MORE</a>
 </section>
@@ -134,6 +174,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
+.work-item a {
+  text-decoration: none;
+  color: inherit;
+}
 .work-item img {
   width: 100%;
   height: 250px;
@@ -145,6 +189,12 @@ body {
 .work-item img:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+.work-title {
+  margin-top: 12px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #222;
 }
 
 /* ===== Animations ===== */
