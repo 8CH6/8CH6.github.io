@@ -11,8 +11,9 @@ layout: compress
     {% include head/custom.html %}
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png" type="image/png">
+<!-- favicon 防缓存 -->
+<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png?v={{ site.time | date: '%s' }}">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png?v={{ site.time | date: '%s' }}" type="image/png">
   </head>
 
   <body>
