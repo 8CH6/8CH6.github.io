@@ -5,23 +5,26 @@ permalink: /portfolio/unity/
 author_profile: false
 ---
 <style>
-/* 页面内容居中（水平+垂直） */
+/* 页面布局，水平居中 */
 .portfolio-page {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 垂直居中 */
-  align-items: center;     /* 水平居中 */
-  min-height: 100vh;       /* 页面至少占满整个视口高度 */
+  align-items: center;
   text-align: center;
-  padding: 20px;
 }
 
-/* work-item 内容水平居中，文字居中 */
+/* 分类导航保持原样 */
+.categories {
+  margin-bottom: 30px;
+}
+
+/* work-item 内容居中 */
 .work-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* 图片自适应宽度，保持比例 */
@@ -30,10 +33,10 @@ author_profile: false
   height: auto;
 }
 
-/* Back按钮居中并圆角 */
+/* Back按钮居中并样式保持 */
 .back-button {
   display: inline-block;
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
@@ -49,6 +52,24 @@ author_profile: false
 <div class="portfolio-page">
   <h1 class="portfolio-title">Unity Works</h1>
 
+  <!-- 分类导航 -->
+  <div class="categories">
+    <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
+    <a href="{{ '/portfolio/photoshop' | relative_url }}">Photoshop</a>
+    <a href="{{ '/portfolio/cinema4d' | relative_url }}">Cinema 4D</a>
+    <a href="{{ '/portfolio/solidworks' | relative_url }}">SolidWorks</a>
+    <a href="{{ '/portfolio/processing' | relative_url }}">Processing</a>
+    <a href="{{ '/portfolio/aftereffects' | relative_url }}">After Effects</a>
+    <a href="{{ '/portfolio/touchdesigner' | relative_url }}">TouchDesigner</a>
+    <a href="{{ '/portfolio/lightroom' | relative_url }}">Lightroom</a>
+    <a href="{{ '/portfolio/arduino' | relative_url }}">Arduino</a>
+    <a href="{{ '/portfolio/unity' | relative_url }}">Unity</a>
+    <a href="{{ '/portfolio/vroid' | relative_url }}">Vroid</a>
+    <a href="{{ '/portfolio/figma' | relative_url }}">Figma</a>
+    <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
+  </div>
+
+  <!-- 作品 -->
   <div class="works-grid">
     <div class="work-item">
       <a href="/portfolio/unity/tiffany-virtual-run/">
