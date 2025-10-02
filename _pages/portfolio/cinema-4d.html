@@ -12,12 +12,22 @@ author_profile: false
 
 /* 分类导航 */
 .categories {
+  display: flex;
+  flex-wrap: wrap;        /* 自动换行 */
+  justify-content: center; /* 居中对齐 */
+  gap: 10px;              /* 按钮间距保留原样 */
   margin-bottom: 30px;
 }
 .categories a {
-  margin: 0 8px;
+  flex: 0 1 calc(16.66% - 10px);  /* 每行显示6个按钮 */
+  padding: 6px 12px;
   text-decoration: none;
   color: inherit;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
 }
 
 /* 单列网格 */
@@ -36,7 +46,7 @@ author_profile: false
 }
 
 .work-item img {
-  max-height: 600px;   /* 高度放大，但不超过400px */
+  max-height: 600px;   /* 高度放大 */
   width: auto;         /* 保持比例 */
   display: block;
   margin: 0 auto;
@@ -50,7 +60,7 @@ author_profile: false
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  border-radius: 30px; /* 圆角30px */
+  border-radius: 20px; /* 圆角20px */
   transition: background-color 0.3s;
 }
 .back-button:hover {
@@ -78,6 +88,7 @@ author_profile: false
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>  
 
+  <!-- 作品网格 -->
   <div class="works-grid">
     <div class="work-item">
       <a href="/portfolio/cinema4d/fantasy-earth/">
@@ -87,5 +98,6 @@ author_profile: false
     </div>
   </div>
 
+  <!-- 回到 Portfolio 按钮 -->
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
