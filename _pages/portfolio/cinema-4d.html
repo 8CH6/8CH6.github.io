@@ -13,46 +13,56 @@ author_profile: false
 /* 分类导航 */
 .categories {
   display: flex;
-  flex-wrap: wrap;        /* 自动换行 */
-  justify-content: center; /* 居中对齐 */
-  gap: 10px;              /* 按钮间距保留原样 */
+  flex-wrap: wrap;          /* 自动换行 */
+  justify-content: center;   /* 居中对齐 */
+  gap: 8px;                 /* 保留原有按钮间隔 */
   margin-bottom: 30px;
 }
 .categories a {
-  flex: 0 1 calc(16.66% - 10px);  /* 每行显示6个按钮 */
-  padding: 6px 12px;
+  padding: 6px 12px;        /* 按钮内边距 */
   text-decoration: none;
   color: inherit;
+  border-radius: 6px;       /* 按钮圆角 */
+  background-color: #f0f0f0;
   text-align: center;
   white-space: nowrap;
-  border-radius: 6px;
-  background-color: #f0f0f0;
   transition: background-color 0.3s;
 }
+.categories a:hover {
+  background-color: #e0e0e0;
+}
 
-/* 单列网格 */
+/* 第一行固定6个按钮 */
+.categories a:nth-child(-n+6) {
+  flex: 0 1 calc(16.66% - 8px); /* 平均分配宽度，减去间距 */
+}
+.categories a:nth-child(n+7) {
+  flex: 0 1 auto;               /* 其他按钮自适应宽度换行 */
+}
+
+/* 单列网格，图片居中 */
 .works-grid {
   display: flex;
-  justify-content: center; /* 水平居中整个格子 */
+  justify-content: center;      /* 水平居中 */
   margin-bottom: 30px;
 }
 
 .work-item {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 垂直居中 */
-  align-items: center;     /* 水平居中 */
+  justify-content: center;      /* 垂直居中 */
+  align-items: center;          /* 水平居中 */
   max-width: 600px;
 }
 
 .work-item img {
-  max-height: 600px;   /* 高度放大 */
-  width: auto;         /* 保持比例 */
+  max-height: 600px;            /* 高度放大 */
+  width: auto;                  /* 保持比例 */
   display: block;
   margin: 0 auto;
 }
 
-/* Back按钮居中并圆角 */
+/* Back按钮居中并圆角20px */
 .back-button {
   display: inline-block;
   margin: 20px auto;
@@ -60,7 +70,7 @@ author_profile: false
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  border-radius: 20px; /* 圆角20px */
+  border-radius: 20px;          /* 圆角20px */
   transition: background-color 0.3s;
 }
 .back-button:hover {
