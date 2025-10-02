@@ -97,8 +97,8 @@ window.onload = typing;
 ---
 
 ## 📄 Publication
-- **2025 Apr** · Manuscript provisionally scheduled for publication in *Huazhang*, p.129  
-  *(CN22-1282/I · ISSN 1009-5489)*  
+**Jul 2023 – Nov 2024** · National Innovation & Entrepreneurship Programme, China (Project ID: 654112300195) – *Living Conditions and Service Needs of Women Living Alone in Ningbo: Policy-Oriented Research*; Team Lead (Liu Shutong, Yan Xinyi, Dong Xuanru, Shi Jin, You); led mixed-methods study informing social policy; manuscript scheduled for publication in *Huazhang* (Apr 2025); National-level award.  
+*(CN22-1282/I · ISSN 1009-5489)*
 
 ---
 
