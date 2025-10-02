@@ -29,6 +29,14 @@ author_profile: false
   align-items: center;           /* 水平居中作品 */
 }
 
+/* works-grid 居中单个作品 */
+.works-grid {
+  display: flex;
+  justify-content: center;       /* 水平居中作品 */
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 /* work-item 内容居中 */
 .work-item {
   display: flex;
@@ -47,7 +55,7 @@ author_profile: false
 /* Back按钮居中并样式保持 */
 .back-button {
   display: inline-block;
-  margin: 20px auto;
+  margin: 20px auto 0;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
