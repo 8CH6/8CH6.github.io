@@ -17,51 +17,57 @@ author_profile: false
   <h2 class="works-title">Featured Works</h2>
   <div class="works-grid">
 
-    <!-- Work 1 -->
+    <!-- Work 1: Wenchang Chicken Traceability System -->
     <div class="work-item">
-      <a href="/portfolio/cinema4d/fantasy-earth/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" alt="Fantasy Earth">
-        <p class="work-title">Fantasy Earth</p>
+      <a href="/portfolio/aftereffects/wenchang-chicken-traceability-system/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" 
+             alt="Wenchang Chicken Traceability System">
+        <p class="work-title">Wenchang Chicken Traceability System</p>
       </a>
     </div>
 
-    <!-- Work 2 -->
+    <!-- Work 2: Intelligent Liquid Analysis System -->
     <div class="work-item">
-      <a href="/portfolio/aftereffects/the-seed-of-hope/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="The Seed of Hope">
-        <p class="work-title">The Seed of Hope</p>
+      <a href="/portfolio/arduino/intelligent-liquid-analysis-system/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" 
+             alt="Intelligent Liquid Analysis System">
+        <p class="work-title">Intelligent Liquid Analysis System</p>
       </a>
     </div>
 
-    <!-- Work 3 -->
-    <div class="work-item">
-      <a href="/portfolio/illustrator/random-word-technique/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Random Word Technique">
-        <p class="work-title">Random Word Technique</p>
-      </a>
-    </div>
-
-    <!-- Work 4 -->
+    <!-- Work 3: Hcare Emergency Call Bell -->
     <div class="work-item">
       <a href="/portfolio/arduino/hcare-emergency-call-bell/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Hcare Emergency Call Bell">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" 
+             alt="Hcare Emergency Call Bell">
         <p class="work-title">Hcare Emergency Call Bell</p>
       </a>
     </div>
 
-    <!-- Work 5 -->
+    <!-- Work 4: Dragon Spring Sword -->
     <div class="work-item">
-      <a href="/portfolio/solidworks/mechanical-design/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Mechanical Design">
-        <p class="work-title">Mechanical Design</p>
+      <a href="/portfolio/touchdesigner/dragon-spring-sword/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" 
+             alt="Dragon Spring Sword">
+        <p class="work-title">Dragon Spring Sword</p>
       </a>
     </div>
 
-    <!-- Work 6 -->
+    <!-- Work 5: Tiffany Virtual Run (Unity) -->
     <div class="work-item">
-      <a href="/portfolio/touchdesigner/interactive-installation/">
-        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/484bbbe70011c1635683ba0cd0116ce.png" alt="Interactive Installation">
-        <p class="work-title">Interactive Installation</p>
+      <a href="/portfolio/unity/tiffany-virtual-run/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" 
+             alt="Tiffany Virtual Run">
+        <p class="work-title">Tiffany Virtual Run</p>
+      </a>
+    </div>
+
+    <!-- Work 6: App-Moonlight (Figma) -->
+    <div class="work-item">
+      <a href="/portfolio/figma/app-moonlight/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/484bbbe70011c1635683ba0cd0116ce.png" 
+             alt="App-Moonlight">
+        <p class="work-title">App-Moonlight</p>
       </a>
     </div>
 
