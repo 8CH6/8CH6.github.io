@@ -1,24 +1,72 @@
 ---
 layout: default
-title: "Guided Video"
-permalink: /portfolio/video/guided-video/
+title: "Anya"
+permalink: /portfolio/vroid/anya/
 author_profile: false
 ---
 
+<style>
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.project-meta {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.back-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.back-button {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
+</style>
+
 <div class="portfolio-page">
-  <h1 class="portfolio-title">Guided Video</h1>
+  <h1 class="portfolio-title">Anya</h1>
+
+
+  <!-- 视频 -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/n6Il_rQBe0E" allowfullscreen></iframe>
+  </div>
 
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Uao1CtZ7u0s" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/SuyQIF1BR3c" allowfullscreen></iframe>
   </div>
 
+  <!-- 项目描述 -->
   <div class="project-meta">
-    <p class="project-description">An instructional video designed to guide and inspire learning.</p>
-    <p class="project-details">Role: Motion Designer · Tools: After Effects · Year: 2024</p>
+    <p class="project-description">Vroid 3D model showcase of Anya.</p>
+    <p class="project-details">Role: 3D Modeler · Tools: Vroid Studio · Year: 2024</p>
   </div>
 
+  <!-- 返回链接 -->
   <div class="back-links">
-    <a href="{{ '/portfolio/video/' | relative_url }}" class="back-button">← Back to Video</a>
+    <a href="{{ '/portfolio/vroid/' | relative_url }}" class="back-button">← Back to Vroid</a>
     <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
   </div>
 </div>
