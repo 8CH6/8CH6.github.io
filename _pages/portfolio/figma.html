@@ -23,9 +23,10 @@ author_profile: false
   .work-item img {
     display: block;
     margin: 0 auto;
-    width: 150%;   /* 放大图片 */
-    max-width: 150%; /* 限制最大放大比例，防止溢出 */
-    height: auto;
+    max-width: 100%;    /* 不超过容器宽度 */
+    height: auto;       /* 保持比例 */
+    transform: scale(1.5);  /* 等比例放大 1.5 倍 */
+    transition: transform 0.3s; /* 悬停放大动画可选 */
   }
 
   /* Back按钮样式 */
