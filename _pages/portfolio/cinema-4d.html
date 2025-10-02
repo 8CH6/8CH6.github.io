@@ -1,4 +1,4 @@
---- 
+---
 layout: default
 title: "Cinema 4D"
 permalink: /portfolio/cinema4d/
@@ -6,14 +6,43 @@ author_profile: false
 ---
 
 <style>
-.work-item img {
-  display: block;
-  margin: 0 auto;    /* 图片居中 */
-  max-width: 70%;    /* 图片稍大一些 */
-  height: auto;
+.portfolio-page {
+  text-align: center;
 }
 
-/* Back 按钮圆角居中 */
+/* 分类导航 */
+.categories {
+  margin-bottom: 30px;
+}
+.categories a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 单列网格（这里只有一个作品） */
+.works-grid {
+  display: flex;
+  justify-content: center; /* 水平居中整个格子 */
+  margin-bottom: 30px;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中 */
+  align-items: center;     /* 水平居中 */
+  max-width: 400px;
+}
+
+.work-item img {
+  height: 400px;       /* 高度加大 */
+  width: auto;         /* 保持比例 */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Back按钮居中并圆角 */
 .back-button {
   display: inline-block;
   margin: 20px auto;
@@ -21,7 +50,7 @@ author_profile: false
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  border-radius: 20px; /* 圆角更大 */
+  border-radius: 20px; /* 圆角20px */
   transition: background-color 0.3s;
 }
 .back-button:hover {
