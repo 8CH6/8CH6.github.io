@@ -51,26 +51,31 @@ author_profile: false
     }
   }
 
-  /* 回到顶部按钮 */
+
+  /* 回到顶部按钮样式 */
   #back-to-top {
     position: fixed;
     right: 30px;
     bottom: 30px;
     background-color: #333;
     color: #fff;
+    font-size: 18px;
     padding: 12px 16px;
-    border-radius: 8px;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: background-color 0.3s, transform 0.2s;
     z-index: 1000;
+    display: none; /* 默认隐藏，滚动时显示 */
+    text-align: center;
+    line-height: 1;
   }
 
   #back-to-top:hover {
     background-color: #555;
     transform: translateY(-2px);
   }
+
 </style>
 <div class="portfolio-page">
   <h1 class="portfolio-title">WORKS</h1>
@@ -322,4 +327,23 @@ author_profile: false
   </div>
 </div>
 <!-- 回到顶部按钮 -->
-<div id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Top</div>
+<!-- 回到顶部按钮 -->
+<div id="back-to-top" title="Back to top">↑</div>
+<script>
+  // 获取回到顶部按钮
+  const backToTop = document.getElementById('back-to-top');
+
+  // 滚动时显示或隐藏按钮
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // 滚动300px后显示
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  // 点击按钮平滑回到顶部
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
