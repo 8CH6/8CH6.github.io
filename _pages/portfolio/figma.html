@@ -10,7 +10,7 @@ author_profile: false
   .works-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 水平居中 */
+    justify-content: center; /* 水平居中作品 */
     gap: 30px;
   }
 
@@ -23,13 +23,6 @@ author_profile: false
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-  }
-
-  .back-button {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #333;
   }
 </style>
 
@@ -62,7 +55,5 @@ author_profile: false
     </div>
   </div>
 
-  <div style="text-align: center;">
-    <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
-  </div>
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
