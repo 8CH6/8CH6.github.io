@@ -6,72 +6,106 @@ author_profile: false
 ---
 
 <style>
-/* 页面布局，垂直+水平居中 */
-.portfolio-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+/* ====== 强覆盖：确保单个作品居中（权重高） ====== */
+/* 限制范围到当前页面，避免影响全站过多元素 */
+body .portfolio-page {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  min-height: 100vh !important;
+  box-sizing: border-box !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 
-/* 分类导航保持原样 */
-.categories {
+/* 分类导航 保持原样但确保在本页面可见 */
+body .portfolio-page .categories {
   margin-bottom: 30px;
-}
-
-/* 作品和按钮的容器，使作品固定在屏幕中间 */
-.content-wrapper {
-  flex: 1;                      /* 占满剩余空间 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;       /* 垂直居中作品 */
-  align-items: center;           /* 水平居中作品 */
-}
-
-/* works-grid 居中单个作品 */
-.works-grid {
-  display: flex;
-  justify-content: center;       /* 水平居中作品 */
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-/* work-item 内容居中 */
-.work-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-/* 图片自适应宽度，保持比例 */
-.work-item img {
-  max-width: 100%;
-  height: auto;
+/* works-grid：即便全局被重写也强制为 flex 居中 */
+body .portfolio-page .works-grid {
+  display: flex !important;
+  justify-content: center !important;   /* 水平居中 */
+  align-items: center !important;       /* 垂直居中单个项目时用到 */
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+  width: 100% !important;
+  max-width: 1100px !important;         /* 保持和其他页面一致的宽度容器 */
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  padding: 0 16px !important;
 }
 
-/* Back按钮居中并样式保持 */
-.back-button {
-  display: inline-block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+/* work-item：强制水平居中卡片，保证单个项目居中显示 */
+body .portfolio-page .work-item {
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 600px !important;          /* 卡片最大宽度（可调整） */
+  box-sizing: border-box !important;
 }
-.back-button:hover {
-  background-color: #555;
+
+/* 图片在卡片内居中并保持比例，不超过卡片宽度 */
+body .portfolio-page .work-item img {
+  display: block !important;
+  margin: 0 auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* 标题文本保持在图片下方居中 */
+body .portfolio-page .work-item p {
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  font-weight: 600 !important;
+  color: inherit !important;
+}
+
+/* Back 按钮保持你原来的样式并居中 */
+body .portfolio-page .back-button {
+  display: inline-block !important;
+  margin: 20px auto 0 !important;
+  padding: 10px 20px !important;
+  background-color: #333 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 20px !important;
+  transition: background-color 0.3s !important;
+  box-sizing: border-box !important;
+}
+body .portfolio-page .back-button:hover {
+  background-color: #555 !important;
+}
+
+/* 响应式：窄屏时保持单列并适当间距 */
+@media screen and (max-width: 768px) {
+  body .portfolio-page {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  body .portfolio-page .work-item {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  body .portfolio-page .works-grid {
+    gap: 20px !important;
+  }
 }
 </style>
 
 <div class="portfolio-page">
   <h1 class="portfolio-title">Unity Works</h1>
 
-  <!-- 分类导航 -->
+  <!-- 分类导航（保持原样） -->
   <div class="categories">
     <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
     <a href="{{ '/portfolio/photoshop' | relative_url }}">Photoshop</a>
@@ -88,18 +122,16 @@ author_profile: false
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>
 
-  <!-- 作品和按钮容器 -->
-  <div class="content-wrapper">
-    <div class="works-grid">
-      <div class="work-item">
-        <a href="/portfolio/unity/tiffany-virtual-run/">
-          <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Tiffany Virtual Run">
-          <p>Tiffany Virtual Run</p>
-        </a>
-      </div>
+  <!-- 作品容器（单个作品将居中） -->
+  <div class="works-grid">
+    <div class="work-item">
+      <a href="/portfolio/unity/tiffany-virtual-run/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Tiffany Virtual Run">
+        <p>Tiffany Virtual Run</p>
+      </a>
     </div>
-
-    <!-- 回到 Portfolio 按钮 -->
-    <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
   </div>
+
+  <!-- 回到 Portfolio 按钮（保持不变） -->
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
