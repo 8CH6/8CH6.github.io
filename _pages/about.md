@@ -104,83 +104,76 @@ window.onload = typing;
 
 ## ⚡ Tools
 
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
+<div class="tool-grid">
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image1.png" alt="Lightroom" style="height:60px;"><br>
-    Lightroom
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image1.png" alt="Lightroom"><br>Lightroom
     <span class="tooltiptext">Adobe Lightroom – Photo Editing</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image2.png" alt="Illustrator" style="height:60px;"><br>
-    Illustrator
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image2.png" alt="Illustrator"><br>Illustrator
     <span class="tooltiptext">Adobe Illustrator – Vector Graphics</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image3.png" alt="Adobe After Effects" style="height:60px;"><br>
-    After Effects
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image3.png" alt="After Effects"><br>After Effects
     <span class="tooltiptext">Motion Graphics & VFX</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image4.png" alt="TouchDesigner" style="height:60px;"><br>
-    TouchDesigner
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image4.png" alt="TouchDesigner"><br>TouchDesigner
     <span class="tooltiptext">Interactive Media</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image5.png" alt="Cinema 4D" style="height:60px;"><br>
-    Cinema 4D
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image5.png" alt="Cinema 4D"><br>Cinema 4D
     <span class="tooltiptext">3D Motion Design</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/solidworks.png" alt="SolidWorks" style="height:60px;"><br>
-    SolidWorks
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/solidworks.png" alt="SolidWorks"><br>SolidWorks
     <span class="tooltiptext">3D CAD Design</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/unity.png" alt="Unity" style="height:60px;"><br>
-    Unity
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/unity.png" alt="Unity"><br>Unity
     <span class="tooltiptext">Game & Interactive Development</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Arduino" style="height:60px;"><br>
-    Arduino
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image8.png" alt="Arduino"><br>Arduino
     <span class="tooltiptext">Physical Computing</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image9.png" alt="Vroid" style="height:60px;"><br>
-    Vroid
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image9.png" alt="Vroid"><br>Vroid
     <span class="tooltiptext">3D Avatar Creation</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image10.png" alt="Photoshop" style="height:60px;"><br>
-    Photoshop
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image10.png" alt="Photoshop"><br>Photoshop
     <span class="tooltiptext">Image Editing</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image11.png" alt="Figma" style="height:60px;"><br>
-    Figma
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image11.png" alt="Figma"><br>Figma
     <span class="tooltiptext">UI/UX Design</span>
   </div>
   <div class="tooltip">
-    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image12.png" alt="Processing" style="height:60px;"><br>
-    Processing
+    <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/image12.png" alt="Processing"><br>Processing
     <span class="tooltiptext">Creative Coding</span>
   </div>
 </div>
 
----
+<!-- 回到顶部按钮 -->
+<div id="back-to-top" title="Back to top">⬆</div>
 
 <style>
 /* 打字机效果 */
 .typing {
-  font-size: 1.2em;
+  font-size: clamp(0.9em, 4vw, 1.2em);
   font-weight: bold;
   border-right: 2px solid #666;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 
 /* 技能条 */
-.skill { margin: 12px 0; }
+.skill {
+  margin: 12px 0;
+  padding: 0 10px;
+}
 .bar {
   width: 100%;
   background: #ddd;
@@ -199,7 +192,12 @@ window.onload = typing;
 }
 
 /* 工具 tooltip */
-.tooltip { position: relative; display: inline-block; transition: transform 0.3s ease; }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin: 10px 0;
+}
 .tooltip:hover { transform: scale(1.1); }
 .tooltiptext {
   visibility: hidden;
@@ -220,6 +218,15 @@ window.onload = typing;
   opacity: 1;
 }
 
+/* 工具栏响应式网格 */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
+  text-align: center;
+  padding: 0 10px;
+}
+
 /* 淡入动画 */
 section, .skill, .tooltip {
   opacity: 0;
@@ -231,15 +238,15 @@ section.visible, .skill.visible, .tooltip.visible {
   transform: translateY(0);
 }
 
-/* 回到顶部按钮样式 */
+/* 回到顶部按钮 */
 #back-to-top {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 20px;
+  bottom: 20px;
   background-color: rgba(51,51,51,0.8);
   color: #fff;
-  font-size: 24px;
-  padding: 12px 16px;
+  font-size: 22px;
+  padding: 10px 14px;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -255,22 +262,17 @@ section.visible, .skill.visible, .tooltip.visible {
   transform: translateY(-2px);
 }
 
-/* 响应式：小屏幕适配 */
+/* 响应式 */
 @media (max-width: 768px) {
-  #back-to-top {
-    right: 15px;
-    bottom: 70px;
-    font-size: 20px;
-    padding: 10px 14px;
-  }
+  .typing { font-size: 1em; }
+  .skill { padding: 0 5px; }
+  .tooltip img { height: 50px; }
+  #back-to-top { right: 15px; bottom: 60px; font-size: 20px; padding: 8px 12px; }
 }
 @media (max-width: 480px) {
-  #back-to-top {
-    right: 10px;
-    bottom: 60px;
-    font-size: 18px;
-    padding: 8px 12px;
-  }
+  .typing { font-size: 0.9em; }
+  .tooltip img { height: 40px; }
+  #back-to-top { right: 10px; bottom: 50px; font-size: 18px; padding: 6px 10px; }
 }
 </style>
 
@@ -278,9 +280,7 @@ section.visible, .skill.visible, .tooltip.visible {
 /* 滚动淡入效果 */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if(entry.isIntersecting) entry.target.classList.add('visible');
   });
 });
 document.querySelectorAll('section, .skill, .tooltip').forEach(el => observer.observe(el));
