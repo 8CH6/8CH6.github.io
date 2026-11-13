@@ -1,93 +1,108 @@
-/* 全局 About 页样式 */
-.about-section {
-  background: #000;   /* 黑色背景 */
-  color: #fff;        /* 白字 */
-  padding: 2rem;
-  border-radius: 12px;
-}
+/* ========================================
+   Portfolio Custom Styles
+   ======================================== */
 
-.about-block {
-  margin-bottom: 3rem;
-}
-
-.about-block h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.about-block p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.about-links {
-  list-style: none;
-  padding: 0;
-}
-
-.about-links li {
-  margin: 0.5rem 0;
-}
-
-.about-links a {
-  color: #1da1f2;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.photo-grid {
+/* Works Grid 默认 2 列 */
+.works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 30px;
 }
 
-.photo-grid img {
+/* Work Item */
+.work-item {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  max-width: 480px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.work-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
 }
 
-.skill-tag {
-  background: #1da1f2;
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-item:hover img {
+  transform: scale(1.05);
+}
+
+.work-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
   color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  pointer-events: none;
 }
-/* ===== 导航栏按钮居中样式 ===== */
-.greedy-nav {
+
+/* Back Button 样式 */
+.back-button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+/* 单个作品居中：判断 works-grid 内只有一个 work-item */
+.works-grid:only-child,
+.works-grid:has(.work-item:only-child) {
   display: flex;
-  justify-content: center; /* 整体居中 */
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* 高度可调 */
 }
 
-.greedy-nav .visible-links {
-  margin: 0 auto; /* 按钮组居中 */
-  display: flex;
-  gap: 20px; /* 按钮间距 */
+/* 响应式：手机端 1 列 */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+  .work-item {
+    max-width: 90%;
+  }
+}
+/* 仅 Portfolio 页面及子页面生效 */
+.portfolio-page {
+  background: linear-gradient(135deg, #ffffff, #f7f9fc, #ffffff);
+  background-size: 400% 400%;
+  animation: subtleGradient 20s ease infinite;
 }
 
-.greedy-nav .site-title {
-  margin-right: auto; /* logo 固定在最左，按钮依然居中 */
+@keyframes subtleGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-/* 导航栏居中 */
-.masthead__menu #site-nav.greedy-nav {
-  justify-content: center;   /* 居中对齐 */
-}
-
-.masthead__menu #site-nav.greedy-nav .visible-links {
-  margin: 0 auto;            /* 左右自动留白 */
-}
-

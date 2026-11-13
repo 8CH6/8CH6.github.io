@@ -5,12 +5,86 @@ permalink: /portfolio/cinema4d/
 author_profile: false
 ---
 
+<style>
+.portfolio-page {
+  text-align: center;
+}
+
+/* 单列网格，图片居中 */
+.works-grid {
+  display: flex;
+  justify-content: center;      /* 水平居中 */
+  flex-wrap: wrap;              /* 多作品自动换行 */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* 垂直居中 */
+  align-items: center;          /* 水平居中 */
+  max-width: 600px;
+}
+
+.work-item img {
+  max-height: 600px;            /* 最大高度 */
+  width: auto;                  /* 保持比例 */
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* 悬停放大动画 */
+}
+
+.work-item img:hover {
+  transform: scale(1.1);        /* 悬停放大 10% */
+}
+
+/* Back按钮居中并圆角20px */
+.back-button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #555;
+}
+</style>
+
 <div class="portfolio-page">
   <h1 class="portfolio-title">Cinema 4D Works</h1>
 
-  <div class="works-grid">
-    <div class="work-item"><img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/color.png"><p>Fantasy Earth</p></div>
+  <!-- 分类导航 -->
+  <div class="categories">
+    <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
+    <a href="{{ '/portfolio/photoshop' | relative_url }}">Photoshop</a>
+    <a href="{{ '/portfolio/cinema4d' | relative_url }}">Cinema 4D</a>
+    <a href="{{ '/portfolio/solidworks' | relative_url }}">SolidWorks</a>
+    <a href="{{ '/portfolio/processing' | relative_url }}">Processing</a>
+    <a href="{{ '/portfolio/aftereffects' | relative_url }}">After Effects</a>
+    <a href="{{ '/portfolio/touchdesigner' | relative_url }}">TouchDesigner</a>
+    <a href="{{ '/portfolio/lightroom' | relative_url }}">Lightroom</a>
+    <a href="{{ '/portfolio/arduino' | relative_url }}">Arduino</a>
+    <a href="{{ '/portfolio/unity' | relative_url }}">Unity</a>
+    <a href="{{ '/portfolio/vroid' | relative_url }}">Vroid</a>
+    <a href="{{ '/portfolio/figma' | relative_url }}">Figma</a>
+    <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
   </div>
 
-  <a href="{{ '/portfolio' | relative_url }}" class="back-button">← Back to Portfolio</a>
+  <!-- 作品网格 -->
+  <div class="works-grid">
+    <div class="work-item">
+      <a href="/portfolio/cinema4d/fantasy-earth/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/color.png" alt="Fantasy Earth">
+        <p>Fantasy Earth</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- 回到 Portfolio 按钮 -->
+  <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>

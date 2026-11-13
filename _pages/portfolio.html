@@ -5,6 +5,78 @@ permalink: /portfolio/
 author_profile: false
 ---
 
+
+<style>
+  /* 网格布局 */
+  .works-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  /* 两列布局作品 */
+  .work-item {
+    flex: 1 1 calc(50% - 30px);
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* 单个作品宽度保持一致，居中显示 */
+  .works-grid > .work-item:only-child {
+    flex: 1 1 400px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .work-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .work-item a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* 响应式优化: 屏幕小于 768px 自动单列 */
+  @media screen and (max-width: 768px) {
+    .work-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    .works-grid > .work-item:only-child {
+      max-width: 100%;
+    }
+  }
+
+  /* 回到顶部按钮样式 */
+  #back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 1000;
+    display: none;
+    text-align: center;
+    line-height: 1;
+  }
+
+  #back-to-top:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+  }
+</style>
 <div class="portfolio-page">
   <h1 class="portfolio-title">WORKS</h1>
 
@@ -23,75 +95,289 @@ author_profile: false
     <a href="{{ '/portfolio/vroid' | relative_url }}">Vroid</a>
     <a href="{{ '/portfolio/figma' | relative_url }}">Figma</a>
     <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
-
-
   </div>
 
   <!-- Illustrator 作品展示 -->
   <div class="works-grid">
+        <!-- Arduino -->
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/kdsj2_%E7%94%BB%E6%9D%BF%2011.png" alt="The Spiritual Charm of Nature">
-      <p>The Spiritual Charm of Nature</p>
+      <a href="/portfolio/arduino/hcare-emergency-call-bell/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work2.png" alt="Hcare Emergency Call Bell">
+        <p>Hcare Emergency Call Bell</p>
+      </a>
+    </div>
+
+    <!-- Intelligent Liquid Analysis System -->
+    <div class="work-item">
+      <a href="/portfolio/arduino/intelligent-liquid-analysis-system/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work3.png" alt="Intelligent Liquid Analysis System">
+        <p>Intelligent Liquid Analysis System</p>
+      </a>
+    </div>
+    <!-- After Effects -->
+    <div class="work-item" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+      <a href="/portfolio/aftereffects/dramatic-face-change/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E5%88%86%E7%BB%84%202.png" 
+             alt="Dramatic face change" 
+             style="max-width:100%; max-height:250px; object-fit:contain; margin:auto;">
+        <p>Dramatic face change</p>
+      </a>
+    </div>
+
+    <!-- Wenchang Chicken Traceability System -->
+    <div class="work-item" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+      <a href="/portfolio/aftereffects/wenchang-chicken-traceability-system/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/work1.png" 
+             alt="Wenchang Chicken Traceability System" 
+             style="max-width:100%; max-height:250px; object-fit:contain; margin:auto;">
+        <p>Wenchang Chicken Traceability System</p>
+      </a>
+    </div>
+
+
+
+    <!-- TouchDesigner -->
+  <!-- Dragon Spring Sword -->
+    <div class="work-item">
+      <a href="/portfolio/touchdesigner/dragon-spring-sword/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/ad8347e96c8fb54e5ea769c73b8bbcd6.jpg" alt="Dragon Spring Sword">
+        <p>Dragon Spring Sword</p>
+      </a>
+    </div>
+
+
+    <div class="work-item">
+      <a href="/portfolio/unity/tiffany-virtual-run/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" 
+             alt="Tiffany Virtual Run">
+        <p>Tiffany Virtual Run</p>
+      </a>
+    </div>
+
+        <!-- Cinema 4D -->
+    <div class="work-item">
+      <a href="/portfolio/cinema4d/fantasy-earth/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/color.png" alt="Fantasy Earth">
+        <p>Fantasy Earth</p>
+      </a>
+    </div>
+
+    <!-- SolidWorks -->
+    <div class="work-item">
+      <a href="/portfolio/solidworks/echomoment/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/echomoment%20(2).png" alt="Echomoment">
+        <p>Echomoment</p>
+      </a>
+    </div>
+
+    <!-- Video -->
+    <div class="work-item">
+      <a href="{{ '/portfolio/video/the-seed-of-hope/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/79d7f8f6eeecb497fb08903309724a1d.png" alt="The Seed of Hope">
+        <p>The Seed of Hope</p>
+      </a>
     </div>
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl1.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Tree of Life">
-      <p>Tree of Life</p>
+      <a href="{{ '/portfolio/video/the-new-war/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/f4a282e23ebb7c07f802b4f8a7552020.png" alt="The New War">
+        <p>The New War</p>
+      </a>
     </div>
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%E3%80%8113_%E7%94%BB%E6%9D%BF%201.jpg" alt="The Lament of Pollution">
-      <p>The Lament of Pollution</p>
+      <a href="{{ '/portfolio/video/guided-video/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/c2fbee2ac10a7502346dc159b7a5f2e4.png" alt="Guided Video">
+        <p>Guided Video</p>
+      </a>
+    </div>
+
+        <div class="work-item">
+      <a href="{{ '/portfolio/video/inspirational-video/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/0efe173ca9911af2f6430d2050df4288.png" alt="Inspirational Video">
+        <p>Inspirational Video</p>
+      </a>
+    </div>
+
+ 
+    <div class="work-item">
+      <a href="/portfolio/figma/app-moonlight/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/484bbbe70011c1635683ba0cd0116ce.png" alt="App-Moonlight">
+        <p>App-Moonlight</p>
+      </a>
+    </div>
+
+
+            <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/random-word-technique/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique">
+        <p>Random Word Technique</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="/portfolio/vroid/anya/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/25-9%E6%9C%88-28-04-04-48-25.png" alt="Anya">
+        <p>Anya</p>
+      </a>
+    </div>
+  
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/personal-logo/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png" alt="Personal LOGO">
+        <p>Personal LOGO</p>
+      </a>
+    </div>
+
+        <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/knitted-future-fashion/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/5121_%E7%94%BB%E6%9D%BF%201.png" alt="Knitted Future Fashion">
+        <p>Knitted Future Fashion</p>
+      </a>
+    </div>
+
+
+
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/the-spiritual-charm-of-nature/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/kdsj2_%E7%94%BB%E6%9D%BF%2011.png" alt="The Spiritual Charm of Nature">
+        <p>The Spiritual Charm of Nature</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/tree-of-life/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl1.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Tree of Life">
+        <p>Tree of Life</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/the-lament-of-pollution/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/final%E3%80%8113_%E7%94%BB%E6%9D%BF%201.jpg" alt="The Lament of Pollution">
+        <p>The Lament of Pollution</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/the-wind-of-freedom/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl2%20%5B%E5%B7%B2%E6%81%A2%E5%A4%8D%5D-01.jpg" alt="The Wind of Freedom">
+        <p>The Wind of Freedom</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/black-and-white-illusion/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Black and White Illusion">
+        <p>Black and White Illusion</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/colorful-reflection-of-tradition/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/D323C05.jpeg" alt="Colorful Reflection of Tradition">
+        <p>Colorful Reflection of Tradition</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/dusk-and-dawn/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl3_%E7%94%BB%E6%9D%BF%201.jpg" alt="Dusk and Dawn">
+        <p>Dusk and Dawn</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/color-dyed-geometry/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/poster%20%E6%94%B9%E4%BA%86_%E7%94%BB%E6%9D%BF%201.png" alt="Color Dyed Geometry">
+        <p>Color Dyed Geometry</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/fading-home/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E7%AC%A6%E5%8F%B7%E6%B5%B7%E6%8A%A5624_%E7%94%BB%E6%9D%BF%201.png" alt="Fading Home">
+        <p>Fading Home</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/the-land-of-melancholy/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/513_%E7%94%BB%E6%9D%BF%201.png" alt="The Land of Melancholy">
+        <p>The Land of Melancholy</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/creative-twelve-shapes/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.2_%E7%94%BB%E6%9D%BF%201.jpg" alt="Creative Twelve Shapes">
+        <p>Creative Twelve Shapes</p>
+      </a>
+    </div>
+
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/taekwondo-power-future-dreams/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E8%B7%86%E6%8B%B3%E9%81%93%E6%B5%B7%E6%8A%A53_%E7%94%BB%E6%9D%BF%201.png" alt="Taekwondo Power, Future Dreams">
+        <p>Taekwondo Power, Future Dreams</p>
+      </a>
+    </div>
+
+    <div class="work-item">
+      <a href="{{ '/portfolio/illustrator/colorful-geometric-mosaic-painting/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Group%201157.png" alt="Colorful Geometric Mosaic Painting">
+        <p>Colorful Geometric Mosaic Painting</p>
+      </a>
+    </div>
+
+
+     <!-- Photoshop -->
+    <div class="work-item">
+      <a href="{{ '/portfolio/photoshop/gray-desperation/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/427poster_%E7%94%BB%E6%9D%BF%201.png" alt="Gray Desperation">
+        <p>Gray Desperation</p>
+      </a>
     </div>
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl2%20%5B%E5%B7%B2%E6%81%A2%E5%A4%8D%5D-01.jpg" alt="The Wind of Freedom">
-      <p>The Wind of Freedom</p>
+      <a href="{{ '/portfolio/photoshop/a-moment-of-shooting/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/420hw1.png" alt="A Moment of Shooting">
+        <p>A Moment of Shooting</p>
+      </a>
     </div>
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.1_%E7%94%BB%E6%9D%BF%201.jpg" alt="Black and White Illusion">
-      <p>Black and White Illusion</p>
+      <a href="{{ '/portfolio/photoshop/despair-in-ruins-part-1/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/504_%E7%94%BB%E6%9D%BF%201.png" alt="Despair in Ruins (Part 1)">
+        <p>Despair in Ruins (Part 1)</p>
+      </a>
     </div>
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/D323C05.jpeg" alt="Colorful Reflection of Tradition">
-      <p>Colorful Reflection of Tradition</p>
+      <a href="{{ '/portfolio/photoshop/despair-in-ruins-part-2/' | relative_url }}">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/5041_%E7%94%BB%E6%9D%BF%201.png" alt="Despair in Ruins (Part 2)">
+        <p>Despair in Ruins (Part 2)</p>
+      </a>
     </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/zcl3_%E7%94%BB%E6%9D%BF%201.jpg" alt="Dusk and Dawn">
-      <p>Dusk and Dawn</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/poster%20%E6%94%B9%E4%BA%86_%E7%94%BB%E6%9D%BF%201.png" alt="Color Dyed Geometry">
-      <p>Color Dyed Geometry</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E7%AC%A6%E5%8F%B7%E6%B5%B7%E6%8A%A5624_%E7%94%BB%E6%9D%BF%201.png" alt="Fading Home">
-      <p>Fading Home</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/513_%E7%94%BB%E6%9D%BF%201.png" alt="The Land of Melancholy">
-      <p>The Land of Melancholy</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/3.7.2_%E7%94%BB%E6%9D%BF%201.jpg" alt="Creative Twelve Shapes">
-      <p>Creative Twelve Shapes</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/5121_%E7%94%BB%E6%9D%BF%201.png" alt="Knitted Future Fashion">
-      <p>Knitted Future Fashion</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/%E8%B7%86%E6%8B%B3%E9%81%93%E6%B5%B7%E6%8A%A53_%E7%94%BB%E6%9D%BF%201.png" alt="Taekwondo Power, Future Dreams">
-      <p>Taekwondo Power, Future Dreams</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Group%201157.png" alt="Colorful Geometric Mosaic Painting">
-      <p>Colorful Geometric Mosaic Painting</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/plogo2_%E7%94%BB%E6%9D%BF%201.png" alt="Personal LOGO">
-      <p>Personal LOGO</p>
-    </div>
-    <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/Final%20Project%E7%AC%AC%E4%B8%80%E9%9D%A2%E4%BF%AE%E6%94%B9%E5%90%8E_%E7%94%BB%E6%9D%BF%201.png" alt="Random Word Technique">
-      <p>Random Word Technique</p>
-    </div>
+
+
   </div>
 </div>
+<!-- 回到顶部按钮 -->
+<div id="back-to-top" title="Back to top">⬆</div>
+
+<script>
+  // 回到顶部功能
+  const backToTop = document.getElementById('back-to-top');
+
+  // 页面一开始就显示按钮
+  backToTop.style.display = 'block';
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'block'; // 一开始也保持显示
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>

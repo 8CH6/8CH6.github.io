@@ -5,15 +5,134 @@ permalink: /portfolio/unity/
 author_profile: false
 ---
 
+<style>
+/* ====== 强覆盖：确保单个作品居中（权重高） ====== */
+/* 限制范围到当前页面，避免影响全站过多元素 */
+body .portfolio-page {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  min-height: 100vh !important;
+  box-sizing: border-box !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+/* 分类导航 保持原样但确保在本页面可见 */
+body .portfolio-page .categories {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* works-grid：即便全局被重写也强制为 flex 居中 */
+body .portfolio-page .works-grid {
+  display: flex !important;
+  justify-content: center !important;   /* 水平居中 */
+  align-items: center !important;       /* 垂直居中单个项目时用到 */
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+  width: 100% !important;
+  max-width: 1100px !important;         /* 保持和其他页面一致的宽度容器 */
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  padding: 0 16px !important;
+}
+
+/* work-item：强制水平居中卡片，保证单个项目居中显示 */
+body .portfolio-page .work-item {
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 600px !important;          /* 卡片最大宽度（可调整） */
+  box-sizing: border-box !important;
+}
+
+/* 图片在卡片内居中并保持比例，不超过卡片宽度 */
+body .portfolio-page .work-item img {
+  display: block !important;
+  margin: 0 auto !important;
+  width: auto !important;
+  max-width: 80% !important; /* 缩小图片 */
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+/* 标题文本保持在图片下方居中 */
+body .portfolio-page .work-item p {
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  font-weight: 600 !important;
+  color: #fff !important; /* 白色文字 */
+}
+
+/* Back 按钮保持你原来的样式并居中 */
+body .portfolio-page .back-button {
+  display: inline-block !important;
+  margin: 20px auto 0 !important;
+  padding: 10px 20px !important;
+  background-color: #333 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 30px !important;
+  transition: background-color 0.3s !important;
+  box-sizing: border-box !important;
+}
+body .portfolio-page .back-button:hover {
+  background-color: #555 !important;
+}
+
+/* 响应式：窄屏时保持单列并适当间距 */
+@media screen and (max-width: 768px) {
+  body .portfolio-page {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  body .portfolio-page .work-item {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  body .portfolio-page .works-grid {
+    gap: 20px !important;
+  }
+}
+</style>
+
 <div class="portfolio-page">
   <h1 class="portfolio-title">Unity Works</h1>
 
+  <!-- 分类导航（保持原样） -->
+  <div class="categories">
+    <a href="{{ '/portfolio/illustrator' | relative_url }}">Illustrator</a>
+    <a href="{{ '/portfolio/photoshop' | relative_url }}">Photoshop</a>
+    <a href="{{ '/portfolio/cinema4d' | relative_url }}">Cinema 4D</a>
+    <a href="{{ '/portfolio/solidworks' | relative_url }}">SolidWorks</a>
+    <a href="{{ '/portfolio/processing' | relative_url }}">Processing</a>
+    <a href="{{ '/portfolio/aftereffects' | relative_url }}">After Effects</a>
+    <a href="{{ '/portfolio/touchdesigner' | relative_url }}">TouchDesigner</a>
+    <a href="{{ '/portfolio/lightroom' | relative_url }}">Lightroom</a>
+    <a href="{{ '/portfolio/arduino' | relative_url }}">Arduino</a>
+    <a href="{{ '/portfolio/unity' | relative_url }}">Unity</a>
+    <a href="{{ '/portfolio/vroid' | relative_url }}">Vroid</a>
+    <a href="{{ '/portfolio/figma' | relative_url }}">Figma</a>
+    <a href="{{ '/portfolio/video' | relative_url }}">Video</a>
+  </div>
+
+  <!-- 作品容器（单个作品将居中） -->
   <div class="works-grid">
     <div class="work-item">
-      <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" alt="Tiffany Virtual Run">
-      <p>Tiffany Virtual Run</p>
+      <a href="/portfolio/unity/tiffany-virtual-run/">
+        <img src="https://cdn.jsdelivr.net/gh/8CH6/picgo/img/7fb06594b0cdbab304b0b137737ed030.png" 
+             alt="Tiffany Virtual Run">
+        <p>Tiffany Virtual Run</p>
+      </a>
     </div>
   </div>
 
+  <!-- 回到 Portfolio 按钮（保持不变） -->
   <a href="{{ '/portfolio/' | relative_url }}" class="back-button">← Back to Portfolio</a>
 </div>
