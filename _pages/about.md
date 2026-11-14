@@ -11,7 +11,7 @@ author_profile: true
 <h2 id="intro" class="typing"></h2>
 
 <script>
-const text = "🎨 A Design & Technology undergraduate exploring the intersection of AI · AR · Interactive Media.";
+const text = "🎨 An MA student in New Media & Social Media at EdUHK, exploring AI · AR · Interactive Media.";
 let i = 0;
 function typing() {
   if (i < text.length) {
@@ -25,7 +25,7 @@ window.onload = typing;
 
 💡 My vision: use **intelligent media** to create sustainable cultural and commercial value — and grow into a leader in the **cultural technology landscape**.  
 
-📱 **+86 17805830516**
+📍 **Tai Po, Hong Kong** · 📱 **(+852) 62636852** · ✉️ **[s1177156@s.eduhk.hk](mailto:s1177156@s.eduhk.hk)**
 
 ---
 
@@ -60,45 +60,48 @@ window.onload = typing;
 ---
 
 ## 🌐 Languages
-- 🇨🇳 Chinese (Native)  
-- 🇬🇧 English (IELTS 7.0)  
+- 🇨🇳 Mandarin (Native)  
+- 🇬🇧 English (Fluent — IELTS 7.0, CET-6)  
 - 🇭🇰 Cantonese (Basic)  
 
 ---
 
 ## 💼 Experience
-**Intern – President’s Office** · Hape International (Ningbo) Ltd.  
-*Apr 2025 – Present*  
+**New Media Operations Intern** · Ningbo Hape Toys Co., Ltd.  
+*Mar 2026 – May 2026*  
 
-**New Media Operator** · Zhejiang Zhongshi Company  
+**Content Operations Intern** · Ningbo Hape Toys Co., Ltd.  
+*Oct 2025 – Jan 2026*  
+
+**Executive Office Intern** · Ningbo Hape Toys Co., Ltd.  
+*Apr 2025 – Jun 2025*  
+
+**New Media Operator** · Zhejiang Mid-Vision Co., Ltd.  
 *Sep 2024 – Jan 2025*  
-
-**Assistant – Store Operation** · Keqin Bicycle Store  
-*Jun 2024 – Sep 2024*  
-
-**Sales Specialist** · Youxuepai (Haining Intai City Experience Store)  
-*Jun 2023 – Sep 2023*  
 
 ---
 
 ## 🎓 Education
-**B.A. in Design and Technology**  
-*Sino-German Institute of Design and Communication, Zhejiang Wanli University*  
-*2022 – 2026*  
-- Mark: 89.5  
-- Provincial Government Scholarship  
+**M.A. in New Media and Social Media**  
+*The Education University of Hong Kong*  
+*Sep 2026 – Jun 2027*  
+
+**B.A. in Art and Technology**  
+*Sino-German School of Design and Communication, Zhejiang Wanli University*  
+*Sep 2022 – Jun 2026*  
+- GPA: 3.98 / 5.00 (Rank: 1 / 27)  
 
 **Awards & Recognition**  
-- 🏆 2025: Zhejiang Provincial **Second Prize**, Future Designer Awards  
+- 🏆 2025: National **Second Prize**, National College Student English Competition  
+- 🏆 2025: Zhejiang Provincial **Second Prize**, Zhejiang Future Designer Competition  
 - 🎖 2022–2024: Zhejiang Provincial Government Scholarship  
-- 🥇 First-class Scholarship, Zhejiang Wanli University  
-- 🌟 Outstanding Student Cadre (Student Leader)  
+- 🥇 2022–2024: First-Class Academic Scholarship, Zhejiang Wanli University  
+- 🌟 2022–2024: Outstanding Student Cadre / Merit Student, Zhejiang Wanli University  
 
 ---
 
 ## 📄 Publication
-**Jul 2023 – Nov 2024** · National Innovation & Entrepreneurship Programme, China (Project ID: 654112300195) – *Living Conditions and Service Needs of Women Living Alone in Ningbo: Policy-Oriented Research*; Team Lead (Liu Shutong, Yan Xinyi, Dong Xuanru, Shi Jin, You); led mixed-methods study informing social policy; manuscript scheduled for publication in *Huazhang* (Apr 2025); National-level award.  
-*(CN22-1282/I · ISSN 1009-5489)*
+**Jul 2023 – Nov 2024** · National Innovation & Entrepreneurship Program (No. 654112300195) – *Living Conditions and Service Needs of Solitary Women in Ningbo: Policy-Oriented Research*; Project Team Leader (5 members); led mixed-methods study informing social policy; research paper scheduled for publication in *Huazhang* (April 2025 issue, p. 129, CN22-1282/I, ISSN 1009-5489); National-Level Award Winner.
 
 ---
 

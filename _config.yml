@@ -8,19 +8,20 @@ title : "Yanrou GE"
 logo: "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/logo.png"
 title_separator          : "-"
 name                     : "Yanrou GE"
-description              : "Undergraduate in Design & Technology — Sino-German Institute of Design and Communication"
+description              : "MA in New Media and Social Media — The Education University of Hong Kong"
 url                      : "https://8CH6.github.io"
 baseurl                  : ""
-repository               : "8CH6/academicpages.github.io"
+repository               : "8CH6/8CH6.github.io"
 
 # Site Author - sidebar profile info
 author:
   avatar           : "https://cdn.jsdelivr.net/gh/8CH6/picgo/img/bio-photo.jpg"  # 使用远程头像
   name             : "Yanrou GE"
   pronouns         :
-  bio              : "Undergraduate student in Design & Technology. Interested in AI, AR, and interactive media for cultural heritage narratives."
-  location         : "Jiaxing, Zhejiang, China"
-  employer         : "Sino-German Institute of Design and Communication"
+  bio              : "MA student in New Media and Social Media at EdUHK. Exploring AI, AR, new media operations, and interactive cultural communication."
+  location         : "Tai Po, Hong Kong"
+  employer         : "The Education University of Hong Kong"
+  email            : "s1177156@s.eduhk.hk"
   uri              :
 
 
