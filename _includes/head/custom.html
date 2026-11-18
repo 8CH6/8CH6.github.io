@@ -15,3 +15,71 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <!-- end custom head snippets -->
+
+<!-- Multilingual (EN / 简 / 繁) Pre-init & Switcher Styles -->
+<script>
+  (function() {
+    var savedLang = localStorage.getItem('site_lang') || 'en';
+    document.documentElement.setAttribute('data-lang', savedLang);
+  })();
+</script>
+<style>
+  .masthead__inner-wrap {
+    position: relative;
+  }
+  .greedy-nav {
+    padding-right: 132px !important;
+  }
+  .lang-switcher {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 999px;
+    padding: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(8px);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "PingFang HK", "Microsoft YaHei", sans-serif;
+  }
+  .lang-switcher button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0;
+  }
+  .lang-switcher button:hover {
+    color: #111;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .lang-switcher button.active {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 768px) {
+    .greedy-nav {
+      padding-right: 124px !important;
+    }
+    .lang-switcher {
+      right: 10px;
+      padding: 2px;
+    }
+    .lang-switcher button {
+      font-size: 11px;
+      padding: 5px 8px;
+    }
+  }
+</style>
