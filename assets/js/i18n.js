@@ -409,8 +409,8 @@
     // 全部作品标题（Video / AE / Arduino / C4D / Figma / Illustrator / Lightroom / Photoshop / Processing / SolidWorks / TD / Unity / Vroid）
     'The Seed of Hope': '希望之种',
     'The New War': '新战争',
-    'Guided Video': '品牌虚拟导览短片',
-    'Inspirational Video': '励志主题短片',
+    'Guided Video': 'Tiffany《蓝盒漫游》品牌概念宣传片',
+    'Inspirational Video': 'Tiffany《逐光而行》品牌形象宣传片',
     '100 Likes': '《100个赞》——一件越来越不合身的自己',
     'Decided for You': '《已为你决定》',
     'My Village Girl Princess': '《我的村姑王妃》（短剧单集）',
@@ -511,6 +511,8 @@
   // 香港繁体专属覆盖（直接使用《葛嫣柔-簡歷-v2》官方原句）
   const HK_EXACT_DICT = {
     '📄 Download my CV (PDF)': '📄 下載繁體中文簡歷 (PDF)',
+    'Guided Video': 'Tiffany《藍盒漫遊》品牌概念宣傳片',
+    'Inspirational Video': 'Tiffany《逐光而行》品牌形象宣傳片',
     'Download my CV (PDF)': '下載繁體中文簡歷 (PDF)',
     'Location: Tai Po, Hong Kong | Phone: (+852) 62636852 | Email:': '現居：香港大埔 ｜ 電話：(+852) 62636852 ｜ 郵箱：',
     'Portfolio:': '個人主頁：',
