@@ -141,6 +141,11 @@
     'Telephone:': '联系电话：',
     'E-mail:': '电子邮箱：',
     'Portfolio Website:': '个人作品集：',
+    'Core Coursework: Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '核心课程：应用传播研究、新媒体教育、新媒体与人工智能心理学、新媒体法律、伦理与监管、多媒体制作、新媒体、算法与人工智能',
+    'Core Coursework:': '核心课程：',
+    'Core Coursework': '核心课程',
+    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '：应用传播研究、新媒体教育、新媒体与人工智能心理学、新媒体法律、伦理与监管、多媒体制作、新媒体、算法与人工智能',
+    'Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '应用传播研究、新媒体教育、新媒体与人工智能心理学、新媒体法律、伦理与监管、多媒体制作、新媒体、算法与人工智能',
     'Home': '首页',
     'About': '关于我',
     'Portfolio': '作品集',
@@ -511,6 +516,11 @@
   // 香港繁体专属覆盖（直接使用《葛嫣柔-簡歷-v2》官方原句）
   const HK_EXACT_DICT = {
     '📄 Download my CV (PDF)': '📄 下載繁體中文簡歷 (PDF)',
+    'Core Coursework: Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '核心課程：應用傳播研究、新媒體教育、新媒體與人工智能心理學、新媒體法律、倫理與監管、多媒體製作、新媒體、算法與人工智能',
+    'Core Coursework:': '核心課程：',
+    'Core Coursework': '核心課程',
+    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '：應用傳播研究、新媒體教育、新媒體與人工智能心理學、新媒體法律、倫理與監管、多媒體製作、新媒體、算法與人工智能',
+    'Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '應用傳播研究、新媒體教育、新媒體與人工智能心理學、新媒體法律、倫理與監管、多媒體製作、新媒體、算法與人工智能',
     'Guided Video': 'Tiffany《藍盒漫遊》品牌概念宣傳片',
     'Inspirational Video': 'Tiffany《逐光而行》品牌形象宣傳片',
     'Download my CV (PDF)': '下載繁體中文簡歷 (PDF)',

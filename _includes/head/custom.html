@@ -19,31 +19,44 @@
 <!-- Multilingual (EN / 简 / 繁) Pre-init & Switcher Styles -->
 <script>
   (function() {
-    var savedLang = localStorage.getItem('site_lang') || 'en';
+    var params = new URLSearchParams(window.location.search);
+    var q = (params.get('lang') || '').trim();
+    var savedLang = (q === 'zh-CN' || q === 'sc') ? 'zh-CN'
+                  : (q === 'zh-HK' || q === 'zh-TW' || q === 'tc') ? 'zh-HK'
+                  : (q === 'en') ? 'en'
+                  : (localStorage.getItem('site_lang') || 'en');
     document.documentElement.setAttribute('data-lang', savedLang);
   })();
 </script>
 <style>
-  .masthead__inner-wrap {
-    position: relative;
+  .masthead__menu #site-nav.greedy-nav {
+    padding-right: 0 !important;
   }
-  .greedy-nav {
-    padding-right: 132px !important;
+  .masthead__menu #site-nav.greedy-nav .visible-links {
+    align-items: center;
+  }
+  #lang-switcher-item {
+    display: inline-flex !important;
+    align-items: center;
+    margin-left: 8px;
+    padding: 0 !important;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  #lang-switcher-item::before,
+  #lang-switcher-item::after {
+    display: none !important;
   }
   .lang-switcher {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1001;
+    position: static;
+    transform: none;
     display: inline-flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.92);
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.14);
     border-radius: 999px;
-    padding: 3px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(8px);
+    padding: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "PingFang HK", "Microsoft YaHei", sans-serif;
   }
   .lang-switcher button {
@@ -54,7 +67,7 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 1;
-    padding: 6px 10px;
+    padding: 5px 9px;
     border-radius: 999px;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -62,24 +75,35 @@
   }
   .lang-switcher button:hover {
     color: #111;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.06);
   }
   .lang-switcher button.active {
     background: #222;
     color: #fff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  html[data-theme="dark"] .lang-switcher {
+    background: rgba(40, 40, 45, 0.92);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+  html[data-theme="dark"] .lang-switcher button {
+    color: #ccc;
+  }
+  html[data-theme="dark"] .lang-switcher button:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  html[data-theme="dark"] .lang-switcher button.active {
+    background: #f5f5f7;
+    color: #111;
   }
   @media (max-width: 768px) {
-    .greedy-nav {
-      padding-right: 124px !important;
-    }
-    .lang-switcher {
-      right: 10px;
-      padding: 2px;
+    #lang-switcher-item {
+      margin-left: 4px;
     }
     .lang-switcher button {
       font-size: 11px;
-      padding: 5px 8px;
+      padding: 4px 7px;
     }
   }
 </style>
