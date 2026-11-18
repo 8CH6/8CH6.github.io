@@ -274,7 +274,7 @@
     'Master of Arts in New Media and Social Media': '硕士 · 新媒体与社交媒体',
     '(Sep 2026 – Jul 2027)': '（2026年9月 – 2027年7月）',
     'Core Coursework': '主要课程',
-    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI B': '：应用传播学研究、新媒体教育、新媒体与人工智能的心理学视角、新媒体法律，道德与监管、多媒体制作、新媒体、算法与人工智能B',
+    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '：应用传播学研究、新媒体教育、新媒体与人工智能的心理学视角、新媒体法律，道德与监管、多媒体制作、新媒体、算法与人工智能',
     '(Sino-German School of Design and Communication)': '（中德设计与传播学院）',
     'Bachelor of Arts in Art and Technology': '本科 · 艺术与科技专业',
     '(Sep 2022 – Jun 2026)': '（2022年9月 – 2026年6月）',
@@ -516,7 +516,7 @@
     'Download my CV (PDF)': '下載繁體中文簡歷 (PDF)',
     'Location: Tai Po, Hong Kong | Phone: (+852) 62636852 | Email:': '現居：香港大埔 ｜ 電話：(+852) 62636852 ｜ 郵箱：',
     'Portfolio:': '個人主頁：',
-    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI B': '：應用傳播學研究、新媒體教育、新媒體與人工智能的心理學視角、新媒體法律，道德與監管、多媒體製作、新媒體、算法與人工智能B',
+    ': Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI': '：應用傳播學研究、新媒體教育、新媒體與人工智能的心理學視角、新媒體法律，道德與監管、多媒體製作、新媒體、算法與人工智能',
     ': Computer-Aided Design, Cross-Cultural Communication, Design Aesthetics & Methodology, Digital Image Design, International Design & Innovation Trends, Motion Graphics, Interactive Systems, VR Design, User Experience Design, Media Integration, Interactive Prototyping': '：計算機輔助設計、跨文化交際能力發展、設計美學與方法論、數字圖像設計、國際設計與創新趨勢、動態圖像設計、交互系統、虛擬現實設計、用戶體驗設計、媒體整合、交互原型',
     ': (1) Quantitative questionnaires capturing demographics, living conditions, and needs; (2) Qualitative in-depth interviews gathering personal experiences, perspectives, and suggestions; (3) Literature review comparing domestic and international practices and policies.': '：1. 問卷調查獲取人口學特徵、生活狀況及需求；2. 深度訪談收集個人經驗、觀點與建議；3. 文獻綜述對比國內外實踐與政策。',
     ': Screened 500+ influencers across maternal/child, designer toys, and stress-relief niches; initiated contact with 100+ creators and built a core partner database of 50+, significantly boosting seed-marketing efficiency.': '：篩選母嬰/潮玩/解壓達人 500+，溝通 100+，建合作庫 50+，提升種草匹配效率。',
@@ -691,11 +691,22 @@
       });
     } finally {
       isApplying = false;
+      window.dispatchEvent(new Event('resize'));
     }
   }
 
   function mountSwitcher() {
-    if (document.getElementById('lang-switcher')) return;
+    const existing = document.getElementById('lang-switcher');
+    if (existing) {
+      existing.querySelectorAll('button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === currentLang);
+        if (!btn.dataset.bound) {
+          btn.dataset.bound = '1';
+          btn.addEventListener('click', () => applyLanguage(btn.dataset.lang, true));
+        }
+      });
+      return;
+    }
     const container = document.querySelector('.masthead__inner-wrap') || document.body;
     const switcher = document.createElement('div');
     switcher.id = 'lang-switcher';

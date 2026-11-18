@@ -24,7 +24,7 @@ Education
 
 **The Education University of Hong Kong**  
 *Master of Arts in New Media and Social Media* (Sep 2026 – Jul 2027)  
-- **Core Coursework**: Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI B
+- **Core Coursework**: Applied Communication Research, New Media Education, Psychological Aspects of New Media and AI, New Media Law, Ethics and Regulation, Multimedia Production, New Media, Algorithms and AI
 
 **Zhejiang Wanli University** *(Sino-German School of Design and Communication)*  
 *Bachelor of Arts in Art and Technology* (Sep 2022 – Jun 2026)  
