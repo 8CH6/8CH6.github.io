@@ -254,6 +254,22 @@
     'Internship & Work Experience': '实习经历',
     'Campus Activities & Volunteering': '校园活动',
     'Honors & Awards': '荣誉奖项',
+    'Zhejiang Provincial Future Designer Competition (2nd Prize)': '浙江省未来设计师大赛二等奖',
+    'National College Student English Competition (2nd Prize)': '全国大学生英语竞赛二等奖',
+    'Zhejiang Provincial Government Scholarship': '浙江省政府奖学金',
+    'First-Class Academic Scholarship, Zhejiang Wanli University': '浙江万里学院一等奖学金',
+    'Outstanding Student Cadre, Zhejiang Wanli University': '浙江万里学院优秀学生干部',
+    'Merit Student (Three-Good Student), Zhejiang Wanli University': '浙江万里学院三好学生',
+    'Wanli Individual Award, Zhejiang Wanli University': '浙江万里学院万里个人奖',
+    'Awards & Recognition': '荣誉与奖项',
+    '🏆 2025: National': '🏆 2025：全国大学生英语竞赛国家级',
+    'Second Prize': '二等奖',
+    ', National College Student English Competition': '（全国大学生英语竞赛）',
+    '🏆 2025: Zhejiang Provincial': '🏆 2025：浙江省未来设计师大赛省级',
+    ', Zhejiang Future Designer Competition': '（浙江省未来设计师大赛）',
+    '🎖 2022–2024: Zhejiang Provincial Government Scholarship': '🎖 2022–2024：浙江省政府奖学金',
+    '🥇 2022–2024: First-Class Academic Scholarship, Zhejiang Wanli University': '🥇 2022–2024：浙江万里学院一等学业奖学金',
+    '🌟 2022–2024: Outstanding Student Cadre / Merit Student, Zhejiang Wanli University': '🌟 2022–2024：浙江万里学院优秀学生干部 / 三好学生',
     'Skills, Certificates & Interests': '技能与兴趣',
     'Master of Arts in New Media and Social Media': '硕士 · 新媒体与社交媒体',
     '(Sep 2026 – Jul 2027)': '（2026年9月 – 2027年7月）',
@@ -528,6 +544,25 @@
     ': Assisted in bookstore cultural campaigns with cross-merchandising displays alongside children’s books and stationery to create an immersive learning environment and gather user feedback.': '：協助書店文化推廣活動：與兒童讀物、文具進行聯動陳列，營造沉浸式學習氛圍；收集用戶反饋優化產品。'
   };
 
+  function normalizeKey(str) {
+    return str
+      .replace(/\s+/g, ' ')
+      .replace(/[“”]/g, '"')
+      .replace(/[‘’]/g, "'")
+      .replace(/[–—]/g, '-')
+      .replace(/…/g, '...')
+      .trim();
+  }
+
+  const NORM_DICT = {};
+  for (const [k, v] of Object.entries(EXACT_DICT)) {
+    NORM_DICT[normalizeKey(k)] = v;
+  }
+  const NORM_HK_DICT = {};
+  for (const [k, v] of Object.entries(HK_EXACT_DICT)) {
+    NORM_HK_DICT[normalizeKey(k)] = v;
+  }
+
   function translateString(raw, lang) {
     if (!raw || lang === 'en') return raw;
     const leadingMatch = raw.match(/^\s*/);
@@ -536,12 +571,13 @@
     const trailing = trailingMatch ? trailingMatch[0] : '';
     const core = raw.replace(/\s+/g, ' ').trim();
     if (!core) return raw;
+    const normCore = normalizeKey(core);
 
-    if (lang === 'zh-HK' && HK_EXACT_DICT[core]) {
-      return leading + HK_EXACT_DICT[core] + trailing;
+    if (lang === 'zh-HK' && (HK_EXACT_DICT[core] || NORM_HK_DICT[normCore])) {
+      return leading + (HK_EXACT_DICT[core] || NORM_HK_DICT[normCore]) + trailing;
     }
 
-    let cn = EXACT_DICT[core];
+    let cn = EXACT_DICT[core] || NORM_DICT[normCore];
 
     // 处理全部项目元数据行：Role: ... · Tools: ... · Year: 2024/2026
     if (!cn && core.startsWith('Role:') && core.includes('Tools:') && core.includes('Year:')) {
